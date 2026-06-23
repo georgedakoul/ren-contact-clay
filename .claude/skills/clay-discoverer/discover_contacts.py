@@ -1,21 +1,27 @@
 """discover_contacts.py — Clay contact discovery driven by actionable_contacts.json.
 
 Usage:
-  python discover_contacts.py          → print status report
-  python discover_contacts.py save     → run save logic for the BATCH dict below
+  python discover_contacts.py              → print status report
+  python discover_contacts.py save         → save the BATCH dict below
+  python discover_contacts.py export       → export all contacts to Excel
+  python discover_contacts.py mark_empty   Brand1 [Brand2 ...]
+  python discover_contacts.py unmark_empty Brand1 [Brand2 ...]
 
-Claude fills the BATCH dict after each round of Clay MCP calls, then runs:
-  python discover_contacts.py save
+File prefix convention in output/employees/:
+  BrandName.json    → ✓ Covered   (has at least one email)
+  00-BrandName.json → ∅ LinkedIn  (contacts found, no emails yet)
+  ZZ-BrandName.json → ✗ Empty     (Clay returned 0 contacts — skip)
+  (no file)         → ✗ Missing   (never searched)
 """
 import json, sys, unicodedata, re
 from datetime import datetime, timezone
 from pathlib import Path
 
-ROOT        = Path(__file__).resolve().parents[3]
-STORE_DIR   = ROOT / "AI Sales Agent System" / "output" / "employees"
+ROOT          = Path(__file__).resolve().parents[3]
+STORE_DIR     = ROOT / "AI Sales Agent System" / "output" / "employees"
 CONTACTS_FILE = ROOT / "AI Sales Agent System" / "actionable_contacts.json"
-CLAY_STATE_FILE = ROOT / "AI Sales Agent System" / "output" / "clay_search_state.json"
-TODAY       = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+EXPORT_PATH   = ROOT / "AI Sales Agent System" / "output" / "contacts_export.xlsx"
+TODAY         = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 STORE_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
@@ -52,29 +58,6 @@ GLOBAL_BRANDS = {
 }
 
 
-def _load_state():
-    if CLAY_STATE_FILE.exists():
-        return json.loads(CLAY_STATE_FILE.read_text(encoding="utf-8"))
-    return {"empty": {}}
-
-def _save_state(state):
-    CLAY_STATE_FILE.write_text(json.dumps(state, indent=2, ensure_ascii=False), encoding="utf-8")
-
-def _mark_brand_empty(brand_name):
-    state = _load_state()
-    entry = state["empty"].get(brand_name, {"attempts": 0})
-    entry["last_searched"] = TODAY
-    entry["attempts"] = entry.get("attempts", 0) + 1
-    state["empty"][brand_name] = entry
-    _save_state(state)
-
-def _unmark_brand_empty(brand_name):
-    state = _load_state()
-    if brand_name in state.get("empty", {}):
-        del state["empty"][brand_name]
-        _save_state(state)
-
-
 def _strip_accents(s):
     return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
 
@@ -91,24 +74,28 @@ def get_identifier(brand_name, linkedin_slug):
 
 
 def _employee_path(brand_name):
-    """Return existing employee file; checks 00- prefix variant too."""
-    p = STORE_DIR / f"{brand_name}.json"
-    if p.exists():
-        return p
-    p0 = STORE_DIR / f"00-{brand_name}.json"
-    if p0.exists():
-        return p0
-    return p  # default for new files
+    """Return existing employee file; checks all prefix variants."""
+    for prefix in ("", "00-", "ZZ-"):
+        p = STORE_DIR / f"{prefix}{brand_name}.json"
+        if p.exists():
+            return p
+    return STORE_DIR / f"{brand_name}.json"  # default for new files
 
 
 def save_contacts(brand_name, contacts, domain=None):
     if not contacts:
-        _mark_brand_empty(brand_name)
-        state = _load_state()
-        attempts = state["empty"][brand_name]["attempts"]
-        print(f"  {brand_name}: Clay returned 0 contacts → marked EMPTY (attempt #{attempts}, skipped in future batches)")
+        zz = STORE_DIR / f"ZZ-{brand_name}.json"
+        zz.write_text("[]", encoding="utf-8")
+        for old_prefix in ("00-",):
+            old = STORE_DIR / f"{old_prefix}{brand_name}.json"
+            if old.exists():
+                old.unlink()
+        print(f"  {brand_name}: Clay returned 0 contacts → ZZ-{brand_name}.json (skipped in future batches)")
         return
-    _unmark_brand_empty(brand_name)
+    # If we now have contacts, remove any ZZ- marker
+    zz = STORE_DIR / f"ZZ-{brand_name}.json"
+    if zz.exists():
+        zz.unlink()
     path = _employee_path(brand_name)
     existing = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
     by_name = {normalize(e["name"]): e for e in existing}
@@ -147,23 +134,31 @@ def save_contacts(brand_name, contacts, domain=None):
 
 
 def _scan_store():
-    """Scan ALL employee files → {brand_name: {total, emails, last_seen}}."""
+    """Scan ALL employee files → {brand_name: {total, emails, last_seen, _prefix}}."""
     store = {}
     for f in sorted(STORE_DIR.glob("*.json")):
         if f.name == "desktop.ini":
             continue
-        brand_name = re.sub(r"^00-", "", f.stem)
-        contacts = json.loads(f.read_text(encoding="utf-8"))
-        email_count = sum(1 for c in contacts if c.get("email"))
-        last_seen = max(
-            (c.get("last_seen") or "1970-01-01") for c in contacts
-        ) if contacts else None
-        store[brand_name] = {"total": len(contacts), "emails": email_count, "last_seen": last_seen}
+        stem = f.stem
+        if stem.startswith("ZZ-"):
+            brand_name = stem[3:]
+            store[brand_name] = {"total": 0, "emails": 0, "last_seen": None, "_prefix": "ZZ-"}
+        elif stem.startswith("00-"):
+            brand_name = stem[3:]
+            contacts = json.loads(f.read_text(encoding="utf-8"))
+            email_count = sum(1 for c in contacts if c.get("email"))
+            last_seen = max((c.get("last_seen") or "1970-01-01") for c in contacts) if contacts else None
+            store[brand_name] = {"total": len(contacts), "emails": email_count, "last_seen": last_seen, "_prefix": "00-"}
+        else:
+            brand_name = stem
+            contacts = json.loads(f.read_text(encoding="utf-8"))
+            email_count = sum(1 for c in contacts if c.get("email"))
+            last_seen = max((c.get("last_seen") or "1970-01-01") for c in contacts) if contacts else None
+            store[brand_name] = {"total": len(contacts), "emails": email_count, "last_seen": last_seen, "_prefix": ""}
     return store
 
 
 def status_report():
-    # Pass 1: inventory the full employee store
     store = _scan_store()
     total_contacts = sum(v["total"] for v in store.values())
     total_emails   = sum(v["emails"] for v in store.values())
@@ -173,45 +168,40 @@ def status_report():
     print(f"  Files on disk : {len(store):>4}  ({brands_with_emails} with emails)")
     print(f"  Total contacts: {total_contacts:>4}  ({total_emails} with emails)")
 
-    # Pass 2: load actionable_contacts.json and find searchable brands
     data      = json.loads(CONTACTS_FILE.read_text(encoding="utf-8"))
     ac_brands = {b["brand"]: b for b in data["brands"]}
-
     searchable = {
         name: b for name, b in ac_brands.items()
         if b.get("linkedin_slug") or name in IDENTIFIER_OVERRIDES
     }
 
-    # Categorise searchable brands against the store + state file
-    empty_state = _load_state().get("empty", {})
-
-    covered      = []   # have ≥1 email
-    linkedin_only = []  # have contacts, 0 emails (00- prefix file)
-    empty        = []   # Clay returned 0 contacts (tracked in state file)
-    missing      = []   # never searched at all
+    covered      = []  # BrandName.json — has ≥1 email
+    linkedin_only = [] # 00-BrandName.json — contacts but 0 emails
+    empty        = []  # ZZ-BrandName.json — Clay returned 0 contacts
+    missing      = []  # no file at all — never searched
 
     for name in sorted(searchable):
         slug       = searchable[name].get("linkedin_slug", "")
         identifier = get_identifier(name, slug)
         needs_loc  = name in GLOBAL_BRANDS
         info       = store.get(name)
-        if info is not None and info["emails"] > 0:
-            covered.append((name, identifier, info, needs_loc))
-        elif info is not None:
-            linkedin_only.append((name, identifier, info, needs_loc))
-        elif name in empty_state:
-            empty.append((name, identifier, needs_loc, empty_state[name]))
-        else:
+        if info is None:
             missing.append((name, identifier, needs_loc))
+        elif info["_prefix"] == "ZZ-":
+            empty.append((name, identifier, needs_loc))
+        elif info["emails"] > 0:
+            covered.append((name, identifier, info, needs_loc))
+        else:
+            linkedin_only.append((name, identifier, info, needs_loc))
 
     print(f"\n=== CLAY-SEARCHABLE BRANDS ({len(searchable)} total) ===")
-    print(f"  ✓ Covered       (emails found)          : {len(covered)}")
-    print(f"  ∅ LinkedIn-only (contacts, no emails)   : {len(linkedin_only)}")
-    print(f"  ✗ Empty         (Clay returned 0, skip) : {len(empty)}")
-    print(f"  ✗ Missing       (never searched)        : {len(missing)}")
+    print(f"  ✓ Covered       (BrandName.json   — has emails)        : {len(covered)}")
+    print(f"  ∅ LinkedIn-only (00-BrandName.json — contacts, 0 email): {len(linkedin_only)}")
+    print(f"  ✗ Empty         (ZZ-BrandName.json — Clay returned 0)  : {len(empty)}")
+    print(f"  ✗ Missing       (no file           — never searched)   : {len(missing)}")
 
     if covered:
-        print(f"\n--- COVERED (have emails) ---")
+        print(f"\n--- ✓ COVERED (have emails) ---")
         print(f"  {'Brand':<32} {'Identifier':<45} {'#C':>4} {'#E':>4} {'Last seen':<12}")
         print("  " + "─" * 100)
         for name, identifier, info, needs_loc in covered:
@@ -219,35 +209,33 @@ def status_report():
             print(f"  {name:<32} {identifier:<45} {info['total']:>4} {info['emails']:>4} {info['last_seen'] or '—':<12}{loc}")
 
     if linkedin_only:
-        print(f"\n--- LINKEDIN-ONLY (contacts found, 0 emails) ---")
+        print(f"\n--- ∅ LINKEDIN-ONLY (contacts found, 0 emails) ---")
         print(f"  {'Brand':<32} {'Identifier':<45} {'#C':>4}  {'Last seen':<12}")
         print("  " + "─" * 96)
         for name, identifier, info, needs_loc in linkedin_only:
             loc = "  [+GR]" if needs_loc else ""
-            zero_hint = "  ← 0 contacts, consider mark_empty" if info["total"] == 0 else ""
-            print(f"  {name:<32} {identifier:<45} {info['total']:>4}  {info['last_seen'] or '—':<12}{loc}{zero_hint}")
+            print(f"  {name:<32} {identifier:<45} {info['total']:>4}  {info['last_seen'] or '—':<12}{loc}")
 
     if empty:
-        print(f"\n--- EMPTY (Clay returned 0 contacts — excluded from next batch) ---")
-        print(f"  {'Brand':<32} {'Identifier':<45} {'Tries':>5} {'Last searched':<12}")
-        print("  " + "─" * 100)
-        for name, identifier, needs_loc, einfo in empty:
+        print(f"\n--- ✗ EMPTY (ZZ- files — Clay returned 0, excluded from next batch) ---")
+        print(f"  {'Brand':<32} {'Identifier':<55}")
+        print("  " + "─" * 90)
+        for name, identifier, needs_loc in empty:
             loc = "  [+GR]" if needs_loc else ""
-            print(f"  {name:<32} {identifier:<45} {einfo.get('attempts',1):>5}  {einfo.get('last_searched','—'):<12}{loc}")
+            print(f"  {name:<32} {identifier:<55}{loc}")
 
     if missing:
-        print(f"\n--- MISSING (never searched) ---")
+        print(f"\n--- ✗ MISSING (no file — never searched) ---")
         print(f"  {'Brand':<32} {'Identifier':<45} {'Flags'}")
         print("  " + "─" * 88)
         for name, identifier, needs_loc in missing:
             loc = "[+GR]" if needs_loc else ""
             print(f"  {name:<32} {identifier:<45} {loc}")
 
-    # Next batch: missing first, then linkedin_only — empty brands are NEVER included
+    # Next batch: missing first, then linkedin_only — ZZ- (empty) brands never included
     next_up = list(missing) + [(n, i, nl) for n, i, info, nl in linkedin_only]
     if next_up:
         print(f"\n=== NEXT BATCH RECOMMENDATION (top 10) ===")
-        print(f"  (Empty brands are excluded — re-run mark_empty to re-enable)")
         print(f"  {'#':<4} {'Tier':<12} {'Brand':<32} {'Identifier':<45} {'Flags'}")
         print("  " + "─" * 100)
         for idx, (name, identifier, needs_loc) in enumerate(next_up[:10], 1):
@@ -492,6 +480,110 @@ _LAST_BATCH = {
 }
 
 
+def export_excel():
+    try:
+        from openpyxl import Workbook
+        from openpyxl.styles import PatternFill, Font, Alignment, Border, Side
+        from openpyxl.utils import get_column_letter
+    except ImportError:
+        print("openpyxl not installed. Run: pip3 install openpyxl --break-system-packages")
+        return
+
+    GREEN  = PatternFill("solid", fgColor="C6EFCE")  # covered (has email)
+    YELLOW = PatternFill("solid", fgColor="FFEB9C")  # linkedin-only (no email)
+    RED    = PatternFill("solid", fgColor="FFC7CE")  # empty (ZZ-)
+    HEADER = PatternFill("solid", fgColor="2F4F7F")  # header row
+
+    bold_white = Font(bold=True, color="FFFFFF")
+    bold_black = Font(bold=True)
+    center     = Alignment(horizontal="center", vertical="center", wrap_text=True)
+    left       = Alignment(horizontal="left",   vertical="center", wrap_text=True)
+    thin       = Side(style="thin", color="CCCCCC")
+    border     = Border(left=thin, right=thin, top=thin, bottom=thin)
+
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Contacts"
+
+    headers = ["Brand", "Status", "Name", "Job Title", "Email", "LinkedIn URL", "Domain", "First Seen", "Last Seen"]
+    col_widths = [28, 14, 28, 36, 34, 52, 22, 12, 12]
+
+    for col, (h, w) in enumerate(zip(headers, col_widths), 1):
+        cell = ws.cell(row=1, column=col, value=h)
+        cell.fill   = HEADER
+        cell.font   = bold_white
+        cell.alignment = center
+        cell.border = border
+        ws.column_dimensions[get_column_letter(col)].width = w
+    ws.row_dimensions[1].height = 22
+    ws.freeze_panes = "A2"
+
+    store = _scan_store()
+    data  = json.loads(CONTACTS_FILE.read_text(encoding="utf-8"))
+    all_brands = sorted(b["brand"] for b in data["brands"])
+
+    row = 2
+    for brand in all_brands:
+        info = store.get(brand)
+        if info is None:
+            continue  # never searched — skip from export
+
+        prefix = info["_prefix"]
+        if prefix == "ZZ-":
+            fill   = RED
+            status = "Empty"
+            contacts_list = []
+        elif prefix == "00-":
+            fill   = YELLOW
+            status = "LinkedIn-only"
+            f = STORE_DIR / f"00-{brand}.json"
+            contacts_list = json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+        else:
+            fill   = GREEN
+            status = "Covered"
+            f = STORE_DIR / f"{brand}.json"
+            contacts_list = json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+
+        if not contacts_list:
+            # One placeholder row for brands with no contacts
+            vals = [brand, status, "—", "—", "—", "—", "—", "—", "—"]
+            for col, v in enumerate(vals, 1):
+                cell = ws.cell(row=row, column=col, value=v)
+                cell.fill = fill
+                cell.alignment = left
+                cell.border = border
+                if col <= 2:
+                    cell.font = bold_black
+            row += 1
+        else:
+            for c in contacts_list:
+                vals = [
+                    brand, status,
+                    c.get("name") or "—",
+                    c.get("job_title") or "—",
+                    c.get("email") or "—",
+                    c.get("linkedin_url") or "—",
+                    c.get("domain") or "—",
+                    c.get("first_seen") or "—",
+                    c.get("last_seen") or "—",
+                ]
+                for col, v in enumerate(vals, 1):
+                    cell = ws.cell(row=row, column=col, value=v)
+                    cell.fill = fill
+                    cell.alignment = left
+                    cell.border = border
+                    if col <= 2:
+                        cell.font = bold_black
+                row += 1
+
+    ws.auto_filter.ref = f"A1:{get_column_letter(len(headers))}1"
+    wb.save(EXPORT_PATH)
+    print(f"Exported {row - 2} rows to: {EXPORT_PATH}")
+    print(f"  Green  = Covered (has email)")
+    print(f"  Yellow = LinkedIn-only (no email yet)")
+    print(f"  Red    = Empty (Clay returned 0 contacts)")
+
+
 if __name__ == "__main__":
     if "save" in sys.argv:
         if not BATCH:
@@ -500,6 +592,8 @@ if __name__ == "__main__":
             for brand, (contacts, domain) in BATCH.items():
                 save_contacts(brand, contacts, domain)
             print("Done.")
+    elif "export" in sys.argv:
+        export_excel()
     elif "mark_empty" in sys.argv:
         idx = sys.argv.index("mark_empty")
         brands = sys.argv[idx + 1:]
@@ -507,10 +601,12 @@ if __name__ == "__main__":
             print("Usage: python discover_contacts.py mark_empty \"Brand1\" \"Brand2\" ...")
         else:
             for b in brands:
-                _mark_brand_empty(b)
-                state = _load_state()
-                attempts = state["empty"][b]["attempts"]
-                print(f"  Marked '{b}' as EMPTY (attempt #{attempts})")
+                zz = STORE_DIR / f"ZZ-{b}.json"
+                zz.write_text("[]", encoding="utf-8")
+                old = STORE_DIR / f"00-{b}.json"
+                if old.exists():
+                    old.unlink()
+                print(f"  '{b}' → ZZ-{b}.json (marked empty)")
     elif "unmark_empty" in sys.argv:
         idx = sys.argv.index("unmark_empty")
         brands = sys.argv[idx + 1:]
@@ -518,7 +614,11 @@ if __name__ == "__main__":
             print("Usage: python discover_contacts.py unmark_empty \"Brand1\" ...")
         else:
             for b in brands:
-                _unmark_brand_empty(b)
-                print(f"  '{b}' removed from empty list — will appear in next batch again")
+                zz = STORE_DIR / f"ZZ-{b}.json"
+                if zz.exists():
+                    zz.unlink()
+                    print(f"  '{b}' removed from empty — will appear in next batch")
+                else:
+                    print(f"  '{b}' was not marked empty")
     else:
         status_report()

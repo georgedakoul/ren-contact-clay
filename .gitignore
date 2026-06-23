@@ -27,6 +27,16 @@ AI Sales Agent System/cache/
 # Orchestrator operational state (local machine state, not needed by clay agent)
 AI Sales Agent System/state/
 
+# Generated exports (regenerate locally with: python3 discover_contacts.py export)
+AI Sales Agent System/output/contacts_export.xlsx
+
+# Other skill configs (not needed by clay agent)
+AI Sales Agent System/orchestrator_config.json
+AI Sales Agent System/perf_analyzer_config.json
+AI Sales Agent System/sentiment_analyzer_config.json
+AI Sales Agent System/contact_discoverer_config.json
+AI Sales Agent System/message_crafter_config.json
+
 # Other skills (cloud agent only needs clay-discoverer)
 .claude/skills/performance-analyser/
 .claude/skills/sentiment-analyser/
