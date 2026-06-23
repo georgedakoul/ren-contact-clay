@@ -1,0 +1,6049 @@
+{
+  "source_file": "Renfluence_Top1000_Coverage.xlsx",
+  "source_sheet": "Actionable Brands",
+  "generated_at": "2026-06-04",
+  "total_brands": 993,
+  "brands": [
+    {
+      "brand": "Stoiximan",
+      "industry": "Gambling / Sports Betting",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "stoiximan"
+    },
+    {
+
+      "brand": "Novibet",
+      "industry": "Betting and Gambling",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "novibet"
+    },
+    {
+
+      "brand": "Caudalie",
+      "industry": "Beauty",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "caudalie"
+    },
+    {
+
+      "brand": "Herbalife",
+      "industry": "Nutrition",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "herbalife-nutrition"
+    },
+    {
+
+      "brand": "Plaisio",
+      "industry": "Retail",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "plaisio-computers"
+    },
+    {
+
+      "brand": "efood",
+      "industry": "Food Delivery",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "efood"
+    },
+    {
+
+      "brand": "Pame Stoixima",
+      "industry": "Gambling / Sports Betting",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "opap"
+    },
+    {
+
+      "brand": "Apivita",
+      "industry": "Cosmetics",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "apivita"
+    },
+    {
+
+      "brand": "Vichy Laboratoires",
+      "industry": "Beauty",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "vichylaboratoires"
+    },
+    {
+
+      "brand": "Samsung",
+      "industry": "Technology",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "samsung"
+    },
+    {
+
+      "brand": "Seventeen Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "hellenica"
+    },
+    {
+
+      "brand": "Apple",
+      "industry": "Technology",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "apple"
+    },
+    {
+
+      "brand": "Red Bull",
+      "industry": "Beverages",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "red-bull"
+    },
+    {
+
+      "brand": "Skroutz",
+      "industry": "E-commerce",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "skroutz"
+    },
+    {
+
+      "brand": "more.com",
+      "industry": "Entertainment",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "more-com"
+    },
+    {
+
+      "brand": "Coca-Cola",
+      "industry": "Beverages",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "coca-cola-hbc"
+    },
+    {
+
+      "brand": "Nespresso",
+      "industry": "Food",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "nespresso"
+    },
+    {
+
+      "brand": "Panathinaikos FC",
+      "industry": "Sports",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "panathinaikos-fc"
+    },
+    {
+
+      "brand": "Amita Motion",
+      "industry": "Beverage",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": null
+    },
+    {
+
+      "brand": "Key Books",
+      "industry": "Publishing",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "key-books"
+    },
+    {
+
+      "brand": "Frezyderm",
+      "industry": "Beauty",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "frezyderm"
+    },
+    {
+
+      "brand": "COSMOTE",
+      "industry": "Entertainment",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "cosmote"
+    },
+    {
+
+      "brand": "Olympiacos FC",
+      "industry": "Sports",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "olympiacoscfp"
+    },
+    {
+
+      "brand": "Aegean Airlines",
+      "industry": "Airline",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "aegean-airlines"
+    },
+    {
+
+      "brand": "Chanel",
+      "industry": "Beauty",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "chanel"
+    },
+    {
+
+      "brand": "KORRES",
+      "industry": "Beauty",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "korres"
+    },
+    {
+
+      "brand": "IKEA",
+      "industry": "Home Furnishings",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "ikea"
+    },
+    {
+
+      "brand": "Wolt",
+      "industry": "Food Delivery",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "wolt"
+    },
+    {
+
+      "brand": "Klinex",
+      "industry": "Household Cleaning Products",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": null
+    },
+    {
+
+      "brand": "Psichogios Books",
+      "industry": "Publishing",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "psichogios-publications"
+    },
+    {
+
+      "brand": "Minos EMI",
+      "industry": "Music",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "minos-emi"
+    },
+    {
+
+      "brand": "La Vie en Rose",
+      "industry": "Beauty / Cosmetics",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "la-vie-en-rose"
+    },
+    {
+
+      "brand": "Pantene",
+      "industry": "Beauty",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": null
+    },
+    {
+
+      "brand": "Monster Energy",
+      "industry": "Beverage",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "monster-energy"
+    },
+    {
+
+      "brand": "Public",
+      "industry": "Retail",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "public-gr"
+    },
+    {
+
+      "brand": "petshop88.gr",
+      "industry": "Pet",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "petshop88"
+    },
+    {
+
+      "brand": "FlexCar",
+      "industry": "Automotive",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "flexcar"
+    },
+    {
+
+      "brand": "Starbucks",
+      "industry": "Food",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "starbucks"
+    },
+    {
+
+      "brand": "Hellmann's",
+      "industry": "Condiments",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": null
+    },
+    {
+
+      "brand": "Village Cinemas",
+      "industry": "Cinema / Entertainment",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "village-cinemas"
+    },
+    {
+
+      "brand": "ION",
+      "industry": "Confectionery",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "ion-confectionery-greek-chocolate"
+    },
+    {
+
+      "brand": "instacar",
+      "industry": "Automotive",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "instacar"
+    },
+    {
+
+      "brand": "Glow Era",
+      "industry": "Beauty",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "glow-era"
+    },
+    {
+
+      "brand": "Avgerinos Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "avgerinos-cosmetics"
+    },
+    {
+
+      "brand": "Pnoe Studio",
+      "industry": "Fashion",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "pnoe-studio"
+    },
+    {
+
+      "brand": "BSB Fashion",
+      "industry": "Fashion",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "bsb-fashion"
+    },
+    {
+
+      "brand": "Papadopoulou",
+      "industry": "Food",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "papadopoulou-biscuits"
+    },
+    {
+
+      "brand": "Huawei",
+      "industry": "Consumer Electronics",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "huawei"
+    },
+    {
+
+      "brand": "Dioptra Books",
+      "industry": "Publishing",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "dioptra-books"
+    },
+    {
+
+      "brand": "Eurobank",
+      "industry": "Banking",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "eurobank"
+    },
+    {
+
+      "brand": "Coffee Island",
+      "industry": "Coffee / Beverages",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "coffee-island"
+    },
+    {
+
+      "brand": "Cosmos Sport",
+      "industry": "Retail",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "cosmos-sport"
+    },
+    {
+
+      "brand": "MAD TV",
+      "industry": "Entertainment",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "mad-tv"
+    },
+    {
+
+      "brand": "Motorola",
+      "industry": "Electronics",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "motorola-mobility"
+    },
+    {
+
+      "brand": "Dress2Undress",
+      "industry": "Apparel & Fashion",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "dress2undress"
+    },
+    {
+
+      "brand": "Visa",
+      "industry": "Finance",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "visa"
+    },
+    {
+
+      "brand": "Alterlife",
+      "industry": "Fitness",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "alterlife"
+    },
+    {
+
+      "brand": "Mind Your Style",
+      "industry": "Fashion",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "mind-your-style"
+    },
+    {
+
+      "brand": "LEGO",
+      "industry": "DIY (Do It Yourself)",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "lego"
+    },
+    {
+
+      "brand": "Vikos",
+      "industry": "Food",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "vikos"
+    },
+    {
+
+      "brand": "SKY express",
+      "industry": "Airline",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "sky-express"
+    },
+    {
+
+      "brand": "Fresh Line",
+      "industry": "Beauty",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "fresh-line"
+    },
+    {
+
+      "brand": "Alumil",
+      "industry": "Building & Construction",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "alumil"
+    },
+    {
+
+      "brand": "Winmasters",
+      "industry": "Betting / Gambling",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "winmasters"
+    },
+    {
+
+      "brand": "InterMed",
+      "industry": "Beauty",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "intermed-sa"
+    },
+    {
+
+      "brand": "Spitogatos",
+      "industry": "Business",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "spitogatos"
+    },
+    {
+
+      "brand": "Papoutsanis",
+      "industry": "Beauty",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "papoutsanis"
+    },
+    {
+
+      "brand": "Protergia",
+      "industry": "Business",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "protergia"
+    },
+    {
+
+      "brand": "Parabita",
+      "industry": "Fashion",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "parabita"
+    },
+    {
+
+      "brand": "Kri Kri",
+      "industry": "Dairy",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "kri-kri"
+    },
+    {
+
+      "brand": "Piraeus Bank",
+      "industry": "Banking",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "piraeus-bank"
+    },
+    {
+
+      "brand": "ferryscanner",
+      "industry": "Travel",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "ferryscanner"
+    },
+    {
+
+      "brand": "Hertz",
+      "industry": "Automotive",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "hertz"
+    },
+    {
+
+      "brand": "Aegean College",
+      "industry": "Education",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "aegean-college"
+    },
+    {
+
+      "brand": "Feelgood Entertainment",
+      "industry": "Entertainment",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "feelgood-entertainment"
+    },
+    {
+
+      "brand": "Spotawheel",
+      "industry": "Automotive",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "spotawheel"
+    },
+    {
+
+      "brand": "Cinobo",
+      "industry": "Entertainment",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "cinobo"
+    },
+    {
+
+      "brand": "Pizza Fan",
+      "industry": "Food",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "pizza-fan"
+    },
+    {
+
+      "brand": "Alfa Pastry",
+      "industry": "Food",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "alfa-pastry"
+    },
+    {
+
+      "brand": "Sony Music Entertainment",
+      "industry": "Music",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "sony-music-entertainment"
+    },
+    {
+
+      "brand": "Fresh Patisserie",
+      "industry": "Food",
+      "coverage_status": "Good coverage",
+      "linkedin_slug": "fresh-patisserie"
+    },
+    {
+
+      "brand": "Celestino",
+      "industry": "Fashion",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "celestino"
+    },
+    {
+
+      "brand": "FREENOW",
+      "industry": "Technology",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "free-now"
+    },
+    {
+
+      "brand": "Barba Stathis",
+      "industry": "Food",
+      "coverage_status": "Thin coverage",
+      "linkedin_slug": "barba-stathis"
+    },
+    {
+      "brand": "L'Oréal Paris",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "bwin",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Alpha TV",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Heaven Music",
+      "industry": "Music",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Temu",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sephora",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Maybelline",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "myastro.gr",
+      "industry": "Astrology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "La Roche-Posay",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Myprotein",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NYX Professional Makeup",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "adidas",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "LIDL",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "GymBeam",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MUA Makeup Academy",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "YSL Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Decoro",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Emmanouela Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MAC Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dior",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "DFYNE",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "About You",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Garnier",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "CeraVe",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Judah Club",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lancôme",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Palaiopwleio Parelthon",
+      "industry": "Retail / Antiques",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nike",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sfera 102.2",
+      "industry": "Media / Radio Broadcasting",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Trendyol",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Elixir Makeup",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Oroskopos.gr",
+      "industry": "Astrology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Benefit Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "PoliPink",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vodafone CU",
+      "industry": "Telecommunications",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Shein",
+      "industry": "E-commerce",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Novasports",
+      "industry": "Broadcasting",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Huda Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kingbet",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Zara",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kiko Milano",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Freedom24",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ΔΕΗ (Public Power Corporation)",
+      "industry": "Energy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Armani Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Handibrand",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Betarades.gr",
+      "industry": "Media",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dust+Cream",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Myikona",
+      "industry": "E-commerce",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "CarVertical",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cheri Up Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Luigi",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kérastase",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Star Channel",
+      "industry": "Broadcasting / Media",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Prozis",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gucci",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Miranta's Cakes and Pretty Little Ideas",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vichy",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hiwell",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Labora",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Louis Vuitton",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sony Music Greece",
+      "industry": "Gaming",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jasmine Dr",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bubblegun",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gellissimo",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Masoutis",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "My market",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sok FM 104.8",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Estée Lauder",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Princess Me Jewels",
+      "industry": "Jewelry",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Melek Gold",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "RaceRoms",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "EuroLeague",
+      "industry": "Sports",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Spotify",
+      "industry": "Digital Media / Audio Streaming",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Astrina.gr",
+      "industry": "Astrology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kiehl's",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Natura Siberica",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Essence",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fenty Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Prada",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jumbo",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hondos Center",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Museclo",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "LOBSTER",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kaktos Publications",
+      "industry": "Publishing",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "H&M",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Knorr",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Betsson",
+      "industry": "Betting / Gambling",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rare Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Giorgio Armani",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NaturesPlus",
+      "industry": "Dietary Supplements",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "AXE",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "zaxaroplastisa",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "LANEIGE",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "AEK FC",
+      "industry": "Sports",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "PAOK FC",
+      "industry": "Sports",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "FAGE",
+      "industry": "Dairy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Naughty Dogs",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jet2holidays",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Golden Smile",
+      "industry": "Dental Services",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ANT1",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Xiaomi",
+      "industry": "Consumer Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Miranta's Cakes",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Elabet",
+      "industry": "Betting/Gambling",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Game of Money Festival",
+      "industry": "Finance",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "YesStyle",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "PlayStation",
+      "industry": "Gaming",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mon Rêve Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Netflix",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dyson",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Masoutis Supermarkets",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Puma",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "myecoshop.gr",
+      "industry": "Sustainability",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ghd",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "McDonald's",
+      "industry": "Fast Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Real Music Greece",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Redken",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bepanthol",
+      "industry": "Skincare / Pharmaceuticals",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sinsay",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tarte Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vinted",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OLYMPOS",
+      "industry": "Food & Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Costas Gagos Architecture & Design",
+      "industry": "Architecture",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "sharosetofitness",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Aria Hotels",
+      "industry": "Accommodation / Hospitality",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dove",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gymshark",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "FuzeTea",
+      "industry": "Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Noble Senses",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Keller Williams",
+      "industry": "Real Estate",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Calvin Klein",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vassia Kostara",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lay's",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "AB Vassilopoulos",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Christos Kavallaris",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dr. Jart+",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lotus Biscoff",
+      "industry": "Confectionery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Swarovski",
+      "industry": "Crystals / Fashion Accessories",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bwoman.gr",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Guess",
+      "industry": "Apparel and Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "my eco shop",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Panik Records",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nuxe",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kappas Travel",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mariwn's",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Miu Miu",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NIVEA",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mya Collection",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Herboxa Nutrition",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Valentino",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Avis",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sol de Janeiro",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kapsule.gr",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tefal",
+      "industry": "Appliances",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SKAI TV",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Novexpert",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Solutions Group",
+      "industry": "Real Estate",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sugar Skin",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "KETHESY",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Chatziioannou Law",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rhode",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Clinique",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "bet365",
+      "industry": "Betting / Gambling",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Charlotte Tilbury",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Catrice Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sheglam",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bobbi Brown",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Camomilla Blu",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Avène",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NARS Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Uber",
+      "industry": "Ride-hailing",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Medicube",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MCB",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nescafé",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "New Balance",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fonbet",
+      "industry": "Betting/Gambling",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Turkish Airlines",
+      "industry": "Airline",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MAKE UP FOR EVER",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BMW",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Disney",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Radiant Professional Make Up",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vistabet",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hermès",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Miniso",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pop Mart",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pepsi",
+      "industry": "Beverages",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Uriage",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Goody's Burger House",
+      "industry": "Fast Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BeWell Podcast",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Biogel Original",
+      "industry": "Dietary Supplements",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Beauty of Joseon",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "COSRX",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lili Drogerie",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Philips",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MorfoSkin",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rodial",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ETHERIO Scent Lab",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Muagreece",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Arla",
+      "industry": "Dairy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Too Faced",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MEGA TV",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Under Armour",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tommy Hilfiger",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Melissa",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nikos Oikonomopoulos",
+      "industry": "Music",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "iFacebyChristina",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "7DAYS",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Il Toto",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "CFMOTO",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ο δικαστής που αγάπησε το κακό (The Judge Who Loved Evil)",
+      "industry": "Publishing",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "My7Days",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kylie Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Oral-B",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cheetos",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pico Bello Clean",
+      "industry": "Cleaning Products",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lurpak",
+      "industry": "Dairy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tommy G Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Untitled Folders",
+      "industry": "Apparel and Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SkinCeuticals",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Old Spice",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Aloe Colors",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Doritos",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "My Nutriplan",
+      "industry": "Nutrition",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mpoulakis Projects",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Intersport",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Oreo",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "John Stavrou Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "illy",
+      "industry": "Coffee / Food & Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tom Ford",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Soul Diet",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "KFC",
+      "industry": "Fast Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lavish Care",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Barilla",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Youth Lab",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "VICKO",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BIODERMA",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MISKO",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "TGI Fridays",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anda Seat",
+      "industry": "Furniture",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mercedes-Benz",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pescanova",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Social Outkast",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Andrianna Geronti",
+      "industry": "Self-Improvement",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Madame Ginger",
+      "industry": "Lifestyle",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Men of Style",
+      "industry": "Lifestyle",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "UGG",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Notino",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "CityKEP",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pinko",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Makeup by Mario",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nikos Nikolaidis",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Organic Shop",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "GRIGI Make Up",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "IQOS",
+      "industry": "Tobacco",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Premier League",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kotsovolos",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Philadelphia",
+      "industry": "Dairy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Eldeco",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Skytelecom",
+      "industry": "Telecommunications",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jotis",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bioten",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kuki",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Metaixmio",
+      "industry": "Publishing",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kinder",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SIG Sportswear",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gogoalshop",
+      "industry": "E-commerce / Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Onassis Stegi",
+      "industry": "Art",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Travel Crew",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Epic Games",
+      "industry": "Gaming",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dimitris Stratos BEAUTY",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Supradyn",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "snappi",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tsakiris Mallas",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ΑποφασίΖΩ (ApoFasizo)",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Aurora Natural Products",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Etihad Airways",
+      "industry": "Airline / Tourism",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pharmasept",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Printify",
+      "industry": "E-commerce",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bread Factory",
+      "industry": "Bakery / Confectionery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mailo's - The Pasta Project",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Linum.gr",
+      "industry": "Art",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Delta",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Giochi Preziosi",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Natasa Theodoridou",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Crocs",
+      "industry": "Apparel / Footwear",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Evangelia",
+      "industry": "Music",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sex Academy",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cookie Man",
+      "industry": "Confectionery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anastasia Beverly Hills",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Healthy Habits",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Golden Rose",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Brain Balance Consulting",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ASU ACTIVE",
+      "industry": "Activewear",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "N1 Casino",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Saint Laurent",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Scandal Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Makeup Closet",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lacta",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dettol",
+      "industry": "Cleaning / Hygiene Products",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Surfless",
+      "industry": "Sports",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Alpro",
+      "industry": "Dairy Alternatives",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Glow Recipe",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jacquemus",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Clinéa",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nikos Vertis",
+      "industry": "Music",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Moneto",
+      "industry": "Insurance",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Skin1004",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jet2",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anua",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "attrattivo",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hourglass Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Longchamp",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Renfluence",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Porsche",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bershka",
+      "industry": "Apparel and Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "E-Daily",
+      "industry": "Media",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ohuhu",
+      "industry": "Art",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "KS Medical Products",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "PĒLION - Natural Luxury",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lipton",
+      "industry": "Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Oriflame",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anastasia Fakli Collection",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rythmos 94.9",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Box Now",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Yamaha",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jo Malone London",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lierac",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NOZ",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Thanos Belalidis",
+      "industry": "Publishing / Self-Improvement",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "L'Artigiano",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vinyl art clothing",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "GOCAR",
+      "industry": "Media / Publishing",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Madame Figaro",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "e-shop.gr",
+      "industry": "E-commerce",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Michael Kors",
+      "industry": "Apparel & Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ninja",
+      "industry": "Appliances / Consumer Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Blade Over",
+      "industry": "Gambling",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vans",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "LG",
+      "industry": "Consumer Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BeWell Movement",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hair House",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Stand Up Therapy",
+      "industry": "Self-Improvement",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anita Brand",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ilias Papageorgiadis",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Biodance",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Allwyn",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Popi Pagoudi",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MAJOVOLI",
+      "industry": "Music",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Eleni Petroulaki",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rohnson",
+      "industry": "Appliances",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ESTIA Home Art",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Juicy Couture",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ChatGPT",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "DIESEL",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Podia",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Skip",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Logitech",
+      "industry": "Gaming Peripherals",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Moët & Chandon",
+      "industry": "Alcohol",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ferryhopper",
+      "industry": "Ferry Booking Service",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dodoni",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Google",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hill's Pet Nutrition",
+      "industry": "Pet",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Grey Goose",
+      "industry": "Alcoholic Beverages",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kiehl's Since 1851",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Radiant Professional",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gymnastics stars",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Capital.gr",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Amber.q",
+      "industry": "Cooking Equipment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Izzy",
+      "industry": "Appliances",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Envie Shoes",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mugler",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Unstable Artouch",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Angel of Mind",
+      "industry": "Consulting / Self-Improvement",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fluff",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Noir Et Or Boutique",
+      "industry": "Clothing / Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Converse",
+      "industry": "Apparel & Accessories",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Eau Thermale Avène",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mustela",
+      "industry": "Baby / Personal Care Products",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Stanley",
+      "industry": "Beverage Containers / Consumer Goods",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ask Ioannina",
+      "industry": "Content Creation / Media",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Always",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Oysho",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Barkibu",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cook at Home",
+      "industry": "Cooking / Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Zinzino",
+      "industry": "Dietary Supplements",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Flawless Beauty Bar",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Paliria",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ZF Garage",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Grill Philosophy",
+      "industry": "Cooking",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sklavenitis",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Stradivarius",
+      "industry": "Apparel & Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Domino's Pizza",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Schwarzkopf Professional",
+      "industry": "Hair Care",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fashion Nova",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Drunk Elephant",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Suggarskin",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nova",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "snobaria",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Burberry",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Unboxholics",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MyNutriPlan",
+      "industry": "Nutrition",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fairy",
+      "industry": "Cleaning / Household",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Princessa Store",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Byoma",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MIGATO",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kallist Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mobilfox",
+      "industry": "Consumer Electronics Accessories",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Leroy Merlin",
+      "industry": "DIY (Do It Yourself)",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Levi's",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Forever Living Products",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "GIGABYTE",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Open TV",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "DJI",
+      "industry": "Audio Equipment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Batiste",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Deluxe",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "PĒLION",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Protein Garden",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mastercard",
+      "industry": "Financial Services",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Viridian",
+      "industry": "Nutrition",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Myaestheticplan",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Thank You Farmer",
+      "industry": "Beauty / Skincare",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Discover Greece",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "HELL Energy",
+      "industry": "Beverages",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Suzuki",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gisou",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Creatorshop",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Funky Buddha",
+      "industry": "Apparel and Accessories",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lorvenn Hair Professionals",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The North Face",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vitam",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Victoria's Secret",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Erre Due",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Roses Beauty Bar",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gillette",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BYD",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Beauty Pin",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Favorina",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Neutrogena",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NESCAFÉ AZERA",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Insta360",
+      "industry": "Consumer Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pepco",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Canon",
+      "industry": "Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Saucony",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Audi",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lacoste",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Secretlab",
+      "industry": "Furniture",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sonar Music Greece",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Overoll Croissanterie",
+      "industry": "Bakery / Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mar Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "KYKNOS",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nestlé",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Doca",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kosas",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "My aesthetic plan",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Arla Protein",
+      "industry": "Dairy / Nutrition",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SeaJets",
+      "industry": "Ferry / Maritime Transportation",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Trata",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Karl Lagerfeld",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Quaker",
+      "industry": "Cereal and Breakfast Foods",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Surfshark",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hair Goals by Anna",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "XP Metal Detectors",
+      "industry": "Consumer Electronics / Hobby Equipment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Essie",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BEETS ME",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Napoleon Grills",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Sims 4",
+      "industry": "Gaming",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Makeup Revolution",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Colgate",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BraidBar Skg",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Smart",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Aromania",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "JBL",
+      "industry": "Audio Equipment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "EL Deco",
+      "industry": "Home Decor",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dimitris Stamatiou Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "PEQUS",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Maybee Skincare",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "HomeVero",
+      "industry": "Appliances / Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kaktos Publishing",
+      "industry": "Publishing",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anestea The Podcast",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pampers",
+      "industry": "Baby & Toddler Products",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NOYNOY",
+      "industry": "Dairy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OtakuStore.gr",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anna Korsanou Law Office",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Notify Show",
+      "industry": "Media / Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Crats Fried Chicken",
+      "industry": "Fast Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ford",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Car.gr",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Power Health",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Aliki Coaching",
+      "industry": "Consulting / Life Coaching",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Heinz",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Moroccanoil",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Balenciaga",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Wellthy",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pixi Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Razer",
+      "industry": "Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OUTDOORCHEF",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BioGel",
+      "industry": "Dietary Supplements",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Garmin",
+      "industry": "Fitness Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "John Malath",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vileda",
+      "industry": "Cleaning Products",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Twitch",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BILLYGRAM",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Scent Lab",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Poco",
+      "industry": "Mobile Telecommunications",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Toyota",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dalon Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "W7 Makeup",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "89.2 music",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Konstantinos Argiros",
+      "industry": "Entertainment / Music",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Spyrando",
+      "industry": "Self-Improvement",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ERT (Hellenic Broadcasting Corporation)",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Alo Yoga",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nutribullet",
+      "industry": "Appliances",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mr. Gadget",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Braun",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Phyto Paris",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Natasha Denona",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nolah",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ruffles",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mykonos Sailing",
+      "industry": "Luxury Travel & Sailing Tours",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jackaroo",
+      "industry": "Fashion / Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "QCY",
+      "industry": "Consumer Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mellon Collection",
+      "industry": "Eyewear",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Primark",
+      "industry": "Apparel / Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Spitishop",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "LUX",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MEDUSA GROUP",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Derma Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Inglesina",
+      "industry": "Baby / Infant Products",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Versus Travel",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Technogym",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tesla",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pink Dot Cafe",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rich Nails & Lashes",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Wella Professionals",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ariel",
+      "industry": "Cleaning / Household",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mastic Origins",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Coffee Berry",
+      "industry": "Coffee Shop / Retail Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kenwood",
+      "industry": "Cooking",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Project Soma",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sneaker10",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Minerva",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Naloo Beauty Bar",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "La Vie en Rose by Dimitra Katsafadou",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Scramble",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Taco Bell",
+      "industry": "Fast Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Soupline",
+      "industry": "Home Care",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Ordinary",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "DKNY",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vaseline",
+      "industry": "Beauty / Personal Care",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Carolina Herrera",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pandora",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "c zinonas",
+      "industry": "Cooking",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MK_design&artworks",
+      "industry": "Art",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Athena Goldy",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ULtrex",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Versace",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "CodeGrow",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Armatura",
+      "industry": "Dietary Supplements",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Iperfumes",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tolis Sweets & Eats",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Wet n Wild",
+      "industry": "Cosmetics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Agios Erotas",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Antipaloi gia Kalo: I Enosi",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Aristea's Beauty Bar",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Honda",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fitness Meals",
+      "industry": "Food & Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SYOSS",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mind Matter",
+      "industry": "Apparel and Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Erborian",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Varou Twins Barbers",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Disneyland Paris",
+      "industry": "Amusement Park",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Macron",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gruppo Cucine",
+      "industry": "Furniture / Interior Design",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Block Blast",
+      "industry": "Gaming",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anna Maria Mazaraki",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Forever Bouquet",
+      "industry": "Art / Craft Services",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BeWell Festival",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Panthenol Extra",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Revolution Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OPPO",
+      "industry": "Consumer Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Apollonas G. Kapsalis / greekgoesketo.gr",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cocomo",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nutella",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bonheur beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Marmalady",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Airbnb",
+      "industry": "Accommodation Booking",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Condito",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Action24",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kim Karamaneas",
+      "industry": "Self-Improvement",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Black Velour",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bella Barnett",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SkinTra",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dr. Althea",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Doitforme",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Google Gemini",
+      "industry": "Artificial Intelligence",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "JD Sports",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Calzedonia",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Biotherm",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "life DANCE Athens",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Anna Korsanou Legal Services",
+      "industry": "Legal Services",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sanitas",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dolce & Gabbana",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Guerlain",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kidnest",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Charisma Suites",
+      "industry": "Hospitality",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kärcher",
+      "industry": "Cleaning Appliances",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Clarins",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Scuffers",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Matchy-Matchy",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bee Factor",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ferrari",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Naria Skin",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kate9ine Dog Training",
+      "industry": "Pet",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Caffè Vergnano 1882",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Foot Locker",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Karamolegos",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Glow Hair by Akis",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BlaBlaToys.gr",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Garden",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hyperloq",
+      "industry": "Consumer Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Wella",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Amino Animo",
+      "industry": "Nutrition",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Arla Foods",
+      "industry": "Dairy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nuii Ice Cream",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cleverista",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BelleBox",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Aperol",
+      "industry": "Alcohol",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Volkswagen",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Riviere Collection",
+      "industry": "Apparel & Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Douleutaras",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Germanos",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ACAMNIA",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lenor",
+      "industry": "Consumer Goods",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Zaman Tattoo Studio",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Summer Fridays",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Citroën",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "viva.gr",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Inglot",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "TP-Link",
+      "industry": "Technology",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MasterChef Greece",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Brothers In Law",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Malezas Trading",
+      "industry": "Finance",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "LYNNE",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Interamerican",
+      "industry": "Finance",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Peugeot",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Morris",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Orjena",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OVS",
+      "industry": "Apparel and Fashion Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "QUEEN BY DIMITRA",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "LOSEBiG",
+      "industry": "Dietary Supplements",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Wealthyhood",
+      "industry": "Finance",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Old Cookie",
+      "industry": "Bakery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kayali",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Haus Labs",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ION Break",
+      "industry": "Confectionery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Stelios Rokkos",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vibrator Productions",
+      "industry": "Adult Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "sexacademy.eu",
+      "industry": "Adult Products / E-commerce",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ajax",
+      "industry": "Cleaning Products",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "GANT",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BOX",
+      "industry": "Food Delivery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Emporio Armani",
+      "industry": "Apparel and Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Karavan Clothing",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Brotherakia",
+      "industry": "Art",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Maverix",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Attica",
+      "industry": "Department Store / Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Pionears",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Jobfind.gr",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Athens Happy House",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lavazza",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ligglo",
+      "industry": "E-commerce / Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lena Zevgara",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "laouta",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Juliette Armand",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Angie's Nail World",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "AQUA Carpatica",
+      "industry": "Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dear Nail Bar",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fantasia Live",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "K18 Hair",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "GET AP Studio",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Chrysi Zymi",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mpoulakis Tyres",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "TikTok",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sensodyne",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sprite",
+      "industry": "Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tesori d'Oriente",
+      "industry": "Bath and Body Care",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "tripment",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SHOPFLIX",
+      "industry": "E-commerce",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Toxic TV",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Travelvibe",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Epipla1.gr",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SUPERFOODS",
+      "industry": "Nutrition",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hey, Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "JYSK",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vikos Cola",
+      "industry": "Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Vitex",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rebel Training",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kryolan",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Marc Jacobs",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cokooni",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pull&Bear",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Maggi",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ANAPLASIS",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BACARDÍ",
+      "industry": "Alcohol",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OnePlus",
+      "industry": "Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Meshki",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Christou 1910",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Refy",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Coffee Lab",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "P.Louise",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Golden Smile Dental Care",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Oniro",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BOSS",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sam's Field",
+      "industry": "Pet",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mr. Softy",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Effie's Hair Salon",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Release Athens",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Affect",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dimitra Vlachou Hair Extensions",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Moroudokosmos",
+      "industry": "Baby Product Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Malen Rouge",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Messinian Spa",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Micas",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cool Artisan",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rolex",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "L'Occitane",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Primer Music Festival",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ILI COSMETICS",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lush Nails",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "TIRTIR",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pet Shop 88",
+      "industry": "Pet",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fitlife Personal Gym",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Makrygiorgis Plastic Surgeon",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fanta",
+      "industry": "Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Crinolino",
+      "industry": "Accessories",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Seneca Medical Group",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BET W",
+      "industry": "Gambling",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Barbers of the North",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Athlos Beauty",
+      "industry": "Aesthetic Services",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bellissima",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "B.Nutri",
+      "industry": "Nutrition / Health Consulting",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "CandleLena",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Afroditi Petrinoli",
+      "industry": "Jewelry",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Continental",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Holland & Barrett",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "menofstyle.gr",
+      "industry": "Lifestyle",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "PCP Clothing",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Black Bow Handmade",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Stavros tou Notou",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Flying Tiger Copenhagen",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Wild Souls",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OneMan",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Kentro Athinon",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fairytale Athens",
+      "industry": "Bakery and Event Planning",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "John Mavros World",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fila",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Deluxe Beauty Salon",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Invisalign",
+      "industry": "Dental",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bosch",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Blery Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SART Clothing",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Business Review Greece",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Starkstores",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Three Cents",
+      "industry": "Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Star Beauty",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Yammiez",
+      "industry": "Confectionery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "FIAT",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Flip.gr",
+      "industry": "E-commerce",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Tidy Guru",
+      "industry": "Consulting / Home Organization",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BioTechUSA",
+      "industry": "Dietary Supplements / Fitness Nutrition",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Giorgos Kakosaios",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Gomario",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rituals",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Peggy Sue",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Goodbye Bread",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Lodge Cast Iron",
+      "industry": "Cooking",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "TCL",
+      "industry": "Consumer Electronics",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Barbie",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Evangelos Tsialikis",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Porto Leone",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Hair Space",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Occhio Papavassiliou",
+      "industry": "Optical Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "emis.chania",
+      "industry": "Hospitality",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Merenda",
+      "industry": "Confectionery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OLA Bio",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Paradise Found",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Moustakas",
+      "industry": "Retail / Toys",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Psychological Services / Content Creator",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Roots Hair Salon",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Malezas",
+      "industry": "Finance",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "AutoValue",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nuii",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "The Trading Club",
+      "industry": "Finance",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hedepy",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Dunk Smash Burgers",
+      "industry": "Fast Food / Restaurant",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sisley Paris",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Demetrios",
+      "industry": "Bridal Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sneakerness",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nissan",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Marmalady Clothing Bar",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Skin4Sin",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mr. Grand",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MEVGAL",
+      "industry": "Dairy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "iLoveBBQ.gr",
+      "industry": "BBQ Equipment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Frenchie.gr",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Greco Strom",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Skinglos",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Asics",
+      "industry": "Athletic Apparel and Footwear",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Playmobil",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "POLO",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ByNelli",
+      "industry": "Interior Design",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tanweer",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Terea",
+      "industry": "Tobacco",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Cybex",
+      "industry": "Baby / Child Products",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Renault",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bynelli Design",
+      "industry": "Interior Design",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Aristotelis Rigas",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "WABI",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "AS Company",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Travel Latino",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Nintendo",
+      "industry": "Gaming",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ray-Ban",
+      "industry": "Eyewear",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Feel at Home",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Milk Makeup",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "CapCut",
+      "industry": "Software",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Milbona",
+      "industry": "Dairy",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Skandinavian Bar",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Burger King",
+      "industry": "Fast Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "L'Occitane en Provence",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Haus Labs by Lady Gaga",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ducray",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Athens Metro Mall",
+      "industry": "Lifestyle",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Opel",
+      "industry": "Automotive",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pinky Beach Mykonos",
+      "industry": "Food & Beverage",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "EveryDay",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "MocoQueen",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "e.l.f. Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Christian Louboutin",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hoka",
+      "industry": "Athletic Apparel & Footwear",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "babaka.gr",
+      "industry": "Digital Media / Parenting Content",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NOX Athens",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "OPI",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "NEEWER",
+      "industry": "Audio and Camera Equipment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mediterranean Cosmos",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Max Stores",
+      "industry": "Home & Lifestyle Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Santa Claus Kingdom",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Alfa Beer",
+      "industry": "Beverages",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sony PlayStation",
+      "industry": "Gaming",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Carroten",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Begoodi Skg",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mavericks",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Intimissimi",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Miraggio Thermal Spa Resort",
+      "industry": "Hospitality",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "REC",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hugo Boss",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Phos Boutique Santorini",
+      "industry": "Hospitality",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Sézane",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Emirates",
+      "industry": "Airline",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Colorescience",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "GL Army",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SMEG",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "ELLE Greece",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Beefeater",
+      "industry": "Alcoholic Beverages",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rich Girl Boudoir",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Yellow Care",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Version Derm",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "extanbebe",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bodytalk",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Strava",
+      "industry": "Fitness",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "YouTube",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Greatness Athens",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Hot Chip Challenge",
+      "industry": "Food",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Le Boudoir Salons",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Labubu",
+      "industry": "Toys / Collectibles",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Endless",
+      "industry": "Baby Products / Personal Care",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Rowenta",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Humanity Greece",
+      "industry": "Non-profit / Humanitarian",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mario Badescu",
+      "industry": "Skincare",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Serenata",
+      "industry": "Confectionery",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "QUEST Metal Detectors",
+      "industry": "Electronics / Hobby Equipment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Tatcha",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "SOSU Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Ioulia Kallimani",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Universal Studios Hollywood",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Doukissa Nomikou",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Buffalo",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "National Bank of Greece",
+      "industry": "Banking / Finance",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "GLAMI",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Shaperfit",
+      "industry": "Apparel & Accessories",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "RoomB",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Xristina Makeup",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Metaxa",
+      "industry": "Alcohol",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bepanthene",
+      "industry": "Health",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Fendi",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Pandora Massage & Beauty",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Otaku Store",
+      "industry": "Retail",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Bookis+",
+      "industry": "Apparel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "HEIT",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mediterranean College",
+      "industry": "Education",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Medik8",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Feli Travels",
+      "industry": "Travel",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Media Strom",
+      "industry": "Home",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Marina Satti",
+      "industry": "Music",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Base Fashion",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "BPerfect Cosmetics",
+      "industry": "Beauty",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Concrete Creators Hub",
+      "industry": "Entertainment",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Mindset Talks",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Workadu",
+      "industry": "Business",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    },
+    {
+      "brand": "Trust",
+      "industry": "Computer Peripherals",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null
+    }
+  ]
+}

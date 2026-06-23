@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Maritina Charitaki",
+    "job_title": "Marketing Manager SBU Greece, Cyprus, Malta",
+    "email": "maritina.charitaki@lego.com",
+    "linkedin_url": "https://www.linkedin.com/in/maritina-charitaki/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "lego.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Eleni Kouri",
+    "job_title": "Associate Digital Marketing Manager",
+    "email": "eleni.kouri@lego.com",
+    "linkedin_url": "https://www.linkedin.com/in/eleni-kouri-b423b99/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "lego.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

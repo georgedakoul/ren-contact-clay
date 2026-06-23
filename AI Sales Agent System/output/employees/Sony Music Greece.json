@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Anna-Maria Antippas",
+    "job_title": "Managing Director",
+    "email": "annamaria.antippas@sonymusic.com",
+    "linkedin_url": "https://www.linkedin.com/in/anna-maria-antippas-8666232/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "sonymusic.com",
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Natasha Katsiouli",
+    "job_title": "Marketing Manager",
+    "email": "natasha.katsiouli@sonymusic.com",
+    "linkedin_url": "https://www.linkedin.com/in/anastasiakatsiouli/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "sonymusic.com",
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18"
+  }
+]

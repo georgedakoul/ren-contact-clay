@@ -1,0 +1,35 @@
+# Windows
+desktop.ini
+Thumbs.db
+*.lnk
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node / web projects (not needed by cloud agent)
+package-lock.json
+Phone App UI/
+geokaravo_website/
+
+# Large / regeneratable skill outputs
+AI Sales Agent System/output/performance-analyser/
+AI Sales Agent System/output/sentiment-analyser/
+AI Sales Agent System/output/orchestrator/
+AI Sales Agent System/output/message-crafter/
+AI Sales Agent System/output/_quarantine/
+AI Sales Agent System/output/pipeline_cost_estimation.pptx
+
+# Contact discoverer DNS/scraping cache (regeneratable)
+AI Sales Agent System/cache/
+
+# Orchestrator operational state (local machine state, not needed by clay agent)
+AI Sales Agent System/state/
+
+# Other skills (cloud agent only needs clay-discoverer)
+.claude/skills/performance-analyser/
+.claude/skills/sentiment-analyser/
+.claude/skills/orchestrator/
+.claude/skills/message-crafter/
+.claude/skills/linkedin-discoverer/

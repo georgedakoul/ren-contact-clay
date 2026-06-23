@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Apostolos Maros",
+    "job_title": "General Manager",
+    "email": "apostolos.maros@loreal.com",
+    "linkedin_url": "https://www.linkedin.com/in/apostolosmaros/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "loreal.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Myrto Tsouki",
+    "job_title": "Retail Brand Manager MakeUp | Maybelline, L'Oréal Paris, Essie",
+    "email": "myrto.tsouki@loreal.com",
+    "linkedin_url": "https://www.linkedin.com/in/myrtotsouki/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "loreal.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Elena Georga",
+    "job_title": "BU Marketing Manager Lancôme, Kiehl's, Biotherm, Helena Rubinstein",
+    "email": "elena.georga@loreal.com",
+    "linkedin_url": "https://www.linkedin.com/in/elena-georga-7b787228/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "loreal.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Vaso Nasi",
+    "job_title": "BU Marketing Manager",
+    "email": "vaso.nasi@loreal.com",
+    "linkedin_url": "https://www.linkedin.com/in/vaso-nasi-seniormarketer1410/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "loreal.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Eleni Anagnostopoulou",
+    "job_title": "Marketing & PR Manager NYX Professional Make-up",
+    "email": "eleni.anagnostopoulou@loreal.com",
+    "linkedin_url": "https://www.linkedin.com/in/eleni-anagnostopoulou-95942ab/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "loreal.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Maria Korali",
+    "job_title": "General Manager - Professional Products Division",
+    "email": "maria.korali@loreal.com",
+    "linkedin_url": "https://www.linkedin.com/in/maria-korali-0a71832/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "loreal.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

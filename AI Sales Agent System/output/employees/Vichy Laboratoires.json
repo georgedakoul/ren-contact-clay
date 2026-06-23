@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Magalie Perrier Garcia",
+    "job_title": "Brand manager",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/magalie-perrier-garcia-197062118",
+    "verified": false,
+    "active": true,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-16"
+  },
+  {
+    "name": "Agnes Anastasiou",
+    "job_title": "Chief Marketing Officer",
+    "email": "agnes.anastasiou@loreal.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "loreal.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Eleni Anagnostopoulou",
+    "job_title": "Marketing & PR Manager NYX Professional Make-up",
+    "email": "eleni.anagnostopoulou@loreal.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "loreal.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

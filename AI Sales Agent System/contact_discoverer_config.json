@@ -1,0 +1,104 @@
+{
+  "defaults": {
+    "input_file": "AI Sales Agent System/actionable_contacts.json",
+    "output_dir": "AI Sales Agent System/output",
+    "cache_dir": "AI Sales Agent System/cache/contact_discoverer",
+    "cache_ttl_days": 7,
+    "domain": {
+      "tld_priority": [
+        ".gr",
+        ".com",
+        ".eu",
+        ".io",
+        ".co",
+        ".net"
+      ],
+      "http_timeout_seconds": 8,
+      "dns_timeout_seconds": 5
+    },
+    "name_discovery": {
+      "scrape_brand_site": true,
+      "brand_site_paths": [
+        "/",
+        "/about",
+        "/about-us",
+        "/team",
+        "/our-team",
+        "/people",
+        "/contact",
+        "/contact-us",
+        "/press",
+        "/leadership"
+      ],
+      "linkedin_query_template": "site:linkedin.com/in \"{brand}\" (CEO OR founder OR marketing OR communications OR partnerships)",
+      "min_names_before_fallback": 2,
+      "serpapi": {
+        "enabled": true,
+        "api_key_env_var": "SERPAPI_API_KEY",
+        "api_key": null,
+        "endpoint": "https://serpapi.com/search.json",
+        "gl": "gr",
+        "hl": "en",
+        "google_domain": "google.gr",
+        "num_results": 15,
+        "monthly_quota": 100,
+        "search_cache_ttl_days": 30
+      },
+      "discovery_fallback": {
+        "enabled": true,
+        "use_duckduckgo": true,
+        "brand_press_paths": [
+          "/press",
+          "/press-releases",
+          "/news",
+          "/media",
+          "/newsroom",
+          "/corporate-news",
+          "/in-the-news"
+        ],
+        "greek_news_sites": [
+          "marketingweek.gr",
+          "fortunegreece.com",
+          "businessdaily.gr",
+          "capital.gr",
+          "naftemporiki.gr",
+          "sepe.gr"
+        ],
+        "ddg_query_template_linkedin": "site:linkedin.com/in \"{brand}\" (CEO OR founder OR marketing OR communications OR partnerships)",
+        "ddg_query_template_press": "site:{site} \"{brand}\"",
+        "ddg_max_results": 10,
+        "max_press_articles_per_brand": 5,
+        "ddg_sleep_seconds": 2.0
+      },
+      "googlesearch_legacy_enabled": false
+    },
+    "email_pattern": {
+      "default_patterns_ranked": [
+        "{first}.{last}",
+        "{f}{last}",
+        "{first}",
+        "{f}.{last}",
+        "{firstlast}",
+        "{first}_{last}"
+      ]
+    },
+    "hunter": {
+      "enabled": true,
+      "api_key": "727ad52505907e2413c09263c0db930b7cb227cc",
+      "min_confidence": 70
+    },
+    "verification": {
+      "mx_check": true,
+      "mx_timeout_seconds": 5,
+      "smtp_probe": false
+    },
+    "comparison": {
+      "name_match_strategy": "normalized_lower"
+    },
+    "concurrency": {
+      "max_workers": 2
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+  },
+  "overrides": {}
+}

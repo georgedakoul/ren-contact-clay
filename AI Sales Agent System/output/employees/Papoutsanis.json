@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Eirini Chatziioakeimidou",
+    "job_title": "Marketing Director",
+    "email": "e.chatziioakeimidou@papoutsanis.gr",
+    "linkedin_url": "https://www.linkedin.com/in/eirini-chatzii/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "papoutsanis.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Lilian Krapsiti",
+    "job_title": "Group Brand Manager",
+    "email": "l.krapsiti@papoutsanis.gr",
+    "linkedin_url": "https://www.linkedin.com/in/lilian-krapsiti-42476a6a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "papoutsanis.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Sofia Angelaki",
+    "job_title": "Senior Brand Manager",
+    "email": "s.angelaki@papoutsanis.gr",
+    "linkedin_url": "https://www.linkedin.com/in/angelakisofia/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "papoutsanis.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

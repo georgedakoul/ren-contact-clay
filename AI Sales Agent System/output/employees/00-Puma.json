@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Esteve Planas",
+    "job_title": "General Manager PUMA Southern Europe",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/esteveplanas/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "puma.com",
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22"
+  },
+  {
+    "name": "Pedro Moscoso",
+    "job_title": "Marketing & Communications Director Southern Europe",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/pedromoscoso/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "puma.com",
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22"
+  },
+  {
+    "name": "Carmen Ponce",
+    "job_title": "Lead Brand Consumer Southern Europe",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/carmenponce6/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "puma.com",
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22"
+  }
+]

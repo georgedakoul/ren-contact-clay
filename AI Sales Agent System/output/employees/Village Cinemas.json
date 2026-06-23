@@ -1,0 +1,62 @@
+[
+  {
+    "name": "George Christodoulou",
+    "job_title": "CEO",
+    "email": "george_christodoulou@village.com.gr",
+    "linkedin_url": "https://www.linkedin.com/in/george-christodoulou-a9aa51ab/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "villagecinemas.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Damianos Bourkas",
+    "job_title": "Deputy Chief Executive Officer",
+    "email": "damianos_bourkas@village.com.gr",
+    "linkedin_url": "https://www.linkedin.com/in/damianos-bourkas-19943a13/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "villagecinemas.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Harry Bakas",
+    "job_title": "Business Development & Marketing Director",
+    "email": "harry_bakas@village.com.gr",
+    "linkedin_url": "https://www.linkedin.com/in/harrybakas/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "villagecinemas.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Giannis Athanasiou",
+    "job_title": "Marketing Manager",
+    "email": "giannis_athanasiou@village.com.gr",
+    "linkedin_url": "https://www.linkedin.com/in/giannis-athanasiou-88b63137/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "villagecinemas.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Alexandra Tampakaki",
+    "job_title": "Marketing Manager",
+    "email": "tampakaki@village.com.gr",
+    "linkedin_url": "https://www.linkedin.com/in/alexandra-tampakaki/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "villagecinemas.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

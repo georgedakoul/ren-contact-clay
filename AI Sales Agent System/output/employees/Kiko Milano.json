@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Katerina Zerva",
+    "job_title": "Brand Marketing Manager- East Europe",
+    "email": "katerina.zerva@kikocosmetics.com",
+    "linkedin_url": "https://www.linkedin.com/in/kzerva/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "kikocosmetics.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Vasiliki Nikolaou",
+    "job_title": "Junior Marketing Brand Manager",
+    "email": "vasiliki.nikolaou@kikocosmetics.com",
+    "linkedin_url": "https://www.linkedin.com/in/vasiliki-nikolaou-04b87915b/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "kikocosmetics.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "John Kamilakis",
+    "job_title": "Marketing Director KIKO MILANO - GR,CY,BG,RO,CZ",
+    "email": "john.kamilakis@kikocosmetics.com",
+    "linkedin_url": "https://www.linkedin.com/in/ioanniskamilakis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "kikocosmetics.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

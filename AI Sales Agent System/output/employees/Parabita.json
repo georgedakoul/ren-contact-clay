@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Vassilis Stathopoulos",
+    "job_title": "Founder",
+    "email": "v.stathopoulos@parabita.gr",
+    "linkedin_url": "https://www.linkedin.com/in/vassilis-stathopoulos-07071935/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "parabita.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Loukia Kachramanou",
+    "job_title": "Marketing Manager",
+    "email": "l.kachramanou@parabita.com",
+    "linkedin_url": "https://www.linkedin.com/in/loukia-kachramanou-402308152/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "parabita.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

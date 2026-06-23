@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Thanos Athanassopoulos",
+    "job_title": "General Manager Red Bull Hellas",
+    "email": "thanos.athanassopoulos@redbull.com",
+    "linkedin_url": "https://www.linkedin.com/in/thanosathanassopoulos/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "redbull.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Panagiota Tempelopoulou",
+    "job_title": "Head of Marketing",
+    "email": "panagiota.tempelopoulou@redbull.com",
+    "linkedin_url": "https://www.linkedin.com/in/panagiota-tempelopoulou-24b41128/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "redbull.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Alex Makropoulos",
+    "job_title": "Country Sports Marketing Manager",
+    "email": "alex.makropoulos@redbull.com",
+    "linkedin_url": "https://www.linkedin.com/in/alex-makropoulos-b48185a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "redbull.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Dimitris Konstantakos",
+    "job_title": "Trade Marketing Manager",
+    "email": "dimitris.konstantakos@redbull.com",
+    "linkedin_url": "https://www.linkedin.com/in/konstantakosdimitris/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "redbull.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Kostas Tzamarias",
+    "job_title": "National On Premise Marketing Manager",
+    "email": "kostas.tzamarias@redbull.com",
+    "linkedin_url": "https://www.linkedin.com/in/kostas-tzamarias-86181b167/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "redbull.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Elissavet Arkopoulou",
+    "job_title": "Communications Manager",
+    "email": "elissavet.arkopoulou@redbull.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "redbull.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

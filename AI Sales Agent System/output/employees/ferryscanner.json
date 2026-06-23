@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Alexia Kotsi",
+    "job_title": "Marketing Director",
+    "email": "akotsi@ferryscanner.com",
+    "linkedin_url": "https://www.linkedin.com/in/alexia-kotsi-5a486a15/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ferryscanner.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Philipp Brinkmann",
+    "job_title": "Managing Director",
+    "email": "pbrinkmann@ferryscanner.com",
+    "linkedin_url": "https://www.linkedin.com/in/philipp-brinkmann-4232a2b/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ferryscanner.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Maria Tsatsaki",
+    "job_title": "Marketing Manager",
+    "email": "maria.tsatsaki@motorola.com",
+    "linkedin_url": "https://www.linkedin.com/in/maria-tsatsaki-20768a28/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "motorola.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Victoria Loupakou",
+    "job_title": "Marketing Manager",
+    "email": "vloupakou@lenovo.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "lenovo.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

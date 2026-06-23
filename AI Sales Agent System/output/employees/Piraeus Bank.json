@@ -1,0 +1,122 @@
+[
+  {
+    "name": "Christos Megalou",
+    "job_title": "Chief Executive Officer",
+    "email": "cmegalou@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/christos-megalou-24233226/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Loukas Petrounias",
+    "job_title": "Chief Marketing Officer",
+    "email": "petrouniasl@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/loukas-petrounias-627247/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Philippos Prountzos",
+    "job_title": "Marketing Director, Retail & Digital Marketing",
+    "email": "pprountzos@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/philipposprountzos/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Yiannis Rokkas",
+    "job_title": "General Manager Group Marketing, Corporate Communications and Press Office",
+    "email": "rokkasy@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/yiannis-rokkas-5a915824/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Harry Margaritis",
+    "job_title": "Group COO - Executive General Manager",
+    "email": "margaritish@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/hmargaritis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Marios Tzitziras",
+    "job_title": "General Manager, Head of Operations",
+    "email": "tzitzirasm@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/mtzitziras/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Ilias Lekkos",
+    "job_title": "Chief Economist & Head of Investment Strategy - General Manager",
+    "email": "lekkosi@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/ilias-lekkos-3555675/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "George Katsouranis",
+    "job_title": "General Manager - Deputy Group CHRO",
+    "email": "katsouranisg@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/george-katsouranis-78002b6/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Dimitri Konstantopoulos",
+    "job_title": "CEO's Office, General Manager",
+    "email": "konstantopoulosd@piraeusbank.gr",
+    "linkedin_url": "https://www.linkedin.com/in/dimitri-konstantopoulos-0b805922/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Michalis Sideratos",
+    "job_title": "Digital Marketing Manager",
+    "email": "sideratosm@piraeusbank.gr",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "piraeusbank.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Dimitris Galanis",
+    "job_title": "Chief Executive Officer",
+    "email": "d.galanis@public.gr",
+    "linkedin_url": "https://www.linkedin.com/in/dimitris-galanis-b821677/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "public.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Elli Lapsati",
+    "job_title": "Senior Category Marketing Manager - Entertainment",
+    "email": "e.lapsati@public.gr",
+    "linkedin_url": "https://www.linkedin.com/in/elli-lapsati-0b2b7a5b/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "public.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Alexandra Katsarou",
+    "job_title": "Trade Marketing Manager",
+    "email": "a.katsarou@public.gr",
+    "linkedin_url": "https://www.linkedin.com/in/alexandra-katsarou-91107a110/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "public.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Antonis Matemtzis",
+    "job_title": "General Manager",
+    "email": "a.matemtzis@public.gr",
+    "linkedin_url": "https://www.linkedin.com/in/antonis-matemtzis-abab2814/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "public.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Efi Gatsiou",
+    "job_title": "Head of Brand & Category Marketing",
+    "email": "e.gatsiou@public.gr",
+    "linkedin_url": "https://www.linkedin.com/in/efi-gatsiou/",
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "public.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

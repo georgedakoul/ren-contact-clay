@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Apostolos Ntokos",
+    "job_title": "Ecommerce & Digital Marketing Manager",
+    "email": "an@samsung.de",
+    "linkedin_url": "https://www.linkedin.com/in/apostolosntokos/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "samsung.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Antony Solomos",
+    "job_title": "Product Marketing Manager IT Display",
+    "email": "a.solomos@samsung.com",
+    "linkedin_url": "https://www.linkedin.com/in/asolomos/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "samsung.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

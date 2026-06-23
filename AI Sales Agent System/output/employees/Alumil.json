@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Nick Salpingidis",
+    "job_title": "Chief Executive Director of Innovation",
+    "email": "n.salpingidis@alumil.com",
+    "linkedin_url": "https://www.linkedin.com/in/nick-salpingidis-a622b7122/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alumil.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Alex Salpingidis",
+    "job_title": "Chief Executive Director of Operations",
+    "email": "a.salpingidis@alumil.com",
+    "linkedin_url": "https://www.linkedin.com/in/alex-salpingidis-52436a68/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alumil.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "George Grammatikopoulos",
+    "job_title": "Regional Marketing Manager",
+    "email": "g.grammatikopoulos@alumil.com",
+    "linkedin_url": "https://www.linkedin.com/in/george-grammatikopoulos-53b28932/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alumil.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Andreas Kontogeorgos",
+    "job_title": "Sales Managing Director",
+    "email": "a.kontogeorgos@alumil.com",
+    "linkedin_url": "https://www.linkedin.com/in/andreaskontogeorgos/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alumil.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Tijana Anokic",
+    "job_title": "Regional Marketing Manager",
+    "email": "t.anokic@alumil.com",
+    "linkedin_url": "https://www.linkedin.com/in/tijana-anokic-0b542b152/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alumil.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

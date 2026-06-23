@@ -1,0 +1,26 @@
+[
+  {
+    "name": "St P.",
+    "job_title": "CEO",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/st-p-4660578a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "celestino.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Despoina Liagkaki",
+    "job_title": "Marketing Manager",
+    "email": "d.liagkaki@celestino.gr",
+    "linkedin_url": "https://www.linkedin.com/in/despoina-liagkaki-634180155/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "celestino.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

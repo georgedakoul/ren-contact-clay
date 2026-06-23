@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Costas Gerardos",
+    "job_title": "CEO",
+    "email": "cgerardos@plaisio.gr",
+    "linkedin_url": "https://www.linkedin.com/in/costasgerardos/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "plaisio.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Maria Tsomou",
+    "job_title": "Media & PR Manager",
+    "email": "mtsomou@plaisio.gr",
+    "linkedin_url": "https://www.linkedin.com/in/maria-tsomou-17b178163/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "plaisio.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Evi Koutridi",
+    "job_title": "Trade Marketing Manager",
+    "email": "ekoutridi@plaisio.gr",
+    "linkedin_url": "https://www.linkedin.com/in/evi-koutridi-3475931b4/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "plaisio.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

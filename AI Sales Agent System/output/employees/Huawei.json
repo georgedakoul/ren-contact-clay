@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Theodor Tamvakidis",
+    "job_title": "Vice Managing Director",
+    "email": "theodor.tamvakidis@huawei.com",
+    "linkedin_url": "https://www.linkedin.com/in/dr-ing-inf-theodor-tamvakidis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "huawei.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Vicky Zervoudi",
+    "job_title": "EU Channel Marketing Director",
+    "email": "vicky.zervoudi@huawei.com",
+    "linkedin_url": "https://www.linkedin.com/in/vicky-zervoudi-81337b7/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "huawei.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Katherine Pothitou",
+    "job_title": "ICT Marketing Manager",
+    "email": "katherine.pothitou@huawei.com",
+    "linkedin_url": "https://www.linkedin.com/in/katherine-pothitou/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "huawei.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Zozepina Vangali",
+    "job_title": "Delivery & Marketing Manager",
+    "email": "zozepina.vangali@huawei.com",
+    "linkedin_url": "https://www.linkedin.com/in/zozepina-vangali-625732b1/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "huawei.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Costas Koboholis",
+    "job_title": "Senior Marketing Manager - South East Europe ICT Marketing",
+    "email": "costas.koboholis@huawei.com",
+    "linkedin_url": "https://www.linkedin.com/in/telecomunications/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "huawei.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Margarita Matsa",
+    "job_title": "Managing Director",
+    "email": "margarita.matsa@umusic.com",
+    "linkedin_url": "https://www.linkedin.com/in/margarita-matsa-11657310a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "minosemi.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Nick Mallis",
+    "job_title": "Social Media Manager & Content Creator",
+    "email": "nikos.mallis@umusic.com",
+    "linkedin_url": "https://www.linkedin.com/in/nickmallis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "minosemi.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

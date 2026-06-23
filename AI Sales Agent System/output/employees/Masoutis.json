@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Theodoros Gerostergioudis",
+    "job_title": "Chief Executive Officer",
+    "email": "tgerostergioudis@masoutis.gr",
+    "linkedin_url": "https://www.linkedin.com/in/theodoros-gerostergioudis-72ab3a48/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "masoutis.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Theodoros Tsachouridis",
+    "job_title": "Senior Retail & Commercial Marketing Manager",
+    "email": "ttsachouridis@masoutis.gr",
+    "linkedin_url": "https://www.linkedin.com/in/theodoros-tsachouridis-mba-85968853/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "masoutis.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

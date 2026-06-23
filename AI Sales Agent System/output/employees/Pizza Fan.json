@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Evi Tsouni",
+    "job_title": "Senior Digital Marketing Manager",
+    "email": "etsouni@pizzafan.gr",
+    "linkedin_url": "https://www.linkedin.com/in/evi-tsouni-277445137/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "pizzafan.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Dionysis Kourasis",
+    "job_title": "Brand Manager",
+    "email": "dkourasis@pizzafan.gr",
+    "linkedin_url": "https://www.linkedin.com/in/dionysis-kourasis-486a41185/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "pizzafan.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Apostolis Stoumpos",
+    "job_title": "Senior Marketing Director",
+    "email": "a.stoumpos@flexcar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/apostolis-stoumpos-655777161/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "flexcar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "George Kavvadias",
+    "job_title": "Marketing Manager",
+    "email": "g.kavvadias@flexcar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/george-kavvadias-047969121/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "flexcar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Erifyli Mouza",
+    "job_title": "Marketing Manager",
+    "email": "e.mouza@flexcar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/erifyli-mouza-6b3200184/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "flexcar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "George D.",
+    "job_title": "Founder & CEO",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/george-de-syllas/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "flexcar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Gabriel Toribio Colic",
+    "job_title": "Co-Founder",
+    "email": "g.colic@flexcar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/gabriel-toribio-colic-31382b108/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "flexcar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Eirini Loupasaki",
+    "job_title": "Chief of Staff to the CEO",
+    "email": "e.loupasaki@flexcar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/eirini-loupasaki-62928b367/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "flexcar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

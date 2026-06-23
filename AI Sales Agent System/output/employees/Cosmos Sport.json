@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Michael Tsiknakis",
+    "job_title": "CEO JD Sporting Goods",
+    "email": "m.tsiknakis@cosmossport.gr",
+    "linkedin_url": "https://www.linkedin.com/in/tsiknakis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "cosmossport.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Katianna Kranioti",
+    "job_title": "Sr. Marketing Manager Omnichannel, GR & CY",
+    "email": "k.kranioti@cosmossport.gr",
+    "linkedin_url": "https://www.linkedin.com/in/katianna-kranioti-a628a842/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "cosmossport.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Eirini Gennaraki",
+    "job_title": "Digital Marketing Manager",
+    "email": "e.gennaraki@cosmossport.gr",
+    "linkedin_url": "https://www.linkedin.com/in/eirinigennaraki/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "cosmossport.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

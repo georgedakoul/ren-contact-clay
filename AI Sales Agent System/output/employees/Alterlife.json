@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Tilemachos Koukouflis",
+    "job_title": "Co-founder & CEO",
+    "email": "t.koukouflis@alterlife.gr",
+    "linkedin_url": "https://www.linkedin.com/in/tilemachos-koukouflis-6182b835b/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alterlife.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Giannis Intzidis",
+    "job_title": "Managing Director",
+    "email": "g.intzidis@alterlife.gr",
+    "linkedin_url": "https://www.linkedin.com/in/giannis-intzidis-a8207a83/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alterlife.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Alexandra Boula",
+    "job_title": "Brand Manager",
+    "email": "a.boula@alterlife.gr",
+    "linkedin_url": "https://www.linkedin.com/in/alexandra-mpoula-a03111b1/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alterlife.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Venetia Tsoukala",
+    "job_title": "Brand Manager",
+    "email": "v.tsoukala@alterlife.gr",
+    "linkedin_url": "https://www.linkedin.com/in/venetia-tsoukala/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "alterlife.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

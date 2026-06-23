@@ -1,0 +1,86 @@
+[
+  {
+    "name": "George Hadjigeorgiou",
+    "job_title": "Co Founder, CEO",
+    "email": "george@skroutz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/george-hadjigeorgiou-52a13a3/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skroutz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "George Avgoustidis",
+    "job_title": "Co-Founder",
+    "email": "ga@skroutz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/george-avgoustidis-8850615/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skroutz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Thalia Geladaki",
+    "job_title": "CMO",
+    "email": "tgeladaki@skroutz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/thaliageladaki/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skroutz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Nick Soueref",
+    "job_title": "Head of Marketing",
+    "email": "nsoueref@skroutz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/soueref/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skroutz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Margarita Pantelaki",
+    "job_title": "Marketing Manager",
+    "email": "mpantelaki@skroutz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/margarita-pantelaki-56269474/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skroutz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Katerina D.",
+    "job_title": "Senior Marketing Manager",
+    "email": "kderveni@skroutz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/kderveni/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skroutz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Greg Mitsotakis",
+    "job_title": "Senior Performance Marketing Manager",
+    "email": "gmitsotakis@skroutz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/greg-mitsotakis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skroutz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Georgios Lioumpis",
+    "job_title": "General Manager",
+    "email": "glioumpis@skyexpress.gr",
+    "linkedin_url": "https://www.linkedin.com/in/georgios-lioumpis-2754126/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skyexpress.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Eleni Tsistraki",
+    "job_title": "Marketing and Communications Director",
+    "email": "e.tsistraki@skyexpress.com",
+    "linkedin_url": "https://www.linkedin.com/in/eleni-tsistraki/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skyexpress.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Alkistis Tziola",
+    "job_title": "Digital Marketing Manager",
+    "email": "a.tziola@skyexpress.gr",
+    "linkedin_url": "https://www.linkedin.com/in/altziola/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "skyexpress.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

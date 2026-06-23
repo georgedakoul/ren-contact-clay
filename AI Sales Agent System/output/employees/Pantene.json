@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Anna Maria Karlatira",
+    "job_title": "Communications Manager",
+    "email": "karlatira.a@pg.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "pg.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Konstantinos Manthos",
+    "job_title": "Senior Brand Manager, Health Care Portfolio",
+    "email": "manthos.k@pg.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "pg.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Vasiliki Karakioulaki",
+    "job_title": "Senior Customer & Channel Marketing Manager",
+    "email": "karakioulaki.v@pg.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "pg.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

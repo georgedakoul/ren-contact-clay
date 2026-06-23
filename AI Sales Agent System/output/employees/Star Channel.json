@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Karolos Alkalai",
+    "job_title": "General Manager",
+    "email": "kalkalai@star.gr",
+    "linkedin_url": "https://www.linkedin.com/in/karolos-alkalai-31007125/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "star.gr",
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Kostas Fotopoulos",
+    "job_title": "General Manager",
+    "email": "kfotopoulos@star.gr",
+    "linkedin_url": "https://www.linkedin.com/in/kostas-fotopoulos-14a6a717/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "star.gr",
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18"
+  }
+]

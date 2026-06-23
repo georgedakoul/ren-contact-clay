@@ -1,0 +1,95 @@
+[
+  {
+    "name": "Athina Stamatiadi",
+    "job_title": "Marketing Manager Caudalie",
+    "email": "athina.stamatiadi@caudalie.com",
+    "linkedin_url": "https://www.linkedin.com/in/athina-stamatiadi",
+    "verified": false,
+    "active": true,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-17",
+    "domain": "caudalie.com"
+  },
+  {
+    "name": "Julia Kaczmarczyk",
+    "job_title": "Marketing Manager at Caudalie Germany & Austria",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/julia-kaczmarczyk-548417134",
+    "verified": false,
+    "active": true,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Sarah Thomas",
+    "job_title": "Chief Marketing Officer, Caudalie",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/sarah-j-thomas",
+    "verified": false,
+    "active": true,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Olena Kolesnyk",
+    "job_title": "Brand Manager - Rene Furterer",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/olena-kolesnyk-748754207",
+    "verified": false,
+    "active": false,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Sezin Nas Cengiz",
+    "job_title": "Caudalie Marketing Manager",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/sezin-nas-cengiz-0a2a0414b",
+    "verified": false,
+    "active": true,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Eleonora Alberici",
+    "job_title": "Marketing Manager @Caudalie",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/eleonora-alberici",
+    "verified": false,
+    "active": true,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Joanna Karwatka",
+    "job_title": "Marketing Manager @ Caudalie",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/joanna-karwatka-97470990",
+    "verified": false,
+    "active": true,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Aude Bourdon",
+    "job_title": "Marketing Manager - Travel Retail EMEA & Americas at Caudalie",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/aude-bourdon",
+    "verified": false,
+    "active": true,
+    "first_seen": "2026-06-16",
+    "last_seen": "2026-06-16"
+  },
+  {
+    "name": "Christina Zarda",
+    "job_title": "PR Manager",
+    "email": "christina.zarda@caudalie.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "caudalie.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Angela Provata",
+    "job_title": "Communications and PR Manager",
+    "email": "ap@keybooks.gr",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "keybooks.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Evgenia Besiou",
+    "job_title": "Public Relations and Communications Manager",
+    "email": "eb@keybooks.gr",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "keybooks.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

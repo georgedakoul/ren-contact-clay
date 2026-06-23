@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Vangelis Batris",
+    "job_title": "Regional Managing Director",
+    "email": "batrisv@intersport.gr",
+    "linkedin_url": "https://www.linkedin.com/in/vangelis-batris-a269625/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "intersport.gr",
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Thaleia Mathiou",
+    "job_title": "Regional Coop Marketing Manager",
+    "email": "mathiout@intersport.gr",
+    "linkedin_url": "https://www.linkedin.com/in/thaleia-mathiou-6b7775108/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "intersport.gr",
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Eleni Metaxa",
+    "job_title": "Regional Marketing & Communications Manager",
+    "email": "metaxae@intersport.gr",
+    "linkedin_url": "https://www.linkedin.com/in/eleni-metaxa-787573a5/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "intersport.gr",
+    "first_seen": "2026-06-18",
+    "last_seen": "2026-06-18"
+  }
+]

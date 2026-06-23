@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Marina Prinou",
+    "job_title": "Marketing Manager, Brand Equity & Own Brands",
+    "email": "mprinou@ab.gr",
+    "linkedin_url": "https://www.linkedin.com/in/marinaprinou/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ab.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Marialena Kyroudi",
+    "job_title": "Brand Manager",
+    "email": "mkyroudi@ab.gr",
+    "linkedin_url": "https://www.linkedin.com/in/marialena-kyroudi-88481217a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ab.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Margarita Gregoriadou",
+    "job_title": "Instore Communications & Branding Marketing Manager",
+    "email": "mgregoriadou@ab.gr",
+    "linkedin_url": "https://www.linkedin.com/in/margarita-gregoriadou-432a46138/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ab.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Tasos Pasalaris",
+    "job_title": "Partnerships Manager",
+    "email": "tpasalaris@ab.gr",
+    "linkedin_url": "https://www.linkedin.com/in/tasos-pasalaris/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ab.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

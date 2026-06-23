@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Eftichios Vassilakis",
+    "job_title": "Managing Director",
+    "email": "evassilakis@hertz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/eftichios-vassilakis-b95550161/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "hertz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Konstantinos Deligiannis",
+    "job_title": "Deputy CEO",
+    "email": "kdeligiannis@hertz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/konstantinos-deligiannis-3608045/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "hertz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Alexia Kritikou",
+    "job_title": "Senior E-Commerce & Marketing Manager",
+    "email": "akritikou@hertz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/alexia-kritikou-99a0a186/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "hertz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Evdokia Angeli",
+    "job_title": "PR, Influence & Social Media Manager",
+    "email": "eangeli@hertz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/evdokia-angeli-14946b87/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "hertz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Katerina Argyrouli",
+    "job_title": "Brand Manager",
+    "email": "kargyrouli@hertz.gr",
+    "linkedin_url": "https://www.linkedin.com/in/katerina-argyrouli-471aa795/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "hertz.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

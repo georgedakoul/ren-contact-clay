@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Panagiotis K.",
+    "job_title": "Managing Director",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/panagiotis-panos-k-99497024/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ikea.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Ada Gianneskis",
+    "job_title": "Communications Director Greece, Cyprus, Bulgaria",
+    "email": "gada@ikea.com",
+    "linkedin_url": "https://www.linkedin.com/in/ada-gianneskis-0431336/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ikea.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Ellie Konstantilieri Fourli",
+    "job_title": "Marketing Manager",
+    "email": "fe@inter.ikea.com",
+    "linkedin_url": "https://www.linkedin.com/in/ellie-konstantilieri-fourli-20355291/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ikea.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Natasa Christofi",
+    "job_title": "Marketing Manager",
+    "email": "natasa.christofi@ikea.gr",
+    "linkedin_url": "https://www.linkedin.com/in/natasa-christofi-7a457945/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ikea.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Panagiotis (Panos) K.",
+    "job_title": "Managing Director",
+    "email": "panagiotis.kouleris@inter.ikea.com",
+    "linkedin_url": "https://www.linkedin.com/in/panagiotis-panos-k-99497024/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ikea.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Irini Dasoula",
+    "job_title": "Executive Assistant to the Managing Director",
+    "email": "irini.dasoula@ikea.gr",
+    "linkedin_url": "https://www.linkedin.com/in/dasoula-irini/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "ikea.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

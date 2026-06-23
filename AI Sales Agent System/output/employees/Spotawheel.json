@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Renos Kattorits",
+    "job_title": "Chief Marketing Officer",
+    "email": "renos@spotawheel.com",
+    "linkedin_url": "https://www.linkedin.com/in/renos-kattorits-46539732/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "spotawheel.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Kiriakos Agadakos",
+    "job_title": "VP of Marketing & Co-Founder",
+    "email": "kiriakos@spotawheel.com",
+    "linkedin_url": "https://www.linkedin.com/in/kiriakos-agadakos-bb283111/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "spotawheel.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Katerina Paschou",
+    "job_title": "Group Brand Manager (GR & RO)",
+    "email": "katerina@spotawheel.com",
+    "linkedin_url": "https://www.linkedin.com/in/katerina-paschou-a2a78412a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "spotawheel.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  }
+]

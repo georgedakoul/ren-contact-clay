@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Andreas Kouris",
+    "job_title": "CEO and owner",
+    "email": "a.kouris@mad.gr",
+    "linkedin_url": "https://www.linkedin.com/in/akouris/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "mad.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Michalis Karis",
+    "job_title": "General Manager - COO",
+    "email": "m.karis@mad.gr",
+    "linkedin_url": "https://www.linkedin.com/in/michalis-karis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "mad.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Iakovina Kapala",
+    "job_title": "Head of Marketing Communications",
+    "email": "i.kapala@mad.gr",
+    "linkedin_url": "https://www.linkedin.com/in/iakovina-kapala/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "mad.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Dominikos Pritis",
+    "job_title": "Marketing Director",
+    "email": "dp@mad.gr",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "mad.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

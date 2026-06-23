@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Alexander Sourmpatis",
+    "job_title": "Global Brand Ambassador",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/alexander-sourmpatis-4694811b/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "threecents.com",
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22"
+  },
+  {
+    "name": "George Bagos",
+    "job_title": "Business Data Analyst",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/george-bagos-2962216a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "threecents.com",
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22"
+  },
+  {
+    "name": "Sophia Terzopoulou",
+    "job_title": "Head of Marketing & Communications",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/sophia-terzopoulou-a25a9340/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "threecents.com",
+    "first_seen": "2026-06-22",
+    "last_seen": "2026-06-22"
+  }
+]

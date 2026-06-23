@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Michalis Kouveliotis",
+    "job_title": "Deputy Chief Executive Officer",
+    "email": "michalis.kouveliotis@aegeanair.com",
+    "linkedin_url": "https://www.linkedin.com/in/michalis-kouveliotis-2a65a951/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "aegeanair.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Marina Valvi",
+    "job_title": "Corporate Affairs & Communications Director",
+    "email": "marina.valvi@aegeanair.com",
+    "linkedin_url": "https://www.linkedin.com/in/marina-valvi-90484b8/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "aegeanair.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

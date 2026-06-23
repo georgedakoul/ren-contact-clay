@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "skills": {
+    "aws-ami-builder": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "packer/builders/skills/aws-ami-builder/SKILL.md",
+      "computedHash": "f4d08ab68834e9025bf7729b9ea02194fc635e1574ee25c39c7ddaf6a6dd6108"
+    },
+    "azure-image-builder": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "packer/builders/skills/azure-image-builder/SKILL.md",
+      "computedHash": "3cbd3d4f51ecc457a74799006b73375d66a1459cf9630c52bb464cc6a3a49930"
+    },
+    "azure-verified-modules": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/code-generation/skills/azure-verified-modules/SKILL.md",
+      "computedHash": "43f713c3c06f5c054033faf32ea1a3ccda1de3dabd97e2f097ed2b50eb36f9d3"
+    },
+    "new-terraform-provider": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/provider-development/skills/new-terraform-provider/SKILL.md",
+      "computedHash": "542c383ff3c80c005e3e3eca1eb6393459872211aad236fb462c7e52c1577dd7"
+    },
+    "provider-actions": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/provider-development/skills/provider-actions/SKILL.md",
+      "computedHash": "23f817e043d03b864e9df09ceedc2c2f552363bc97b77b7162670f3d9f4c96b5"
+    },
+    "provider-docs": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/provider-development/skills/provider-docs/SKILL.md",
+      "computedHash": "7f751a060b7a2ba88f94bc4f786b70a2a99c8d05bb2fc434d6b87e4ec7d97079"
+    },
+    "provider-resources": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/provider-development/skills/provider-resources/SKILL.md",
+      "computedHash": "821b771240b933cf3cb14688057b7abc19b3d353699e0c18c45d62e35d2f54c3"
+    },
+    "provider-test-patterns": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/provider-development/skills/provider-test-patterns/SKILL.md",
+      "computedHash": "860a638d4efbca0f8350e41e70a2f1a514351a6e7e13bc3b6719835a345af45f"
+    },
+    "push-to-registry": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "packer/hcp/skills/push-to-registry/SKILL.md",
+      "computedHash": "e17a2de29c353f0e76b6b868f896b4031fb32b396dbb45cfd7df248d766bf71a"
+    },
+    "refactor-module": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/module-generation/skills/refactor-module/SKILL.md",
+      "computedHash": "c3d0ae43f67269a0cbeb2ce9c34b4c44db58b488c6190a4d9b869b3a8c409c15"
+    },
+    "run-acceptance-tests": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/provider-development/skills/run-acceptance-tests/SKILL.md",
+      "computedHash": "892fd535d4a55701e1a2762dc6f3399c69739437e21ddffc7ed599643642b480"
+    },
+    "terraform-search-import": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/code-generation/skills/terraform-search-import/SKILL.md",
+      "computedHash": "52b4b3a00a7c70ed82c5cfd25282f2e7a097ab99eabc366ce06e6df827eb061d"
+    },
+    "terraform-stacks": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/module-generation/skills/terraform-stacks/SKILL.md",
+      "computedHash": "99ca149418ff0f37231f0f6f1e21599e9838004b326c8a88b1ea66d23a50af28"
+    },
+    "terraform-style-guide": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/code-generation/skills/terraform-style-guide/SKILL.md",
+      "computedHash": "08a999e2ddf01d83f3dc9775f5f8502e37f731e424f41840090ea53651e2ede7"
+    },
+    "terraform-test": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "terraform/code-generation/skills/terraform-test/SKILL.md",
+      "computedHash": "ff097a62725c55be6035987f0acf259140c9e122a13814ea86f453710b8a2145"
+    },
+    "windows-builder": {
+      "source": "hashicorp/agent-skills",
+      "sourceType": "github",
+      "skillPath": "packer/builders/skills/windows-builder/SKILL.md",
+      "computedHash": "509f80c5e2f37966e713905a3497c1d3f36b2613c2c9c2bd1d7dc5e9560702a4"
+    }
+  }
+}

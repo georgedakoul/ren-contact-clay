@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Aspasia Topalidou",
+    "job_title": "General Manager",
+    "email": "aspasia.topalidou@free-now.com",
+    "linkedin_url": "https://www.linkedin.com/in/aspasia-topalidou-5a4a945/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "free-now.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Lily Sophocleous",
+    "job_title": "Growth Marketing Manager (CRO)",
+    "email": "lily.sophocleous@free-now.com",
+    "linkedin_url": "https://www.linkedin.com/in/lily-sophocleous/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "free-now.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Penelope Kalliontzi",
+    "job_title": "PR & Communications Manager",
+    "email": "penelope.kalliontzi@free-now.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "free-now.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

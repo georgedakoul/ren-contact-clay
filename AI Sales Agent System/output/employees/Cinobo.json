@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dafni Bechtsi",
+    "job_title": "Founder, CEO",
+    "email": "dafni.bechtsi@cinobo.com",
+    "linkedin_url": "https://www.linkedin.com/in/dafnibechtsi/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "cinobo.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Mariefi Tranopoulou",
+    "job_title": "Senior Marketing Communications Manager",
+    "email": "mariefi.tranopoulou@cinobo.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "cinobo.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

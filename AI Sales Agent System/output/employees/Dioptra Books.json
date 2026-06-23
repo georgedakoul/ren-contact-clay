@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Giannis Pliotas",
+    "job_title": "Marketing Director",
+    "email": "ipliotas@dioptra.gr",
+    "linkedin_url": "https://www.linkedin.com/in/giannis-pliotas/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "dioptra.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Anna Karamanou",
+    "job_title": "Digital Marketing Manager",
+    "email": "akaramanou@dioptra.gr",
+    "linkedin_url": "https://www.linkedin.com/in/anna-karamanou-817474121/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "dioptra.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

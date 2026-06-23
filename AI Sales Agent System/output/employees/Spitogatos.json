@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Dimitris Melachroinos",
+    "job_title": "Co-Founder & CEO",
+    "email": "dimitris.melachroinos@spitogatos.gr",
+    "linkedin_url": "https://www.linkedin.com/in/melachroinos/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "spitogatos.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Isidora Markou",
+    "job_title": "Digital Marketing & Communications Manager",
+    "email": "isidora.markou@spitogatos.gr",
+    "linkedin_url": "https://www.linkedin.com/in/isidoramarkou/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "spitogatos.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

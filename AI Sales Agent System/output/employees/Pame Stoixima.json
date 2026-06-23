@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Artemis Gianpapa",
+    "job_title": "Communications Manager",
+    "email": "a.gianpapa@opap.gr",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "opap.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Virginia Kanaki",
+    "job_title": "Marketing Communications Manager",
+    "email": "v.kanaki@opap.gr",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "opap.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Nikolaos Panagiotou",
+    "job_title": "Marketing Communications Manager - Retail",
+    "email": "n.panagiotou@opap.gr",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "excel",
+    "domain": "opap.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Ploiarchou Anastasia",
+    "job_title": "Brand and Communications Director",
+    "email": "a.ploiarchou@opap.gr",
+    "linkedin_url": "https://www.linkedin.com/in/ploiarchou-anastasia-9ab1802a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "opap.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Niki Palantza",
+    "job_title": "Marketing Director - Community",
+    "email": "n.palantza@opap.gr",
+    "linkedin_url": "https://www.linkedin.com/in/niki-palantza-2801052a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "opap.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

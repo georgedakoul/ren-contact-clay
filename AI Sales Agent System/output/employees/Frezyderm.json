@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Yota Demouze",
+    "job_title": "Marketing Director",
+    "email": "ydemouze@frezyderm.gr",
+    "linkedin_url": "https://www.linkedin.com/in/yota-demouze-654338a7/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "frezyderm.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Afroditi Bouzioukou",
+    "job_title": "Marketing Manager",
+    "email": "abouzioukou@frezyderm.gr",
+    "linkedin_url": "https://www.linkedin.com/in/afroditi-bouzioukou-a95091110/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "frezyderm.com",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Georgios Chouliaras",
+    "job_title": "Medical Marketing Manager",
+    "email": "gchouliaras@frezyderm.gr",
+    "linkedin_url": "https://www.linkedin.com/in/chouliarasgeorgios/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "frezyderm.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]

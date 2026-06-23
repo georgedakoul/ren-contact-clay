@@ -1,0 +1,52 @@
+{
+  "defaults": {
+    "underperformance_threshold": 0.7,
+    "min_score_to_flag": 0.3,
+    "lookback_days": 90,
+    "min_videos_per_creator": 3,
+    "min_likelihood_score": 8,
+    "max_brands_per_post": 4,
+    "weights": {
+      "views": 0.4,
+      "likes": 0.2,
+      "comments": 0.2,
+      "shares": 0.15,
+      "saves": 0.05
+    },
+    "priority_bands": {
+      "critical_max": 0.4,
+      "high_max": 0.6,
+      "medium_max": 0.7
+    },
+    "mcp_filters": {
+      "is_ad": true,
+      "profile_types": [
+        "personal"
+      ],
+      "has_ai_analysis": null,
+      "is_sponsored": false,
+      "countries": [
+        "Greece"
+      ],
+      "min_followers": 100000,
+      "media_types": [
+        "video",
+        "reel",
+        "short"
+      ]
+    },
+    "output_dir": "AI Sales Agent System/output/performance-analyser",
+    "include_all_scored_creators": true,
+    "auto_brand_variations": true,
+    "cache": {
+      "enable_perf_metrics_cache": true,
+      "perf_metrics_cache_ttl_hours": 24,
+      "cache_dir": "AI Sales Agent System/cache",
+      "cache_file": "profile_overview.json"
+    },
+    "feature_flags": {
+      "search_media_returns_profile_uuid": true
+    }
+  },
+  "overrides": {}
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Antonis Samothrakis",
+    "job_title": "Founder | CEO",
+    "email": "asamothrakis@instacar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/ansam0/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "instacar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Antonis Zois",
+    "job_title": "Co-Founder, Head of Operations",
+    "email": "azois@instacar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/antonis-zois-20a329b3/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "instacar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Georgia Karadima",
+    "job_title": "Brand Manager",
+    "email": "gkaradima@instacar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/georgia-karadima-05948892/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "instacar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Iliana Tsirtou",
+    "job_title": "Social Media Manager",
+    "email": "itsirtou@instacar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/iliana-tsirtou-706547276/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "instacar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "George Kyriakides",
+    "job_title": "General Manager - Sell Vehicles BU",
+    "email": "gkyriakides@instacar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/george-kyriakides-51a07318/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "instacar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-18"
+  },
+  {
+    "name": "Dimitris Kalaitzis",
+    "job_title": "Head of Marketing",
+    "email": "dkalaitzis@instacar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/dimitrios-kalaitzis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "instacar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  },
+  {
+    "name": "Myrto Kasimati",
+    "job_title": "Marketing Communications Manager",
+    "email": "mkasimati@instacar.gr",
+    "linkedin_url": "https://www.linkedin.com/in/myrtokasimati/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "instacar.gr",
+    "first_seen": "2026-06-17",
+    "last_seen": "2026-06-17"
+  }
+]
