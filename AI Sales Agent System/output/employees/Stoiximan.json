@@ -1,33 +1,9 @@
 [
   {
-    "name": "Nikos Fligos",
-    "job_title": "Chief Executive Officer",
-    "email": "n.fligos@stoiximan.gr",
-    "linkedin_url": "https://www.linkedin.com/in/nikos-fligos-7b885814/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "stoiximan.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
-  },
-  {
     "name": "Antonis Polychronis",
     "job_title": "Head of Marketing",
     "email": "a.polychronis@stoiximan.gr",
     "linkedin_url": "https://www.linkedin.com/in/antonispolychronis/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "stoiximan.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
-  },
-  {
-    "name": "Vasia Tsekoura",
-    "job_title": "Senior Acquisition & Performance Marketing Manager",
-    "email": "v.tsekoura@stoiximan.gr",
-    "linkedin_url": "https://www.linkedin.com/in/vasia-tsekoura-27a524157/",
     "verified": false,
     "active": true,
     "source": "clay",
@@ -64,18 +40,6 @@
     "job_title": "General Manager (Cyprus)",
     "email": "a.chontoulidis@stoiximan.gr",
     "linkedin_url": "https://www.linkedin.com/in/angelos-chontoulidis-8793b74/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "stoiximan.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17"
-  },
-  {
-    "name": "Gina Yiagitzi",
-    "job_title": "Executive Assistant to CEO",
-    "email": "g.yiagitzi@stoiximan.gr",
-    "linkedin_url": "https://www.linkedin.com/in/gina-yiagitzi-47270a44/",
     "verified": false,
     "active": true,
     "source": "clay",

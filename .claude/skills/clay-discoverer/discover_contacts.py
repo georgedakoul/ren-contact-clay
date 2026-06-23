@@ -60,8 +60,33 @@ GLOBAL_BRANDS = {
 # Job titles to ignore — contacts whose title contains any of these strings
 # (case-insensitive, substring match) are skipped on save and purged on export.
 BANNED_TITLES = {
-    "trade marketing manager",
+    # Confirmed by user (specific titles)
     "chief of staff to the ceo",
+    "design lead",
+    "performance marketing manager",
+    "assistant general manager",
+    "chief executive officer at cosmote payments",   # specific person only, not all CEOs
+    # Business development / commercial (not marketing decision-makers)
+    "business development",         # BDM, head of BD, chief strategy & BD officer
+    "commercial director",
+    "commercial manager",
+    "international business director",
+    # Trade / shopper / channel (not influencer marketing decision-makers)
+    "trade marketing",              # specialist, coordinator, lead, section manager, manager
+    "shopper",                      # shopper marketing manager, head of shopper marketing
+    # Exports (distribution, not brand marketing)
+    "exports director",
+    "export marketing manager",
+    # Operations
+    "director of partners operations",
+    # HR / people / admin roles
+    "head of people",               # head of people rewards, head of people & culture, etc.
+    "organisational development",
+    "executive assistant",
+    # Analytics (not decision-makers)
+    "business data analyst",
+    # Keyword catch-all
+    "sales",                        # any title containing "sales"
 }
 
 

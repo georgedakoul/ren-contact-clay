@@ -1,17 +1,5 @@
 [
   {
-    "name": "Fokion Karavias",
-    "job_title": "Chief Executive Officer",
-    "email": "fkaravias@eurobank.gr",
-    "linkedin_url": "https://www.linkedin.com/in/fokionkaravias/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "eurobank.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
-  },
-  {
     "name": "Michael Vlastarakis",
     "job_title": "Group Chief Marketing Officer",
     "email": "mvlastarakis@eurobank.gr",
@@ -72,18 +60,6 @@
     "last_seen": "2026-06-17"
   },
   {
-    "name": "Panos Bougioukos",
-    "job_title": "Head of People Rewards, Assistant General Manager",
-    "email": "pbougioukos@eurobank.gr",
-    "linkedin_url": "https://www.linkedin.com/in/panos-bougioukos-b270aa6b/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "eurobank.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17"
-  },
-  {
     "name": "Spyros Venetsianos",
     "job_title": "General Manager",
     "email": "svenetsianos@eurobank.gr",
@@ -120,18 +96,6 @@
     "last_seen": "2026-06-17"
   },
   {
-    "name": "George Kefalas",
-    "job_title": "Assistant General Manager, Head of Strategic Business Planning",
-    "email": "gkefalas@eurobank.gr",
-    "linkedin_url": "https://www.linkedin.com/in/george-kefalas-b38239a/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "eurobank.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17"
-  },
-  {
     "name": "Konstantinos Vassiliou",
     "job_title": "Deputy CEO | Head of CIB",
     "email": "kvassiliou@eurobank.gr",
@@ -142,42 +106,6 @@
     "domain": "eurobank.gr",
     "first_seen": "2026-06-17",
     "last_seen": "2026-06-17"
-  },
-  {
-    "name": "Dionysis Pettas",
-    "job_title": "Assistant General Manager | Group Head of HR Business Partnering",
-    "email": "dpettas@eurobank.gr",
-    "linkedin_url": "https://www.linkedin.com/in/dionysis-pettas-675508a0/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "eurobank.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
-  },
-  {
-    "name": "Konstantinos Psaltopoulos",
-    "job_title": "Assistant General Manager | Head of Commercial Real Estate Finance",
-    "email": "kpsaltopoulos@eurobank.gr",
-    "linkedin_url": "https://www.linkedin.com/in/konstantinos-psaltopoulos-cfa-64a6242/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "eurobank.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17"
-  },
-  {
-    "name": "Yiota Daskalaki",
-    "job_title": "Assistant General Manager, Head of HR Business Partnering Retail Banking",
-    "email": "ydaskalaki@eurobank.gr",
-    "linkedin_url": "https://www.linkedin.com/in/yiota-daskalaki-486611/",
-    "verified": false,
-    "active": true,
-    "source": "clay",
-    "domain": "eurobank.gr",
-    "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
   },
   {
     "name": "Philippos Karamanolis",
