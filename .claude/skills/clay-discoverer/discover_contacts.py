@@ -57,6 +57,18 @@ GLOBAL_BRANDS = {
     "Nespresso", "Monster Energy", "La Vie en Rose",
 }
 
+# Job titles to ignore — contacts whose title contains any of these strings
+# (case-insensitive, substring match) are skipped on save and purged on export.
+BANNED_TITLES = {
+    "trade marketing manager",
+    "chief of staff to the ceo",
+}
+
+
+def _is_banned(title):
+    t = normalize(title)
+    return any(banned in t for banned in BANNED_TITLES)
+
 
 def _strip_accents(s):
     return "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
@@ -99,13 +111,17 @@ def save_contacts(brand_name, contacts, domain=None):
     path = _employee_path(brand_name)
     existing = json.loads(path.read_text(encoding="utf-8")) if path.exists() else []
     by_name = {normalize(e["name"]): e for e in existing}
+    # Purge any existing contacts with banned titles before merging
+    by_name = {k: v for k, v in by_name.items() if not _is_banned(v.get("job_title") or "")}
     added = email_added = 0
     for c in contacts:
         name = (c.get("name") or "").strip()
         if not name:
             continue
-        key = normalize(name)
         title  = (c.get("latest_experience_title") or "").strip()
+        if _is_banned(title):
+            continue
+        key = normalize(name)
         li_url = c.get("url") or None
         em     = (c.get("email") or "").strip() or None
         dom    = c.get("domain") or domain or None
@@ -584,6 +600,22 @@ def export_excel():
     print(f"  Red    = Empty (Clay returned 0 contacts)")
 
 
+def purge_banned():
+    """Remove contacts with banned titles from every file in the store."""
+    total_removed = 0
+    for f in sorted(STORE_DIR.glob("*.json")):
+        if f.name == "desktop.ini" or f.stem.startswith("ZZ-"):
+            continue
+        contacts = json.loads(f.read_text(encoding="utf-8"))
+        clean = [c for c in contacts if not _is_banned(c.get("job_title") or "")]
+        removed = len(contacts) - len(clean)
+        if removed:
+            f.write_text(json.dumps(clean, indent=2, ensure_ascii=False), encoding="utf-8")
+            print(f"  {f.name}: removed {removed} contact(s) with banned title(s)")
+            total_removed += removed
+    print(f"Purge complete — {total_removed} contact(s) removed across the store.")
+
+
 if __name__ == "__main__":
     if "save" in sys.argv:
         if not BATCH:
@@ -592,6 +624,8 @@ if __name__ == "__main__":
             for brand, (contacts, domain) in BATCH.items():
                 save_contacts(brand, contacts, domain)
             print("Done.")
+    elif "purge" in sys.argv:
+        purge_banned()
     elif "export" in sys.argv:
         export_excel()
     elif "mark_empty" in sys.argv:
