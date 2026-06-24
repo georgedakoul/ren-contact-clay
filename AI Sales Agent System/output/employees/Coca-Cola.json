@@ -83,4 +83,65 @@
     "first_seen": "2026-06-17",
     "last_seen": "2026-06-18"
   }
+,
+  {
+    "name": "Athina Popof",
+    "job_title": "FLA Marketing Director GR/CY/Malta",
+    "email": "athina.popof@coca-colacompany.com",
+    "linkedin_url": "https://www.linkedin.com/in/athina-popof-b5130623/",
+    "verified": false,
+    "active": true,
+    "source": "constructed",
+    "domain": "coca-colacompany.com",
+    "first_seen": "2026-06-23",
+    "last_seen": "2026-06-23"
+  },
+  {
+    "name": "Antonis Theoharis",
+    "job_title": "FLA Brand Manager Flavours & Stills GR/CY/Malta",
+    "email": "antonis.theoharis@coca-colacompany.com",
+    "linkedin_url": "https://www.linkedin.com/in/antonis-theoharis/",
+    "verified": false,
+    "active": true,
+    "source": "constructed",
+    "domain": "coca-colacompany.com",
+    "first_seen": "2026-06-23",
+    "last_seen": "2026-06-23"
+  },
+  {
+    "name": "Ioanna Mysirioti",
+    "job_title": "Senior Communications Manager GR/CY/Malta",
+    "email": "ioanna.mysirioti@coca-colacompany.com",
+    "linkedin_url": "https://www.linkedin.com/in/ioanna-mysirioti-259277a7/",
+    "verified": false,
+    "active": true,
+    "source": "constructed",
+    "domain": "coca-colacompany.com",
+    "first_seen": "2026-06-23",
+    "last_seen": "2026-06-23"
+  },
+  {
+    "name": "Panagiotis Athanasainas",
+    "job_title": "Consumer & Shopper Connections Director, Europe (IMX)",
+    "email": "panagiotis.athanasainas@coca-colacompany.com",
+    "linkedin_url": null,
+    "verified": false,
+    "active": true,
+    "source": "constructed",
+    "domain": "coca-colacompany.com",
+    "first_seen": "2026-06-23",
+    "last_seen": "2026-06-23"
+  },
+  {
+    "name": "Paschalis Karatzetzos",
+    "job_title": "Director Social Influencer Marketing Europe",
+    "email": "paschalis.karatzetzos@coca-colacompany.com",
+    "linkedin_url": "https://www.linkedin.com/in/paschalis-karatzetzos-b7528854/",
+    "verified": false,
+    "active": true,
+    "source": "constructed",
+    "domain": "coca-colacompany.com",
+    "first_seen": "2026-06-23",
+    "last_seen": "2026-06-23"
+  }
 ]

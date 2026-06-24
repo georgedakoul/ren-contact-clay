@@ -284,9 +284,11 @@ def status_report():
 
     # Next batch: missing first (have identifiers), then linkedin_only (retry for emails),
     # then needs_domain (require web search — listed last, agent handles via WebSearch).
-    next_up  = [(n, i, "missing")       for n, i    in missing]
-    next_up += [(n, i, "linkedin-only") for n, i, _ in linkedin_only]
-    next_up += [(n, None, "needs-domain") for (n,)  in needs_domain]
+    # Within each tier, Beauty industry brands come first.
+    _is_beauty = lambda n: 0 if searchable.get(n, {}).get("industry", "").lower() == "beauty" else 1
+    next_up  = sorted([(n, i, "missing")         for n, i    in missing],       key=lambda x: _is_beauty(x[0]))
+    next_up += sorted([(n, i, "linkedin-only")   for n, i, _ in linkedin_only], key=lambda x: _is_beauty(x[0]))
+    next_up += sorted([(n, None, "needs-domain") for (n,)    in needs_domain],  key=lambda x: _is_beauty(x[0]))
 
     if next_up:
         print(f"\n=== NEXT BATCH RECOMMENDATION (top 22) ===")
