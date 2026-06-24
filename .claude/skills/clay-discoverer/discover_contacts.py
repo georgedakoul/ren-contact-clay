@@ -38,9 +38,11 @@ IDENTIFIER_OVERRIDES = {
     "ION":               "ion.gr",              # slug returns wrong/0 results
     "instacar":          "instacar.gr",         # slug returns US company
     "Apivita":           "apivita.com",         # slug returns 0 results
-    "more.com":          "wind.com.gr",         # slug → wrong entity; Nova/WIND domain
+    "more.com":          "more.com",            # use own domain directly
+    "Wind":              "wind.gr",             # Wind Hellas / Nova
     "Alterlife":         "alterlife.gr",        # slug returned 0 emails; domain works
     "SKY express":       "skyexpress.gr",       # slug returned 0 emails; domain works
+    "Carroten":          "carroten.gr",         # owned by Sarantis; no standalone LinkedIn
     "Fresh Line":        "freshline.gr",        # slug returned 0 emails; domain works
     "Alumil":            "alumil.com",          # slug returned 0 emails; domain works
     "BSB Fashion":       "bsbfashion.com",      # slug returned 0 emails; domain works
