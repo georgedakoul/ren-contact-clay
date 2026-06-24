@@ -103,12 +103,14 @@ def normalize(s):
     return re.sub(r"\s+", " ", _strip_accents(s).lower().strip())
 
 
-def get_identifier(brand_name, linkedin_slug):
+def get_identifier(brand_name, linkedin_slug, website=None):
     if brand_name in IDENTIFIER_OVERRIDES:
         return IDENTIFIER_OVERRIDES[brand_name]
     if linkedin_slug:
         return f"https://www.linkedin.com/company/{linkedin_slug}"
-    return brand_name  # search by company name when no slug/domain available
+    if website:
+        return website
+    return None  # no identifier — needs domain discovery via web search
 
 
 def _employee_path(brand_name):
@@ -212,77 +214,87 @@ def status_report():
 
     data      = json.loads(CONTACTS_FILE.read_text(encoding="utf-8"))
     ac_brands = {b["brand"]: b for b in data["brands"]}
-    # All brands are searchable: LinkedIn slug → LinkedIn URL, IDENTIFIER_OVERRIDES → domain,
-    # otherwise → search by company name directly.
     searchable = ac_brands
 
     covered      = []  # BrandName.json — has ≥1 email
     linkedin_only = [] # 00-BrandName.json — contacts but 0 emails
     empty        = []  # ZZ-BrandName.json — Clay returned 0 contacts
-    missing      = []  # no file at all — never searched
+    missing      = []  # no file — has identifier (slug/override/website), never searched
+    needs_domain = []  # no file — no identifier at all, needs web search to find domain
 
     for name in sorted(searchable):
-        slug       = searchable[name].get("linkedin_slug", "")
-        identifier = get_identifier(name, slug)
-        needs_loc  = True  # always filter by Greece — this is a Greek outreach list
+        slug       = searchable[name].get("linkedin_slug") or ""
+        website    = searchable[name].get("website") or None
+        identifier = get_identifier(name, slug, website)
         info       = store.get(name)
-        if info is None:
-            missing.append((name, identifier, needs_loc))
+        if identifier is None:
+            needs_domain.append((name,))
+        elif info is None:
+            missing.append((name, identifier))
         elif info["_prefix"] == "ZZ-":
-            empty.append((name, identifier, needs_loc))
+            empty.append((name, identifier))
         elif info["emails"] > 0:
-            covered.append((name, identifier, info, needs_loc))
+            covered.append((name, identifier, info))
         else:
-            linkedin_only.append((name, identifier, info, needs_loc))
+            linkedin_only.append((name, identifier, info))
 
     print(f"\n=== CLAY-SEARCHABLE BRANDS ({len(searchable)} total) ===")
     print(f"  ✓ Covered       (BrandName.json   — has emails)        : {len(covered)}")
     print(f"  ∅ LinkedIn-only (00-BrandName.json — contacts, 0 email): {len(linkedin_only)}")
     print(f"  ✗ Empty         (ZZ-BrandName.json — Clay returned 0)  : {len(empty)}")
-    print(f"  ✗ Missing       (no file           — never searched)   : {len(missing)}")
+    print(f"  ✗ Missing       (has identifier    — never searched)   : {len(missing)}")
+    print(f"  ? Needs-domain  (no identifier     — web search needed): {len(needs_domain)}")
 
     if covered:
         print(f"\n--- ✓ COVERED (have emails) ---")
         print(f"  {'Brand':<32} {'Identifier':<45} {'#C':>4} {'#E':>4} {'Last seen':<12}")
         print("  " + "─" * 100)
-        for name, identifier, info, needs_loc in covered:
-            loc = "  [+GR]" if needs_loc else ""
-            print(f"  {name:<32} {identifier:<45} {info['total']:>4} {info['emails']:>4} {info['last_seen'] or '—':<12}{loc}")
+        for name, identifier, info in covered:
+            print(f"  {name:<32} {identifier:<45} {info['total']:>4} {info['emails']:>4} {info['last_seen'] or '—':<12}")
 
     if linkedin_only:
         print(f"\n--- ∅ LINKEDIN-ONLY (contacts found, 0 emails) ---")
         print(f"  {'Brand':<32} {'Identifier':<45} {'#C':>4}  {'Last seen':<12}")
         print("  " + "─" * 96)
-        for name, identifier, info, needs_loc in linkedin_only:
-            loc = "  [+GR]" if needs_loc else ""
-            print(f"  {name:<32} {identifier:<45} {info['total']:>4}  {info['last_seen'] or '—':<12}{loc}")
+        for name, identifier, info in linkedin_only:
+            print(f"  {name:<32} {identifier:<45} {info['total']:>4}  {info['last_seen'] or '—':<12}")
 
     if empty:
         print(f"\n--- ✗ EMPTY (ZZ- files — Clay returned 0, excluded from next batch) ---")
         print(f"  {'Brand':<32} {'Identifier':<55}")
         print("  " + "─" * 90)
-        for name, identifier, needs_loc in empty:
-            loc = "  [+GR]" if needs_loc else ""
-            print(f"  {name:<32} {identifier:<55}{loc}")
+        for name, identifier in empty:
+            print(f"  {name:<32} {identifier:<55}")
 
     if missing:
-        print(f"\n--- ✗ MISSING (no file — never searched) ---")
-        print(f"  {'Brand':<32} {'Identifier':<45} {'Flags'}")
-        print("  " + "─" * 88)
-        for name, identifier, needs_loc in missing:
-            loc = "[+GR]" if needs_loc else ""
-            print(f"  {name:<32} {identifier:<45} {loc}")
+        print(f"\n--- ✗ MISSING (has identifier — never searched) ---")
+        print(f"  {'Brand':<32} {'Identifier':<45}")
+        print("  " + "─" * 80)
+        for name, identifier in missing:
+            print(f"  {name:<32} {identifier:<45}")
 
-    # Next batch: missing first, then linkedin_only — ZZ- (empty) brands never included
-    next_up = list(missing) + [(n, i, nl) for n, i, info, nl in linkedin_only]
+    if needs_domain:
+        print(f"\n--- ? NEEDS-DOMAIN (no slug/website — web search required) ---")
+        print(f"  {'Brand':<32}")
+        print("  " + "─" * 34)
+        for (name,) in needs_domain[:20]:
+            print(f"  {name:<32}  [needs-domain]")
+        if len(needs_domain) > 20:
+            print(f"  ... and {len(needs_domain) - 20} more")
+
+    # Next batch: missing first (have identifiers), then linkedin_only (retry for emails),
+    # then needs_domain (require web search — listed last, agent handles via WebSearch).
+    next_up  = [(n, i, "missing")       for n, i    in missing]
+    next_up += [(n, i, "linkedin-only") for n, i, _ in linkedin_only]
+    next_up += [(n, None, "needs-domain") for (n,)  in needs_domain]
+
     if next_up:
-        print(f"\n=== NEXT BATCH RECOMMENDATION (top 10) ===")
-        print(f"  {'#':<4} {'Tier':<12} {'Brand':<32} {'Identifier':<45} {'Flags'}")
+        print(f"\n=== NEXT BATCH RECOMMENDATION (top 22) ===")
+        print(f"  {'#':<4} {'Tier':<14} {'Brand':<32} {'Identifier'}")
         print("  " + "─" * 100)
-        for idx, (name, identifier, needs_loc) in enumerate(next_up[:10], 1):
-            tier = "missing" if idx <= len(missing) else "linkedin-only"
-            loc  = "[+GR]" if needs_loc else ""
-            print(f"  [{idx:>2}] {tier:<12}  {name:<32} {identifier:<45} {loc}")
+        for idx, (name, identifier, tier) in enumerate(next_up[:22], 1):
+            ident_str = identifier or "[needs-domain — use WebSearch]"
+            print(f"  [{idx:>2}] {tier:<14}  {name:<32} {ident_str}")
     else:
         print("\nAll searchable brands are covered or pending LinkedIn-only retry.")
 
