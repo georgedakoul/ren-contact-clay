@@ -49,7 +49,8 @@ IDENTIFIER_OVERRIDES = {
     "Protergia":         "protergia.gr",        # slug returned 0 emails; domain works
 }
 
-# Global brands that need locations=["Greece"] filter to avoid non-GR employees
+# All searches now use locations=["Greece"] — this is a Greek outreach list.
+# GLOBAL_BRANDS kept for reference only (no longer drives filter logic).
 GLOBAL_BRANDS = {
     "Samsung", "Apple", "Herbalife", "IKEA", "LEGO", "Huawei",
     "Motorola", "Starbucks", "Red Bull", "Wolt", "FREENOW",
@@ -107,7 +108,7 @@ def get_identifier(brand_name, linkedin_slug):
         return IDENTIFIER_OVERRIDES[brand_name]
     if linkedin_slug:
         return f"https://www.linkedin.com/company/{linkedin_slug}"
-    return None
+    return brand_name  # search by company name when no slug/domain available
 
 
 def _employee_path(brand_name):
@@ -211,10 +212,9 @@ def status_report():
 
     data      = json.loads(CONTACTS_FILE.read_text(encoding="utf-8"))
     ac_brands = {b["brand"]: b for b in data["brands"]}
-    searchable = {
-        name: b for name, b in ac_brands.items()
-        if b.get("linkedin_slug") or name in IDENTIFIER_OVERRIDES
-    }
+    # All brands are searchable: LinkedIn slug → LinkedIn URL, IDENTIFIER_OVERRIDES → domain,
+    # otherwise → search by company name directly.
+    searchable = ac_brands
 
     covered      = []  # BrandName.json — has ≥1 email
     linkedin_only = [] # 00-BrandName.json — contacts but 0 emails
@@ -224,7 +224,7 @@ def status_report():
     for name in sorted(searchable):
         slug       = searchable[name].get("linkedin_slug", "")
         identifier = get_identifier(name, slug)
-        needs_loc  = name in GLOBAL_BRANDS
+        needs_loc  = True  # always filter by Greece — this is a Greek outreach list
         info       = store.get(name)
         if info is None:
             missing.append((name, identifier, needs_loc))
