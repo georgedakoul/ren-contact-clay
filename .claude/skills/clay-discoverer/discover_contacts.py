@@ -88,11 +88,52 @@ BANNED_TITLES = {
     "business data analyst",
     # Keyword catch-all
     "sales",                        # any title containing "sales"
+    # Noise / non-decision-maker
+    "marketing department",         # not a real title
+    "marketing team member",        # too junior / generic
+    "jysk influencer",              # brand ambassador role, not marketing decision-maker
+    "assistant brand marketing skip",  # support role
+    # FLA-specific / internal codes
+    "fla marketing director",
+    # Performance/paid specialists that are executional, not decision-makers
+    "performance marketing specialist",
 }
+
+# Exact-match bans (full title only — substring would catch valid roles).
+BANNED_TITLES_EXACT = {
+    "social media",                 # bare "Social Media" with no qualifier is noise
+}
+
+# Titles always kept regardless of BANNED_TITLES substring matches.
+# Paid media roles are valid decision-makers for influencer spend conversations.
+WANTED_TITLES = {
+    "paid media manager",
+    "paid media specialist",
+}
+
+_brand_names_cache = None
+
+def _brand_names():
+    global _brand_names_cache
+    if _brand_names_cache is None:
+        try:
+            data = json.loads(CONTACTS_FILE.read_text(encoding="utf-8"))
+            _brand_names_cache = {normalize(b["brand"]) for b in data["brands"]}
+        except Exception:
+            _brand_names_cache = set()
+    return _brand_names_cache
 
 
 def _is_banned(title):
     t = normalize(title)
+    if t in BANNED_TITLES_EXACT:
+        return True
+    if t in WANTED_TITLES:
+        return False
+    # Brand-prefixed titles (e.g. "BMW Marketing Manager") always kept.
+    for brand in _brand_names():
+        if t.startswith(brand + " "):
+            return False
     return any(banned in t for banned in BANNED_TITLES)
 
 
