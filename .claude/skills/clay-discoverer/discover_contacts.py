@@ -205,6 +205,44 @@ def _employee_path(brand_name):
     return STORE_DIR / f"{brand_name}.json"  # default for new files
 
 
+def _sync_actionable(brand_name):
+    """Update actionable_contacts.json stats for one brand from the employee file on disk."""
+    try:
+        data = json.loads(CONTACTS_FILE.read_text(encoding="utf-8"))
+    except Exception:
+        return
+    brands = data if isinstance(data, list) else data.get("brands", [])
+    entry = next((b for b in brands if b.get("brand") == brand_name), None)
+    if entry is None:
+        return
+    info = _scan_store().get(brand_name)
+    if info is None:
+        entry["has_employee_file"] = False
+        entry["employee_count"]    = 0
+        entry["emails_known"]      = 0
+        entry["employee_file"]     = None
+        entry["coverage_status"]   = "No coverage"
+    elif info["_prefix"] == "ZZ-":
+        entry["has_employee_file"] = True
+        entry["employee_count"]    = 0
+        entry["emails_known"]      = 0
+        entry["employee_file"]     = f"ZZ-{brand_name}.json"
+        entry["coverage_status"]   = "Empty"
+    elif info["emails"] > 0:
+        entry["has_employee_file"] = True
+        entry["employee_count"]    = info["total"]
+        entry["emails_known"]      = info["emails"]
+        entry["employee_file"]     = f"{brand_name}.json"
+        entry["coverage_status"]   = "Covered"
+    else:
+        entry["has_employee_file"] = True
+        entry["employee_count"]    = info["total"]
+        entry["emails_known"]      = 0
+        entry["employee_file"]     = f"00-{brand_name}.json"
+        entry["coverage_status"]   = "LinkedIn-only"
+    CONTACTS_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
 def save_contacts(brand_name, contacts, domain=None):
     if not contacts:
         zz = STORE_DIR / f"ZZ-{brand_name}.json"
@@ -213,6 +251,7 @@ def save_contacts(brand_name, contacts, domain=None):
             old = STORE_DIR / f"{old_prefix}{brand_name}.json"
             if old.exists():
                 old.unlink()
+        _sync_actionable(brand_name)
         print(f"  {brand_name}: Clay returned 0 contacts → ZZ-{brand_name}.json (skipped in future batches)")
         return
     # If we now have contacts, remove any ZZ- marker
@@ -257,6 +296,7 @@ def save_contacts(brand_name, contacts, domain=None):
     new_path.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
     if path.exists() and path != new_path:
         path.unlink()
+    _sync_actionable(brand_name)
     print(f"  {brand_name}: {added} new contacts, {email_added} emails added → {len(merged)} total")
 
 
@@ -797,6 +837,7 @@ if __name__ == "__main__":
                 old = STORE_DIR / f"00-{b}.json"
                 if old.exists():
                     old.unlink()
+                _sync_actionable(b)
                 print(f"  '{b}' → ZZ-{b}.json (marked empty)")
     elif "unmark_empty" in sys.argv:
         idx = sys.argv.index("unmark_empty")
@@ -808,6 +849,7 @@ if __name__ == "__main__":
                 zz = STORE_DIR / f"ZZ-{b}.json"
                 if zz.exists():
                     zz.unlink()
+                    _sync_actionable(b)
                     print(f"  '{b}' removed from empty — will appear in next batch")
                 else:
                     print(f"  '{b}' was not marked empty")

@@ -147,6 +147,4 @@ Contact schema per entry:
 
 ## Related skills
 
-- `linkedin-discoverer` — Playwright LinkedIn scraper (higher recall, requires browser session)
-- `apollo-discoverer` — Apollo.io free-tier name+title lookup (no email on free tier)
 - `contact-discoverer` — DNS/Hunter.io/scraping pipeline (lowest detection risk)
