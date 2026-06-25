@@ -430,7 +430,40 @@ def status_report():
 # Format: brand_name → (contacts_list, domain_hint)
 # contacts_list items: {"name", "latest_experience_title", "url", "email", "domain"}
 # ---------------------------------------------------------------------------
-BATCH = {}
+BATCH = {
+    "7 DAYS": ([], "https://www.linkedin.com/company/7days-beauty"),
+    "7DAYS": ([], "https://www.linkedin.com/company/7days-beauty"),
+    "A-Derma": ([
+        {"name": "Vasileios Vasileiadis", "latest_experience_title": "Marketing Activation Manager", "url": "https://www.linkedin.com/in/vasileios-vasileiadis-b560bb94/", "email": None, "domain": "pierre-fabre.com"},
+        {"name": "Sanny Dhimitri", "latest_experience_title": "Digital Project Manager - Influencers & Creatives", "url": "https://www.linkedin.com/in/sanforadhimitri/", "email": None, "domain": "pierre-fabre.com"},
+        {"name": "Dimitra Ioakeim", "latest_experience_title": "Digital Project Manager", "url": "https://www.linkedin.com/in/dioakeim/", "email": None, "domain": "pierre-fabre.com"},
+        {"name": "Katerina Rologi Sidiropoulou", "latest_experience_title": "Marketing Assistant DCPC", "url": "https://www.linkedin.com/in/katerina-rologi-sidiropoulou-102856228/", "email": None, "domain": "pierre-fabre.com"},
+        {"name": "Victoria Mantikou", "latest_experience_title": "Digital & Media Specialist", "url": "https://www.linkedin.com/in/victoria-mantikou-7a3286213/", "email": None, "domain": "pierre-fabre.com"},
+        {"name": "Katerina Patsidioti", "latest_experience_title": "HR assistant", "url": "https://www.linkedin.com/in/katerina-patsidioti-0506301aa/", "email": None, "domain": "pierre-fabre.com"},
+        {"name": "Theodora Koutsouri", "latest_experience_title": "Administrative Marketing Assistant", "url": "https://www.linkedin.com/in/theodora-koutsouri-573733152/", "email": None, "domain": "pierre-fabre.com"},
+    ], "pierre-fabre.com"),
+    "ACAMNIA": ([], "acamnia.com"),
+    "ANAPLASIS": ([
+        {"name": "Christina Tzekou", "latest_experience_title": "Graphic Designer - ANAPLASIS (Cosmetics Brand)", "url": "https://www.linkedin.com/in/christina-tzekou-821728207/", "email": None, "domain": "anaplasis.gr"},
+    ], "anaplasis.gr"),
+    "AXE": ([], "https://www.linkedin.com/company/axe"),
+    "Affect": ([], "affectcosmetics.com"),
+    "Aloe Colors": ([], "aloeplus.gr"),
+    "Amika": ([], "loveamika.com"),
+    "Anastasia Beverly Hills": ([], "anastasiabeverlyhills.com"),
+    "Anua": ([], "anua-us.com"),
+    "Aromania": ([], "https://www.linkedin.com/company/aromaniagroup"),
+    "Aveda": ([], "aveda.com"),
+    "Avène": ([], "https://www.linkedin.com/company/avene"),
+    "BIODERMA": ([], "https://www.linkedin.com/company/bioderma"),
+    "BPerfect Cosmetics": ([], "bperfectcosmetics.com"),
+    "Batiste": ([], "batistehair.com"),
+    "Beauty of Joseon": ([], "https://www.linkedin.com/company/beautyofjoseon"),
+    "Bee Factor": ([], "beefactor.gr"),
+    "Bellissima": ([], "tenactagroup.com"),
+    "Biodance": ([], "beautyselection.co.kr"),
+    "Bioten": ([], "https://www.linkedin.com/company/bioten-group"),
+}
 _LAST_BATCH_2026_06_22 = {
     "Douleutaras": ([
         {"name": "Danai Dimitriou", "latest_experience_title": "Performance Marketing Specialist", "url": "https://www.linkedin.com/in/danai-dimitriou/", "email": None, "domain": "douleutaras.gr"},

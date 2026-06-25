@@ -1272,13 +1272,13 @@
     {
       "brand": "AXE",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "axe",
       "times_advertised": 197,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-AXE.json"
     },
     {
       "brand": "zaxaroplastisa",
@@ -2317,13 +2317,13 @@
     {
       "brand": "Avène",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "avene",
       "times_advertised": 113,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Avène.json"
     },
     {
       "brand": "Avgerinos Cosmetics",
@@ -2581,13 +2581,13 @@
     {
       "brand": "Beauty of Joseon",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "beautyofjoseon",
       "times_advertised": 100,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Beauty of Joseon.json"
     },
     {
       "brand": "COSRX",
@@ -2779,13 +2779,13 @@
     {
       "brand": "7DAYS",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "7days-beauty",
       "times_advertised": 93,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-7DAYS.json"
     },
     {
       "brand": "Il Toto",
@@ -2955,13 +2955,13 @@
     {
       "brand": "Aloe Colors",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "aloe-colors",
       "times_advertised": 90,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Aloe Colors.json"
     },
     {
       "brand": "Doritos",
@@ -3153,13 +3153,13 @@
     {
       "brand": "BIODERMA",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "bioderma",
       "times_advertised": 86,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-BIODERMA.json"
     },
     {
       "brand": "MISKO",
@@ -3461,13 +3461,13 @@
     {
       "brand": "Bioten",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "bioten-group",
       "times_advertised": 80,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Bioten.json"
     },
     {
       "brand": "Kuki",
@@ -3791,13 +3791,13 @@
     {
       "brand": "Anastasia Beverly Hills",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "anastasia-beverly-hills",
       "times_advertised": 72,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Anastasia Beverly Hills.json"
     },
     {
       "brand": "Mind Your Style",
@@ -4033,13 +4033,13 @@
     {
       "brand": "Anua",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "anua",
       "times_advertised": 68,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Anua.json"
     },
     {
       "brand": "attrattivo",
@@ -4462,13 +4462,13 @@
     {
       "brand": "Biodance",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "beautyselection-biodance",
       "times_advertised": 62,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Biodance.json"
     },
     {
       "brand": "Alumil",
@@ -5265,13 +5265,13 @@
     {
       "brand": "Batiste",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "batiste",
       "times_advertised": 53,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Batiste.json"
     },
     {
       "brand": "Deluxe",
@@ -5925,13 +5925,13 @@
     {
       "brand": "Aromania",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "aromaniagroup",
       "times_advertised": 47,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Aromania.json"
     },
     {
       "brand": "JBL",
@@ -7553,13 +7553,13 @@
     {
       "brand": "Bee Factor",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "bee-factor-natural-cosmetics",
       "times_advertised": 38,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Bee Factor.json"
     },
     {
       "brand": "Ferrari",
@@ -7795,13 +7795,13 @@
     {
       "brand": "ACAMNIA",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "acamnia",
       "times_advertised": 36,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-ACAMNIA.json"
     },
     {
       "brand": "Lenor",
@@ -8620,13 +8620,13 @@
     {
       "brand": "ANAPLASIS",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "anaplasis-greece",
       "times_advertised": 33,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 1,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-ANAPLASIS.json"
     },
     {
       "brand": "BACARDÍ",
@@ -8785,13 +8785,13 @@
     {
       "brand": "Affect",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "affect-cosmetics",
       "times_advertised": 32,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Affect.json"
     },
     {
       "brand": "Dimitra Vlachou Hair Extensions",
@@ -9027,13 +9027,13 @@
     {
       "brand": "Bellissima",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "tenacta-group-spa",
       "times_advertised": 31,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Bellissima.json"
     },
     {
       "brand": "B.Nutri",
@@ -10941,13 +10941,13 @@
     {
       "brand": "BPerfect Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "bperfect-cosmetics",
       "times_advertised": 26,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-BPerfect Cosmetics.json"
     },
     {
       "brand": "Concrete Creators Hub",
@@ -11942,13 +11942,13 @@
     {
       "brand": "Aveda",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "aveda",
       "times_advertised": 24,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Aveda.json"
     },
     {
       "brand": "Brigitte Boutique",
@@ -14098,13 +14098,13 @@
     {
       "brand": "7 DAYS",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "7days-beauty",
       "times_advertised": 20,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-7 DAYS.json"
     },
     {
       "brand": "Alpha Radio 98.9",
@@ -17035,13 +17035,13 @@
     {
       "brand": "A-Derma",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "pierre-fabre",
       "times_advertised": 16,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 7,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-A-Derma.json"
     },
     {
       "brand": "MOEHA",
@@ -19774,13 +19774,13 @@
     {
       "brand": "Amika",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "amika",
       "times_advertised": 14,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Amika.json"
     },
     {
       "brand": "Hollywood Clinic",
