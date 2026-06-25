@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Maria Kotsifakou",
+    "job_title": "Marketing Manager",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/maria-kotsifakou/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "bolton.com",
+    "first_seen": "2026-06-25",
+    "last_seen": "2026-06-25"
+  },
+  {
+    "name": "Chrysa Printziou",
+    "job_title": "Marketing Specialist UHU/Bison",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/cprintziou/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "bolton.com",
+    "first_seen": "2026-06-25",
+    "last_seen": "2026-06-25"
+  }
+]

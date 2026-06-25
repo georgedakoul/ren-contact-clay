@@ -2240,13 +2240,13 @@
     {
       "brand": "Clinique",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "clinique",
       "times_advertised": 119,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Clinique.json"
     },
     {
       "brand": "bet365",
@@ -2262,24 +2262,24 @@
     {
       "brand": "Charlotte Tilbury",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "charlotte-tilbury-beauty-ltd",
       "times_advertised": 116,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Charlotte Tilbury.json"
     },
     {
       "brand": "Catrice Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "catrice-cosmetics",
       "times_advertised": 116,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Catrice Cosmetics.json"
     },
     {
       "brand": "Sheglam",
@@ -2295,13 +2295,13 @@
     {
       "brand": "Bobbi Brown",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "bobbi-brown-cosmetics",
       "times_advertised": 115,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Bobbi Brown.json"
     },
     {
       "brand": "Camomilla Blu",
@@ -2592,13 +2592,13 @@
     {
       "brand": "COSRX",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "cosrx",
       "times_advertised": 100,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-COSRX.json"
     },
     {
       "brand": "Lili Drogerie",
@@ -3978,13 +3978,13 @@
     {
       "brand": "Clinéa",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "sarantis",
       "times_advertised": 69,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 18,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Clinéa.json"
     },
     {
       "brand": "Nikos Vertis",
@@ -5089,13 +5089,13 @@
     {
       "brand": "Burberry",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "burberry",
       "times_advertised": 54,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Burberry.json"
     },
     {
       "brand": "Unboxholics",
@@ -5155,13 +5155,13 @@
     {
       "brand": "Byoma",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "byoma",
       "times_advertised": 54,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Byoma.json"
     },
     {
       "brand": "MIGATO",
@@ -5892,13 +5892,13 @@
     {
       "brand": "Colgate",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "colgate-palmolive",
       "times_advertised": 47,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 8,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Colgate.json"
     },
     {
       "brand": "BraidBar Skg",
@@ -6321,13 +6321,13 @@
     {
       "brand": "Dalon Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "dalon",
       "times_advertised": 44,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Dalon Cosmetics.json"
     },
     {
       "brand": "W7 Makeup",
@@ -6431,13 +6431,13 @@
     {
       "brand": "Braun",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "braun",
       "times_advertised": 44,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Braun.json"
     },
     {
       "brand": "Phyto Paris",
@@ -6849,13 +6849,13 @@
     {
       "brand": "Carolina Herrera",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "carolina-herrera",
       "times_advertised": 42,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Carolina Herrera.json"
     },
     {
       "brand": "Piraeus Bank",
@@ -7410,13 +7410,13 @@
     {
       "brand": "Biotherm",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "biotherm",
       "times_advertised": 39,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Biotherm.json"
     },
     {
       "brand": "Hertz",
@@ -7465,13 +7465,13 @@
     {
       "brand": "Dolce & Gabbana",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "dolce-gabbana",
       "times_advertised": 38,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Dolce & Gabbana.json"
     },
     {
       "brand": "Guerlain",
@@ -7520,13 +7520,13 @@
     {
       "brand": "Clarins",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "clarins",
       "times_advertised": 38,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Clarins.json"
     },
     {
       "brand": "Scuffers",
@@ -10182,13 +10182,13 @@
     {
       "brand": "Christian Louboutin",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "christian-louboutin",
       "times_advertised": 28,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Christian Louboutin.json"
     },
     {
       "brand": "Hoka",
@@ -10303,13 +10303,13 @@
     {
       "brand": "Carroten",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": null,
       "times_advertised": 27,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Carroten.json"
     },
     {
       "brand": "Begoodi Skg",
@@ -10424,13 +10424,13 @@
     {
       "brand": "Colorescience",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "colorescience",
       "times_advertised": 27,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Colorescience.json"
     },
     {
       "brand": "GL Army",
@@ -11128,13 +11128,13 @@
     {
       "brand": "Borotalco",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "bolton",
       "times_advertised": 25,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 2,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Borotalco.json"
     },
     {
       "brand": "Farmina Pet Foods",
@@ -12382,13 +12382,13 @@
     {
       "brand": "Coach",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "coach",
       "times_advertised": 23,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Coach.json"
     },
     {
       "brand": "Plintirio Bar",
@@ -19763,13 +19763,13 @@
     {
       "brand": "Diptyque",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "diptyque",
       "times_advertised": 14,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Diptyque.json"
     },
     {
       "brand": "Amika",
@@ -20313,13 +20313,13 @@
     {
       "brand": "Byredo",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "byredo",
       "times_advertised": 13,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Byredo.json"
     },
     {
       "brand": "CD by Cristin Diamantidou",
