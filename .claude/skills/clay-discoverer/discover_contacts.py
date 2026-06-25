@@ -26,7 +26,7 @@ File prefix convention in output/employees/:
   ZZ-BrandName.json → ✗ Empty     (Clay returned 0 contacts — skip)
   (no file)         → ✗ Missing   (never searched)
 """
-import json, sys, unicodedata, re
+import json, sys, unicodedata, re, subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -658,6 +658,25 @@ _LAST_BATCH = {
 }
 
 
+def git_sync():
+    """Stage employee files + actionable_contacts.json, commit, pull --rebase, push."""
+    files = [
+        "AI Sales Agent System/actionable_contacts.json",
+        "AI Sales Agent System/output/employees/",
+    ]
+    subprocess.run(["git", "-C", str(ROOT), "add"] + files, check=True)
+    # Nothing staged → nothing to do
+    diff = subprocess.run(["git", "-C", str(ROOT), "diff", "--cached", "--quiet"])
+    if diff.returncode == 0:
+        print("git_sync: nothing to commit — store unchanged.")
+        return
+    msg = f"clay-discoverer: batch save {TODAY}"
+    subprocess.run(["git", "-C", str(ROOT), "commit", "-m", msg], check=True)
+    subprocess.run(["git", "-C", str(ROOT), "pull", "--rebase"], check=True)
+    subprocess.run(["git", "-C", str(ROOT), "push"], check=True)
+    print(f"git_sync: pushed — '{msg}'")
+
+
 def export_excel():
     try:
         from openpyxl import Workbook
@@ -807,7 +826,9 @@ def purge_banned():
 
 
 if __name__ == "__main__":
-    if "save" in sys.argv:
+    if "git_sync" in sys.argv:
+        git_sync()
+    elif "save" in sys.argv:
         if not BATCH:
             print("BATCH is empty — nothing to save.")
         else:

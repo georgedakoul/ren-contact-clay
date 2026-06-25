@@ -34,6 +34,9 @@ python ".claude/skills/clay-discoverer/discover_contacts.py"
 # Phase 1: save raw employee batch (Claude fills the BATCH dict in the script first)
 python ".claude/skills/clay-discoverer/discover_contacts.py" save
 
+# ALWAYS run after save — commits + pushes employee files + actionable_contacts.json to GitHub
+python ".claude/skills/clay-discoverer/discover_contacts.py" git_sync
+
 # Phase 3: print contacts without emails, ready for find-and-enrich-list-of-contacts
 python ".claude/skills/clay-discoverer/discover_contacts.py" enrich_emails "Brand1" "Brand2"
 
@@ -62,8 +65,11 @@ confirmed.
 After getting task context from `get-task-context`, populate `BATCH` and run:
 ```bash
 python discover_contacts.py save
+python discover_contacts.py git_sync
 ```
 Writes `00-BrandName.json`. `BANNED_TITLES` applied automatically on save.
+`git_sync` commits and pushes the results to GitHub — **always run it**, otherwise
+the data stays on the agent's machine only and is lost on reset.
 
 ### Phase 2 — Review / title filter
 
