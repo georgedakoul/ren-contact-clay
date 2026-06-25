@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Dora Dimaki",
+    "job_title": "Marketing Director",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/dora-dimaki-82bb81115/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "gardenofficial.com",
+    "first_seen": "2026-06-25",
+    "last_seen": "2026-06-25"
+  },
+  {
+    "name": "Dafni Karouta",
+    "job_title": "Social Media Marketing Specialist",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/dafni-karouta-a26a822a1/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "gardenofficial.com",
+    "first_seen": "2026-06-25",
+    "last_seen": "2026-06-25"
+  },
+  {
+    "name": "Chrysa Chamamtzi",
+    "job_title": "Digital Marketing Manager",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/chrysa-chamamtzi-26946422a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "gardenofficial.com",
+    "first_seen": "2026-06-25",
+    "last_seen": "2026-06-25"
+  }
+]

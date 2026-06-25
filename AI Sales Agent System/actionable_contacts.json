@@ -656,13 +656,13 @@
     {
       "brand": "Dust+Cream",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "dustandcream",
       "times_advertised": 340,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 3,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Dust+Cream.json"
     },
     {
       "brand": "Myikona",
@@ -953,13 +953,13 @@
     {
       "brand": "Estée Lauder",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "the-estee-lauder-companies",
       "times_advertised": 256,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Estée Lauder.json"
     },
     {
       "brand": "Princess Me Jewels",
@@ -1096,24 +1096,24 @@
     {
       "brand": "Essence",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "essence-cosmetics",
       "times_advertised": 215,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Essence.json"
     },
     {
       "brand": "Fenty Beauty",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "fenty-beauty",
       "times_advertised": 213,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Fenty Beauty.json"
     },
     {
       "brand": "Prada",
@@ -1558,13 +1558,13 @@
     {
       "brand": "Dyson",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "dyson",
       "times_advertised": 164,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Dyson.json"
     },
     {
       "brand": "Masoutis Supermarkets",
@@ -1756,13 +1756,13 @@
     {
       "brand": "Dove",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "dove",
       "times_advertised": 148,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 17,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Dove.json"
     },
     {
       "brand": "Gymshark",
@@ -1877,13 +1877,13 @@
     {
       "brand": "Dr. Jart+",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "dr-jart",
       "times_advertised": 137,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Dr. Jart+.json"
     },
     {
       "brand": "Lotus Biscoff",
@@ -4814,13 +4814,13 @@
     {
       "brand": "Fluff",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "fluffcasualcosmetics",
       "times_advertised": 58,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Fluff.json"
     },
     {
       "brand": "Noir Et Or Boutique",
@@ -4847,13 +4847,13 @@
     {
       "brand": "Eau Thermale Avène",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "avene",
       "times_advertised": 57,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Eau Thermale Avène.json"
     },
     {
       "brand": "Mustela",
@@ -5045,13 +5045,13 @@
     {
       "brand": "Drunk Elephant",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "drunk-elephant-llc",
       "times_advertised": 54,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Drunk Elephant.json"
     },
     {
       "brand": "Suggarskin",
@@ -5507,13 +5507,13 @@
     {
       "brand": "Gillette",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "gillette",
       "times_advertised": 50,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Gillette.json"
     },
     {
       "brand": "BYD",
@@ -5837,13 +5837,13 @@
     {
       "brand": "Essie",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "essie",
       "times_advertised": 48,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Essie.json"
     },
     {
       "brand": "BEETS ME",
@@ -7069,13 +7069,13 @@
     {
       "brand": "Erborian",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "erborian-koreanskintherapy",
       "times_advertised": 40,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Erborian.json"
     },
     {
       "brand": "Varou Twins Barbers",
@@ -7355,13 +7355,13 @@
     {
       "brand": "Dr. Althea",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "dr-althea",
       "times_advertised": 39,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Dr. Althea.json"
     },
     {
       "brand": "Doitforme",
@@ -7652,13 +7652,13 @@
     {
       "brand": "Garden",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "garden-beauty-products",
       "times_advertised": 37,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 3,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Garden.json"
     },
     {
       "brand": "Hyperloq",
@@ -10083,13 +10083,13 @@
     {
       "brand": "Ducray",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "ducray",
       "times_advertised": 28,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Ducray.json"
     },
     {
       "brand": "Athens Metro Mall",
@@ -11348,13 +11348,13 @@
     {
       "brand": "Dust and Cream",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "dustandcream",
       "times_advertised": 25,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 3,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Dust and Cream.json"
     },
     {
       "brand": "Treaclemoon",
@@ -12118,13 +12118,13 @@
     {
       "brand": "Flower Knows",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "flower-knows-cosmetics",
       "times_advertised": 23,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Flower Knows.json"
     },
     {
       "brand": "Εκδόσεις Κλειδάριθμος",
@@ -12404,13 +12404,13 @@
     {
       "brand": "Fanola",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "fanola",
       "times_advertised": 23,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Fanola.json"
     },
     {
       "brand": "Remington",
@@ -13383,13 +13383,13 @@
     {
       "brand": "Froika",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "froika",
       "times_advertised": 21,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 1,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Froika.json"
     },
     {
       "brand": "Oggi Shops",
@@ -14802,13 +14802,13 @@
     {
       "brand": "ELEMIS",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "elemis",
       "times_advertised": 19,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-ELEMIS.json"
     },
     {
       "brand": "EKO",
@@ -15385,13 +15385,13 @@
     {
       "brand": "Geek & Gorgeous",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "geek-gorgeous",
       "times_advertised": 18,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Geek & Gorgeous.json"
     },
     {
       "brand": "Mega Channel",
