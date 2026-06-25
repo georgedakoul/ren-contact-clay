@@ -7,23 +7,21 @@ description: >
   output/employees/<brand_name>.json, with dedup by normalized name, domain filtering,
   email extraction from enrichments[], and a status report of which brands have employee
   files and how many emails are known.
-  Also contains IDENTIFIER_OVERRIDES for brands where the LinkedIn slug resolves to the
-  wrong company entity, and GLOBAL_BRANDS for brands that need a Greece location filter.
+  Also contains DOMAIN_MAP for per-brand companyIdentifier overrides (domain preferred over
+  LinkedIn slug), and GLOBAL_BRANDS for brands that need a Greece location filter.
   Invoke when the user says "save clay contacts", "save the batch", "run discover_contacts",
-  "store the clay results", or "show me the contact status report".
+  "store the clay results", "show me the contact status report", or "enrich emails".
 ---
 
 # clay-discoverer
 
 ## Purpose
 
-Companion script to the Clay MCP workflow. After Claude fires
-`find-and-enrich-contacts-at-company` calls and collects task contexts via
-`get-task-context`, this script saves the raw contact dicts into the persistent
-employee store at `AI Sales Agent System/output/employees/<brand_name>.json`.
+Companion script to the Clay MCP workflow. After Claude fires Clay MCP calls and collects
+task contexts via `get-task-context`, this script saves the raw contact dicts into the
+persistent employee store at `AI Sales Agent System/output/employees/<brand_name>.json`.
 
-It is **not** a stand-alone discoverer — it is the save/merge layer that persists Clay
-results across sessions so they don't have to be re-fetched.
+It is **not** a stand-alone discoverer — it is the save/merge/filter layer.
 
 ---
 
@@ -33,58 +31,102 @@ results across sessions so they don't have to be re-fetched.
 # Print status report: full employee store overview + next batch recommendation
 python ".claude/skills/clay-discoverer/discover_contacts.py"
 
-# Save a batch (Claude fills the BATCH dict in the script first)
+# Phase 1: save raw employee batch (Claude fills the BATCH dict in the script first)
 python ".claude/skills/clay-discoverer/discover_contacts.py" save
+
+# Phase 3: print contacts without emails, ready for find-and-enrich-list-of-contacts
+python ".claude/skills/clay-discoverer/discover_contacts.py" enrich_emails "Brand1" "Brand2"
+
+# Export to Excel
+python ".claude/skills/clay-discoverer/discover_contacts.py" export
 ```
+
+---
+
+## 3-Phase Clay Workflow
+
+### Phase 1 — Employee discovery (domain → employees)
+
+Use `find-and-enrich-contacts-at-company` with the brand's **domain** (not LinkedIn slug):
+
+```
+companyIdentifier: "stoiximan.gr"          ← from DOMAIN_MAP or status report
+contactFilters: { locations: ["Greece"] }
+```
+
+Clay resolves the correct LinkedIn entity from domain internally. The `DOMAIN_MAP` dict
+in the script has known good domains for ~44 brands. For brands not yet in DOMAIN_MAP,
+the status report shows the LinkedIn URL as fallback — add the domain to DOMAIN_MAP once
+confirmed.
+
+After getting task context from `get-task-context`, populate `BATCH` and run:
+```bash
+python discover_contacts.py save
+```
+Writes `00-BrandName.json`. `BANNED_TITLES` applied automatically on save.
+
+### Phase 2 — Review / title filter
+
+The `save` command applies `BANNED_TITLES` filtering automatically. Run `purge` to clean
+any existing files:
+```bash
+python discover_contacts.py purge
+```
+
+### Phase 3 — Email enrichment (filtered contacts → emails)
+
+```bash
+python discover_contacts.py enrich_emails "Brand1" "Brand2"
+```
+
+Outputs a JSON array to stdout:
+```json
+[
+  {"contactName": "Maria Papadopoulos", "companyIdentifier": "brand.gr"},
+  ...
+]
+```
+
+Pass this to `find-and-enrich-list-of-contacts` with:
+```
+dataPoints: { contactDataPoints: [{ type: "Email" }] }
+```
+
+After getting the enriched results via `get-task-context`, populate `BATCH` as usual and
+run `save` again — the merge layer fills in emails for existing contacts.
 
 ---
 
 ## Status report — what it shows
 
-The report has three passes:
-
-1. **Employee store overview** — scans ALL files in `output/employees/` first.
-   Shows total files, total contacts, total emails across the whole store.
-
-2. **Clay-searchable brands** — of the 80 brands with a Clay identifier (linkedin_slug
-   or IDENTIFIER_OVERRIDES entry), shows:
+1. **Employee store overview** — scans ALL files in `output/employees/`.
+2. **Clay-searchable brands** — coverage per brand:
    - ✓ Covered: have ≥1 email
-   - ∅ Partial: have contacts but 0 emails (typically global brands needing `+GR` filter)
-   - ✗ Missing: no employee file at all
+   - ∅ LinkedIn-only: have contacts but 0 emails
+   - ✗ Empty: Clay returned 0 contacts (ZZ- file)
+   - ✗ Missing: no employee file
+3. **Next batch recommendation** — ranked list of brands to search next.
 
-3. **Next batch recommendation** — explicit ranked list of which brands to search next
-   (missing first, then partial), ready to copy into a Clay MCP call sequence.
-
----
-
-## Workflow with Clay MCP
-
-1. Run the status report to see the "Next batch recommendation"
-2. Claude calls `find-and-enrich-contacts-at-company` for each brand → gets `taskId`
-3. Claude calls `get-task-context(taskId)` → gets raw contact list with enrichments
-4. Claude edits the `BATCH` dict in this script with the results
-5. Claude runs `python discover_contacts.py save` to merge into employee store
+The `Identifier` column shows the domain when in `DOMAIN_MAP`, LinkedIn URL otherwise.
 
 ---
 
-## IDENTIFIER_OVERRIDES
+## DOMAIN_MAP
 
-Brands where the LinkedIn company slug resolves to the wrong entity or where the domain
-gives better Clay results. Edit `IDENTIFIER_OVERRIDES` at the top of the script to add
-new overrides when Clay returns results from the wrong company.
+Maps brand → preferred `companyIdentifier` (domain). Domains are preferred over LinkedIn
+slugs because Clay resolves the correct entity more reliably from domain, and avoids slug
+ambiguity (wrong region, wrong company entity, 0-result slugs).
 
-## GLOBAL_BRANDS
+Add new entries when a brand's domain is confirmed. Brands not in DOMAIN_MAP fall back to
+`linkedin_slug` from `actionable_contacts.json`.
 
-Brands that need `contactFilters: {locations: ["Greece"]}` in the Clay call to avoid
-returning non-Greek employees from global headquarters. Check this set before firing Clay
-for a multinational brand.
+`IDENTIFIER_OVERRIDES` is an alias pointing to the same dict for backward compatibility.
 
 ---
 
 ## Output
 
 Writes directly to `AI Sales Agent System/output/employees/<brand_name>.json`.
-No separate output file — the employee store IS the output.
 
 Contact schema per entry:
 ```json

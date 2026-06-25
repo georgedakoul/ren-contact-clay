@@ -8,7 +8,7 @@
       "brand": "L'Oréal Paris",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "loreal",
       "times_advertised": 1758
     },
     {
@@ -43,21 +43,21 @@
       "brand": "Temu",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "temuapp",
       "times_advertised": 1455
     },
     {
       "brand": "Sephora",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "sephora",
       "times_advertised": 1348
     },
     {
       "brand": "Maybelline",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "maybelline",
       "times_advertised": 1238
     },
     {
@@ -71,7 +71,7 @@
       "brand": "La Roche-Posay",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "la-roche-posay",
       "times_advertised": 1046
     },
     {
@@ -85,7 +85,7 @@
       "brand": "NYX Professional Makeup",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "nyx-professional-makeup",
       "times_advertised": 958
     },
     {
@@ -127,14 +127,14 @@
       "brand": "MUA Makeup Academy",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "mua-makeup-academy",
       "times_advertised": 773
     },
     {
       "brand": "YSL Beauty",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "ysl-beauty",
       "times_advertised": 771
     },
     {
@@ -155,7 +155,7 @@
       "brand": "MAC Cosmetics",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "mac-cosmetics",
       "times_advertised": 683
     },
     {
@@ -183,14 +183,14 @@
       "brand": "Garnier",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "garnier",
       "times_advertised": 658
     },
     {
       "brand": "CeraVe",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "cerave",
       "times_advertised": 648
     },
     {
@@ -204,7 +204,7 @@
       "brand": "Lancôme",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "lancome",
       "times_advertised": 607
     },
     {
@@ -295,7 +295,7 @@
       "brand": "Benefit Cosmetics",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "benefitcosmetics",
       "times_advertised": 462
     },
     {
@@ -365,7 +365,7 @@
       "brand": "Kiko Milano",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "kiko-milano",
       "times_advertised": 385
     },
     {
@@ -393,7 +393,7 @@
       "brand": "Armani Beauty",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "giorgio-armani",
       "times_advertised": 362
     },
     {
@@ -421,7 +421,7 @@
       "brand": "Dust+Cream",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "dustandcream",
       "times_advertised": 340
     },
     {
@@ -456,7 +456,7 @@
       "brand": "Kérastase",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "kerastase",
       "times_advertised": 330
     },
     {
@@ -491,7 +491,7 @@
       "brand": "Vichy",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "vichy",
       "times_advertised": 301
     },
     {
@@ -694,7 +694,7 @@
       "brand": "Natura Siberica",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "natura-siberica",
       "times_advertised": 216
     },
     {
@@ -799,7 +799,7 @@
       "brand": "Giorgio Armani",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "giorgio-armani",
       "times_advertised": 200
     },
     {
@@ -946,7 +946,7 @@
       "brand": "YesStyle",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "yesstyle",
       "times_advertised": 170
     },
     {
@@ -981,7 +981,7 @@
       "brand": "Pantene",
       "industry": "Beauty",
       "coverage_status": "Good coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "pantene",
       "times_advertised": 166
     },
     {
@@ -1023,7 +1023,7 @@
       "brand": "ghd",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "ghdhair",
       "times_advertised": 161
     },
     {
@@ -1065,7 +1065,7 @@
       "brand": "Tarte Cosmetics",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "tartecosmetics",
       "times_advertised": 154
     },
     {
@@ -1121,7 +1121,7 @@
       "brand": "Dove",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "dove",
       "times_advertised": 148
     },
     {
@@ -1282,7 +1282,7 @@
       "brand": "NIVEA",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "nivea",
       "times_advertised": 130
     },
     {
@@ -1387,7 +1387,7 @@
       "brand": "Novexpert",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "novexpert",
       "times_advertised": 120
     },
     {
@@ -1457,7 +1457,7 @@
       "brand": "Sheglam",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "www.sheglam.com",
       "times_advertised": 115
     },
     {
@@ -1506,7 +1506,7 @@
       "brand": "Medicube",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "medicube",
       "times_advertised": 111
     },
     {
@@ -1555,7 +1555,7 @@
       "brand": "MAKE UP FOR EVER",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "make-up-for-ever",
       "times_advertised": 106
     },
     {
@@ -1576,7 +1576,7 @@
       "brand": "Radiant Professional Make Up",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "hellenica",
       "times_advertised": 104
     },
     {
@@ -1646,7 +1646,7 @@
       "brand": "Beauty of Joseon",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "beautyofjoseon",
       "times_advertised": 100
     },
     {
@@ -1660,14 +1660,14 @@
       "brand": "Lili Drogerie",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "lili-drogerie-greece",
       "times_advertised": 100
     },
     {
       "brand": "Philips",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "philips",
       "times_advertised": 99
     },
     {
@@ -1688,7 +1688,7 @@
       "brand": "Rodial",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "rodial",
       "times_advertised": 98
     },
     {
@@ -1772,7 +1772,7 @@
       "brand": "7DAYS",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "7days-beauty",
       "times_advertised": 93
     },
     {
@@ -1800,7 +1800,7 @@
       "brand": "My7Days",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "7days-beauty",
       "times_advertised": 93
     },
     {
@@ -1814,7 +1814,7 @@
       "brand": "Oral-B",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "oral-b",
       "times_advertised": 92
     },
     {
@@ -1842,7 +1842,7 @@
       "brand": "Tommy G Cosmetics",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "gavrilis-group-sa",
       "times_advertised": 91
     },
     {
@@ -1968,7 +1968,7 @@
       "brand": "Lavish Care",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "lavishcare",
       "times_advertised": 87
     },
     {
@@ -2094,7 +2094,7 @@
       "brand": "Notino",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "notino",
       "times_advertised": 83
     },
     {
@@ -2129,7 +2129,7 @@
       "brand": "Makeup by Mario",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "makeupbymario",
       "times_advertised": 81
     },
     {
@@ -2143,7 +2143,7 @@
       "brand": "Organic Shop",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "organic-shop",
       "times_advertised": 81
     },
     {
@@ -2535,7 +2535,7 @@
       "brand": "Clinéa",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "sarantis",
       "times_advertised": 69
     },
     {
@@ -2570,7 +2570,7 @@
       "brand": "Anua",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "anua",
       "times_advertised": 68
     },
     {
@@ -2843,7 +2843,7 @@
       "brand": "Biodance",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "beautyselection-biodance",
       "times_advertised": 62
     },
     {
@@ -2997,7 +2997,7 @@
       "brand": "Radiant Professional",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "hellenica",
       "times_advertised": 59
     },
     {
@@ -3067,7 +3067,7 @@
       "brand": "Fluff",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "fluffcasualcosmetics",
       "times_advertised": 58
     },
     {
@@ -3284,7 +3284,7 @@
       "brand": "Byoma",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "byoma",
       "times_advertised": 54
     },
     {
@@ -3648,7 +3648,7 @@
       "brand": "Kosas",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "kosas",
       "times_advertised": 49
     },
     {
@@ -3774,7 +3774,7 @@
       "brand": "Aromania",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "aromaniagroup",
       "times_advertised": 47
     },
     {
@@ -4033,7 +4033,7 @@
       "brand": "W7 Makeup",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "w7cosmetics",
       "times_advertised": 44
     },
     {
@@ -4187,7 +4187,7 @@
       "brand": "MEDUSA GROUP",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "medusa-company",
       "times_advertised": 43
     },
     {
@@ -4488,7 +4488,7 @@
       "brand": "SYOSS",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "syoss",
       "times_advertised": 41
     },
     {
@@ -4502,7 +4502,7 @@
       "brand": "Erborian",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "erborian-koreanskintherapy",
       "times_advertised": 40
     },
     {
@@ -4684,7 +4684,7 @@
       "brand": "Dr. Althea",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "dr-althea",
       "times_advertised": 39
     },
     {
@@ -4719,7 +4719,7 @@
       "brand": "Biotherm",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "biotherm",
       "times_advertised": 39
     },
     {
@@ -4810,7 +4810,7 @@
       "brand": "Bee Factor",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "bee-factor-natural-cosmetics",
       "times_advertised": 38
     },
     {
@@ -4964,7 +4964,7 @@
       "brand": "ACAMNIA",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "acamnia",
       "times_advertised": 36
     },
     {
@@ -5118,14 +5118,14 @@
       "brand": "Kayali",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "kayalibeauty",
       "times_advertised": 35
     },
     {
       "brand": "Haus Labs",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "hauslabs",
       "times_advertised": 35
     },
     {
@@ -5272,7 +5272,7 @@
       "brand": "Juliette Armand",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "juliette-armand-s-a-",
       "times_advertised": 34
     },
     {
@@ -5489,7 +5489,7 @@
       "brand": "ANAPLASIS",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "anaplasis-greece",
       "times_advertised": 33
     },
     {
@@ -5538,7 +5538,7 @@
       "brand": "P.Louise",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "p-louise",
       "times_advertised": 33
     },
     {
@@ -5594,7 +5594,7 @@
       "brand": "Affect",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "affect-cosmetics",
       "times_advertised": 32
     },
     {
@@ -5678,7 +5678,7 @@
       "brand": "TIRTIR",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "tirtir",
       "times_advertised": 32
     },
     {
@@ -5748,7 +5748,7 @@
       "brand": "Bellissima",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "tenacta-group-spa",
       "times_advertised": 31
     },
     {
@@ -6315,7 +6315,7 @@
       "brand": "WABI",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "wabi-beauty",
       "times_advertised": 28
     },
     {
@@ -6406,7 +6406,7 @@
       "brand": "Haus Labs by Lady Gaga",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "hauslabs",
       "times_advertised": 28
     },
     {
@@ -6483,7 +6483,7 @@
       "brand": "Christian Louboutin",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "christian-louboutin",
       "times_advertised": 28
     },
     {
@@ -6686,7 +6686,7 @@
       "brand": "Version Derm",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "version-dermocosmetics",
       "times_advertised": 27
     },
     {
@@ -6798,7 +6798,7 @@
       "brand": "SOSU Cosmetics",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "sosu-cosmetics",
       "times_advertised": 26
     },
     {
@@ -6966,7 +6966,7 @@
       "brand": "BPerfect Cosmetics",
       "industry": "Beauty",
       "coverage_status": "No coverage",
-      "linkedin_slug": null,
+      "linkedin_slug": "bperfect-cosmetics",
       "times_advertised": 26
     },
     {
@@ -7022,7 +7022,7 @@
       "brand": "Papoutsanis Aromatics",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "papoutsanis",
       "times_advertised": 26
     },
     {
@@ -7085,7 +7085,7 @@
       "brand": "Borotalco",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "bolton",
       "times_advertised": 25
     },
     {
@@ -7169,7 +7169,7 @@
       "brand": "W7 Makeup Greece",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "w7cosmetics",
       "times_advertised": 25
     },
     {
@@ -7225,14 +7225,14 @@
       "brand": "Dust and Cream",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "dustandcream",
       "times_advertised": 25
     },
     {
       "brand": "Treaclemoon",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "treaclemoon",
       "times_advertised": 25
     },
     {
@@ -7309,7 +7309,7 @@
       "brand": "Lancaster",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "lancaster-paris",
       "times_advertised": 25
     },
     {
@@ -7358,7 +7358,7 @@
       "brand": "My 7 Days",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "7days-beauty",
       "times_advertised": 24
     },
     {
@@ -7505,7 +7505,7 @@
       "brand": "Mixsoon",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "mixsoon",
       "times_advertised": 24
     },
     {
@@ -7715,7 +7715,7 @@
       "brand": "Flower Knows",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "flower-knows-cosmetics",
       "times_advertised": 23
     },
     {
@@ -7729,7 +7729,7 @@
       "brand": "MEDIPEEL",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "medipeel",
       "times_advertised": 23
     },
     {
@@ -7918,7 +7918,7 @@
       "brand": "Lattafa Perfumes",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "lattafa-perfumes",
       "times_advertised": 23
     },
     {
@@ -8121,7 +8121,7 @@
       "brand": "L'Erbolario",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "lerbolario",
       "times_advertised": 22
     },
     {
@@ -8170,7 +8170,7 @@
       "brand": "TRESemmé",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "tresemme",
       "times_advertised": 22
     },
     {
@@ -8198,7 +8198,7 @@
       "brand": "Zadig & Voltaire",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "zadig-et-voltaire",
       "times_advertised": 22
     },
     {
@@ -8226,7 +8226,7 @@
       "brand": "Little Secrets Natural Cosmetics",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "little-secrets-natural-cosmetics",
       "times_advertised": 22
     },
     {
@@ -8345,7 +8345,7 @@
       "brand": "Priorin",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "bayer",
       "times_advertised": 22
     },
     {
@@ -8793,7 +8793,7 @@
       "brand": "Tecnoskin",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "tecnoskin",
       "times_advertised": 20
     },
     {
@@ -8821,7 +8821,7 @@
       "brand": "Medisei",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "medisei-s-a",
       "times_advertised": 20
     },
     {
@@ -8975,7 +8975,7 @@
       "brand": "7 DAYS",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "7days-beauty",
       "times_advertised": 20
     },
     {
@@ -9304,7 +9304,7 @@
       "brand": "Makeupland.gr",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "makeupland",
       "times_advertised": 19
     },
     {
@@ -9423,7 +9423,7 @@
       "brand": "ELEMIS",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "elemis",
       "times_advertised": 19
     },
     {
@@ -9437,14 +9437,14 @@
       "brand": "Purito",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "purito",
       "times_advertised": 19
     },
     {
       "brand": "Rabanne",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "rabanne",
       "times_advertised": 19
     },
     {
@@ -9675,7 +9675,7 @@
       "brand": "Torriden",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "torriden",
       "times_advertised": 19
     },
     {
@@ -9696,7 +9696,7 @@
       "brand": "Physis Laboratory",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "physis-laboratory",
       "times_advertised": 18
     },
     {
@@ -9794,7 +9794,7 @@
       "brand": "Geek & Gorgeous",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "geek-gorgeous",
       "times_advertised": 18
     },
     {
@@ -10095,14 +10095,14 @@
       "brand": "Head & Shoulders",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "head-shoulders",
       "times_advertised": 17
     },
     {
       "brand": "Helenvita",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "pharmex",
       "times_advertised": 17
     },
     {
@@ -10144,14 +10144,14 @@
       "brand": "KOCOSTAR",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "kocostar",
       "times_advertised": 17
     },
     {
       "brand": "Lattafa",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "lattafa-perfumes",
       "times_advertised": 17
     },
     {
@@ -10417,7 +10417,7 @@
       "brand": "r.e.m. beauty",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "rembeauty",
       "times_advertised": 17
     },
     {
@@ -10494,7 +10494,7 @@
       "brand": "The Inkey List",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "the-inkey-list",
       "times_advertised": 17
     },
     {
@@ -10564,7 +10564,7 @@
       "brand": "Origins",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "origins",
       "times_advertised": 17
     },
     {
@@ -10606,7 +10606,7 @@
       "brand": "Supergoop!",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "supergoop",
       "times_advertised": 17
     },
     {
@@ -10844,7 +10844,7 @@
       "brand": "A-Derma",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "pierre-fabre",
       "times_advertised": 16
     },
     {
@@ -10991,7 +10991,7 @@
       "brand": "Liposan",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "liposan",
       "times_advertised": 16
     },
     {
@@ -11033,7 +11033,7 @@
       "brand": "Sweed Beauty",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "sweed-beauty",
       "times_advertised": 16
     },
     {
@@ -11061,7 +11061,7 @@
       "brand": "VT Cosmetics",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "vt-cosmetics",
       "times_advertised": 16
     },
     {
@@ -12272,7 +12272,7 @@
       "brand": "PhiBrows",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "phibrows",
       "times_advertised": 14
     },
     {
@@ -12412,7 +12412,7 @@
       "brand": "Sebastian Professional",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "sebastian-professional",
       "times_advertised": 14
     },
     {
@@ -12447,7 +12447,7 @@
       "brand": "Jeffree Star Cosmetics",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "jeffree-star-cosmetics",
       "times_advertised": 14
     },
     {
@@ -12769,7 +12769,7 @@
       "brand": "PURITO SEOUL",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "purito",
       "times_advertised": 13
     },
     {
@@ -12839,7 +12839,7 @@
       "brand": "KIKO",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "kiko-milano",
       "times_advertised": 13
     },
     {
@@ -13154,7 +13154,7 @@
       "brand": "W7 Cosmetics",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "w7cosmetics",
       "times_advertised": 13
     },
     {
@@ -13336,7 +13336,7 @@
       "brand": "Mastic Spa",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "mastic-spa",
       "times_advertised": 13
     },
     {
@@ -13714,7 +13714,7 @@
       "brand": "W7",
       "industry": "Beauty",
       "coverage_status": "Uncovered",
-      "linkedin_slug": null,
+      "linkedin_slug": "w7cosmetics",
       "times_advertised": 12
     },
     {

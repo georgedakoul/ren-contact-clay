@@ -1,11 +1,24 @@
 """discover_contacts.py — Clay contact discovery driven by actionable_contacts.json.
 
 Usage:
-  python discover_contacts.py              → print status report
-  python discover_contacts.py save         → save the BATCH dict below
-  python discover_contacts.py export       → export all contacts to Excel
+  python discover_contacts.py                          → print status report
+  python discover_contacts.py save                     → save the BATCH dict below
+  python discover_contacts.py enrich_emails Brand1 … → print JSON for find-and-enrich-list-of-contacts
+  python discover_contacts.py export                   → export all contacts to Excel
   python discover_contacts.py mark_empty   Brand1 [Brand2 ...]
   python discover_contacts.py unmark_empty Brand1 [Brand2 ...]
+
+3-phase Clay workflow:
+  Phase 1 — Employee discovery:
+    find-and-enrich-contacts-at-company(companyIdentifier=<domain>, contactFilters={locations:["Greece"]})
+    → raw employees (name + title + LinkedIn URL, no email needed yet)
+  Phase 2 — Save + title filter:
+    Edit BATCH dict, run `python discover_contacts.py save`
+    → writes 00-BrandName.json, BANNED_TITLES applied automatically
+  Phase 3 — Email enrichment:
+    run `python discover_contacts.py enrich_emails BrandName`
+    → prints JSON list; pass to find-and-enrich-list-of-contacts with dataPoints:{contactDataPoints:[{type:"Email"}]}
+    → save result via BATCH as usual
 
 File prefix convention in output/employees/:
   BrandName.json    → ✓ Covered   (has at least one email)
@@ -25,31 +38,61 @@ TODAY         = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 STORE_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
-# Identifier overrides: brands where linkedin_slug resolves to the wrong company
-# or where domain gives better results than the LinkedIn company page.
+# DOMAIN_MAP: preferred companyIdentifier (domain) per brand.
+# Always use domain over LinkedIn slug — Clay resolves the correct entity from domain.
+# Add any brand here once its domain is known; brands not listed fall back to linkedin_slug.
 # ---------------------------------------------------------------------------
-IDENTIFIER_OVERRIDES = {
-    "COSMOTE":           "cosmote.gr",          # slug → wrong company
+DOMAIN_MAP = {
+    # Slug resolves to wrong entity or returns 0 — domain is the fix
+    "COSMOTE":           "cosmote.gr",
     "Village Cinemas":   "villagecinemas.gr",    # slug → Australian entity
-    "Cosmos Sport":      "cosmossport.gr",       # slug had issues
+    "Cosmos Sport":      "cosmossport.gr",
     "Coca-Cola":         "coca-colahellenic.com",
     "Psichogios Books":  "psichogios.gr",
-    "Pame Stoixima":     "opap.gr",             # brand lives under OPAP
-    "ION":               "ion.gr",              # slug returns wrong/0 results
-    "instacar":          "instacar.gr",         # slug returns US company
-    "Apivita":           "apivita.com",         # slug returns 0 results
-    "more.com":          "more.com",            # use own domain directly
-    "Wind":              "wind.gr",             # Wind Hellas / Nova
-    "Alterlife":         "alterlife.gr",        # slug returned 0 emails; domain works
-    "SKY express":       "skyexpress.gr",       # slug returned 0 emails; domain works
-    "Carroten":          "carroten.gr",         # owned by Sarantis; no standalone LinkedIn
-    "Fresh Line":        "freshline.gr",        # slug returned 0 emails; domain works
-    "Alumil":            "alumil.com",          # slug returned 0 emails; domain works
-    "BSB Fashion":       "bsbfashion.com",      # slug returned 0 emails; domain works
-    "La Vie en Rose":    "lavieenrose.com",     # slug → Swiss NGO; use domain + Greece filter
-    "Mind Your Style":   "mindyourstyle.gr",    # slug returned 0 emails; domain works
-    "Protergia":         "protergia.gr",        # slug returned 0 emails; domain works
+    "Pame Stoixima":     "opap.gr",              # brand lives under OPAP
+    "ION":               "ion.gr",
+    "instacar":          "instacar.gr",          # slug → US company
+    "Apivita":           "apivita.com",
+    "more.com":          "more.com",
+    "Wind":              "wind.gr",
+    "Alterlife":         "alterlife.gr",
+    "SKY express":       "skyexpress.gr",
+    "Carroten":          "carroten.gr",          # owned by Sarantis; no standalone LinkedIn
+    "Fresh Line":        "freshline.gr",
+    "Alumil":            "alumil.com",
+    "BSB Fashion":       "bsbfashion.com",
+    "La Vie en Rose":    "lavieenrose.com",      # slug → Swiss NGO
+    "Mind Your Style":   "mindyourstyle.gr",
+    "Protergia":         "protergia.gr",
+    # Known good domains from previous batches
+    "Douleutaras":       "douleutaras.gr",
+    "Box Now":           "boxnow.gr",
+    "Germanos":          "germanos.gr",
+    "MEVGAL":            "mevgal.gr",
+    "Vitex":             "vitex.gr",
+    "Three Cents":       "threecents.com",
+    "Snappi":            "snappibank.com",
+    "LG":                "lg.com",
+    "JYSK":              "jysk.com",
+    "Kinder":            "ferrerocareers.com",
+    "NIVEA":             "beiersdorf.com",
+    "Dove":              "unilever.com",
+    "Converse":          "converse.com",
+    "BMW":               "bmwgroup.com",
+    "Ferryhopper":       "ferryhopper.com",
+    "Vans":              "vans.com",
+    "ANT1":              "ant1.gr",
+    "AEK FC":            "aekfc.gr",
+    "Jumbo":             "e-jumbo.gr",
+    "FAGE":              "home.fage",
+    "New Balance":       "newbalance.com",
+    "Zara":              "inditexpeople.com",
+    "Puma":              "puma.com",
+    "CarVertical":       "carvertical.com",
 }
+
+# ponytail: kept for backward-compat; points to same dict
+IDENTIFIER_OVERRIDES = DOMAIN_MAP
 
 # All searches now use locations=["Greece"] — this is a Greek outreach list.
 # GLOBAL_BRANDS kept for reference only (no longer drives filter logic).
@@ -147,12 +190,12 @@ def normalize(s):
 
 
 def get_identifier(brand_name, linkedin_slug, website=None):
-    if brand_name in IDENTIFIER_OVERRIDES:
-        return IDENTIFIER_OVERRIDES[brand_name]
-    if linkedin_slug:
-        return f"https://www.linkedin.com/company/{linkedin_slug}"
+    if brand_name in DOMAIN_MAP:
+        return DOMAIN_MAP[brand_name]
     if website:
         return website
+    if linkedin_slug:
+        return f"https://www.linkedin.com/company/{linkedin_slug}"
     return None  # no identifier — needs domain discovery via web search
 
 
@@ -682,6 +725,35 @@ def export_excel():
     print(f"  Red    = Empty (Clay returned 0 contacts)")
 
 
+def list_for_enrichment(brand_names):
+    """Print JSON array of {contactName, companyIdentifier} for contacts missing emails.
+
+    Paste the output directly into find-and-enrich-list-of-contacts with
+    dataPoints: {contactDataPoints: [{type: "Email"}]}.
+    """
+    result = []
+    for brand in brand_names:
+        path = _employee_path(brand)
+        if not path.exists():
+            print(f"# {brand}: no employee file — run Phase 1 first", file=sys.stderr)
+            continue
+        contacts = json.loads(path.read_text(encoding="utf-8"))
+        pending = [c for c in contacts if not c.get("email")]
+        if not pending:
+            print(f"# {brand}: all contacts already have emails", file=sys.stderr)
+            continue
+        added = 0
+        for c in pending:
+            domain = c.get("domain") or DOMAIN_MAP.get(brand)
+            if not domain:
+                print(f"# {brand} / {c['name']}: no domain — add to DOMAIN_MAP", file=sys.stderr)
+                continue
+            result.append({"contactName": c["name"], "companyIdentifier": domain})
+            added += 1
+        print(f"# {brand}: {added}/{len(pending)} contacts queued for email enrichment", file=sys.stderr)
+    print(json.dumps(result, indent=2, ensure_ascii=False))
+
+
 def purge_banned():
     """Remove contacts with banned titles from every file in the store."""
     total_removed = 0
@@ -706,6 +778,13 @@ if __name__ == "__main__":
             for brand, (contacts, domain) in BATCH.items():
                 save_contacts(brand, contacts, domain)
             print("Done.")
+    elif "enrich_emails" in sys.argv:
+        idx = sys.argv.index("enrich_emails")
+        brands = sys.argv[idx + 1:]
+        if not brands:
+            print("Usage: python discover_contacts.py enrich_emails \"Brand1\" [\"Brand2\" ...]")
+        else:
+            list_for_enrichment(brands)
     elif "purge" in sys.argv:
         purge_banned()
     elif "export" in sys.argv:
