@@ -120,7 +120,6 @@ ambiguity (wrong region, wrong company entity, 0-result slugs).
 Add new entries when a brand's domain is confirmed. Brands not in DOMAIN_MAP fall back to
 `linkedin_slug` from `actionable_contacts.json`.
 
-`IDENTIFIER_OVERRIDES` is an alias pointing to the same dict for backward compatibility.
 
 ---
 

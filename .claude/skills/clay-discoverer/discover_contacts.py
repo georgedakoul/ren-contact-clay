@@ -91,9 +91,6 @@ DOMAIN_MAP = {
     "CarVertical":       "carvertical.com",
 }
 
-# ponytail: kept for backward-compat; points to same dict
-IDENTIFIER_OVERRIDES = DOMAIN_MAP
-
 # All searches now use locations=["Greece"] — this is a Greek outreach list.
 # GLOBAL_BRANDS kept for reference only (no longer drives filter logic).
 GLOBAL_BRANDS = {
@@ -742,15 +739,14 @@ def list_for_enrichment(brand_names):
         if not pending:
             print(f"# {brand}: all contacts already have emails", file=sys.stderr)
             continue
-        added = 0
+        before = len(result)
         for c in pending:
             domain = c.get("domain") or DOMAIN_MAP.get(brand)
             if not domain:
                 print(f"# {brand} / {c['name']}: no domain — add to DOMAIN_MAP", file=sys.stderr)
                 continue
             result.append({"contactName": c["name"], "companyIdentifier": domain})
-            added += 1
-        print(f"# {brand}: {added}/{len(pending)} contacts queued for email enrichment", file=sys.stderr)
+        print(f"# {brand}: {len(result) - before}/{len(pending)} contacts queued for email enrichment", file=sys.stderr)
     print(json.dumps(result, indent=2, ensure_ascii=False))
 
 

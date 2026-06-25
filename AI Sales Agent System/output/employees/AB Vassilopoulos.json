@@ -9,7 +9,11 @@
     "source": "clay",
     "domain": "ab.gr",
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
+    "last_seen": "2026-06-18",
+    "hunter_result": "risky",
+    "hunter_score": 70,
+    "hunter_confidence": "MEDIUM",
+    "hunter_verified_at": "2026-06-25"
   },
   {
     "name": "Marialena Kyroudi",
@@ -33,7 +37,11 @@
     "source": "clay",
     "domain": "ab.gr",
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
+    "last_seen": "2026-06-18",
+    "hunter_result": "risky",
+    "hunter_score": 70,
+    "hunter_confidence": "MEDIUM",
+    "hunter_verified_at": "2026-06-25"
   },
   {
     "name": "Tasos Pasalaris",
@@ -45,6 +53,10 @@
     "source": "clay",
     "domain": "ab.gr",
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
+    "last_seen": "2026-06-18",
+    "hunter_result": "risky",
+    "hunter_score": 73,
+    "hunter_confidence": "MEDIUM",
+    "hunter_verified_at": "2026-06-25"
   }
 ]

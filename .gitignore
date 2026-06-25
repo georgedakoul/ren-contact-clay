@@ -42,4 +42,12 @@ AI Sales Agent System/message_crafter_config.json
 .claude/skills/sentiment-analyser/
 .claude/skills/orchestrator/
 .claude/skills/message-crafter/
-.claude/skills/linkedin-discoverer/
+.claude/skills/handoff/
+
+# Tool/app noise
+.agents/
+.obsidian/
+.claude/AI Sales Agent System/
+
+# Other configs not needed by clay agent
+AI Sales Agent System/linkedin_discoverer_config.json
