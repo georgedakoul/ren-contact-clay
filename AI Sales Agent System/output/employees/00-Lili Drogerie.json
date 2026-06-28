@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Alexandros Sideridis",
+    "job_title": "Marketing Manager",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/alexandros-sideridis-96107b46/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "lilidrogerie.gr",
+    "first_seen": "2026-06-28",
+    "last_seen": "2026-06-28"
+  },
+  {
+    "name": "Georgia Panousi",
+    "job_title": "Marketing Specialist",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/georgina-panousi/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "lilidrogerie.gr",
+    "first_seen": "2026-06-28",
+    "last_seen": "2026-06-28"
+  }
+]

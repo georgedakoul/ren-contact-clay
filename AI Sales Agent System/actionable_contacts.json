@@ -194,13 +194,13 @@
     {
       "brand": "MUA Makeup Academy",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "mua-makeup-academy",
       "times_advertised": 773,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-MUA Makeup Academy.json"
     },
     {
       "brand": "YSL Beauty",
@@ -2361,13 +2361,13 @@
     {
       "brand": "Medicube",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "medicube",
       "times_advertised": 111,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Medicube.json"
     },
     {
       "brand": "MCB",
@@ -2438,13 +2438,13 @@
     {
       "brand": "MAKE UP FOR EVER",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "make-up-for-ever",
       "times_advertised": 106,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-MAKE UP FOR EVER.json"
     },
     {
       "brand": "BMW",
@@ -2603,13 +2603,13 @@
     {
       "brand": "Lili Drogerie",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "lili-drogerie-greece",
       "times_advertised": 100,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 2,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Lili Drogerie.json"
     },
     {
       "brand": "Philips",
@@ -3087,13 +3087,13 @@
     {
       "brand": "Lavish Care",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "lavishcare",
       "times_advertised": 87,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 1,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Lavish Care.json"
     },
     {
       "brand": "Coffee Island",
@@ -3340,13 +3340,13 @@
     {
       "brand": "Makeup by Mario",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "makeupbymario",
       "times_advertised": 81,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Makeup by Mario.json"
     },
     {
       "brand": "Nikos Nikolaidis",
@@ -4253,13 +4253,13 @@
     {
       "brand": "Lierac",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "lierac",
       "times_advertised": 65,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Lierac.json"
     },
     {
       "brand": "NOZ",
@@ -5441,13 +5441,13 @@
     {
       "brand": "Lorvenn Hair Professionals",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "lorvenn-hair-professionals",
       "times_advertised": 51,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Lorvenn Hair Professionals.json"
     },
     {
       "brand": "The North Face",
@@ -5881,13 +5881,13 @@
     {
       "brand": "Makeup Revolution",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "makeup-revolution",
       "times_advertised": 47,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Makeup Revolution.json"
     },
     {
       "brand": "Colgate",
@@ -6574,13 +6574,13 @@
     {
       "brand": "MEDUSA GROUP",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "medusa-company",
       "times_advertised": 43,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-MEDUSA GROUP.json"
     },
     {
       "brand": "Derma Beauty",
@@ -8829,13 +8829,13 @@
     {
       "brand": "Messinian Spa",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "messinian-luxury",
       "times_advertised": 32,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Messinian Spa.json"
     },
     {
       "brand": "Micas",
@@ -9984,13 +9984,13 @@
     {
       "brand": "Milk Makeup",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "milk-makeup",
       "times_advertised": 28,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Milk Makeup.json"
     },
     {
       "brand": "CapCut",
@@ -10886,13 +10886,13 @@
     {
       "brand": "Medik8",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "medik8",
       "times_advertised": 26,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Medik8.json"
     },
     {
       "brand": "Feli Travels",
@@ -11447,13 +11447,13 @@
     {
       "brand": "Loewe",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "loewe",
       "times_advertised": 25,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Loewe.json"
     },
     {
       "brand": "Tsakiris Chips",
@@ -12140,13 +12140,13 @@
     {
       "brand": "MEDIPEEL",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "medipeel",
       "times_advertised": 23,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-MEDIPEEL.json"
     },
     {
       "brand": "Jo Exclusive Boutique",
@@ -12921,13 +12921,13 @@
     {
       "brand": "Little Secrets Natural Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "little-secrets-natural-cosmetics",
       "times_advertised": 22,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 1,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Little Secrets Natural Cosmetics.json"
     },
     {
       "brand": "Electronic Arts",
@@ -13856,13 +13856,13 @@
     {
       "brand": "Medisei",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "medisei-s-a",
       "times_advertised": 20,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 3,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Medisei.json"
     },
     {
       "brand": "unpackman.gr",
@@ -14615,13 +14615,13 @@
     {
       "brand": "Makeupland.gr",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "makeupland",
       "times_advertised": 19,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Makeupland.gr.json"
     },
     {
       "brand": "We4all",
@@ -17123,13 +17123,13 @@
     {
       "brand": "Laura Mercier",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "laura-mercier",
       "times_advertised": 16,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Laura Mercier.json"
     },
     {
       "brand": "Kerrygold",
@@ -17266,13 +17266,13 @@
     {
       "brand": "Liposan",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "liposan",
       "times_advertised": 16,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Liposan.json"
     },
     {
       "brand": "ELA BET",
@@ -18003,13 +18003,13 @@
     {
       "brand": "Lorvenn",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "lorvenn-hair-professionals",
       "times_advertised": 15,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Lorvenn.json"
     },
     {
       "brand": "Veganuary",
@@ -20951,13 +20951,13 @@
     {
       "brand": "Mastic Spa",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "mastic-spa",
       "times_advertised": 13,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 2,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Mastic Spa.json"
     },
     {
       "brand": "Minerva Underwear",

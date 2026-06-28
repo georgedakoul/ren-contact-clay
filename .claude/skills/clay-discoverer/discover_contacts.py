@@ -431,31 +431,42 @@ def status_report():
 # contacts_list items: {"name", "latest_experience_title", "url", "email", "domain"}
 # ---------------------------------------------------------------------------
 BATCH = {
-    "Jo Malone London": ([], "https://www.linkedin.com/company/jo-malone-london"),
-    "Juliette Armand": ([
-        {"name": "Elpida Fardogianni", "latest_experience_title": "Marketing Specialist", "url": "https://www.linkedin.com/in/elpida-fardogianni-124877b2/", "email": None, "domain": "juliettearmand.com"},
-        {"name": "Bill Papaefstratiou", "latest_experience_title": "Head of Marketing", "url": "https://www.linkedin.com/in/bill-papaefstratiou-26a4b258/", "email": None, "domain": "juliettearmand.com"},
-    ], "juliettearmand.com"),
-    "K18 Hair": ([], "https://www.linkedin.com/company/k18hair"),
-    "KIKO": ([], "https://www.linkedin.com/company/kiko-milano"),
-    "KOCOSTAR": ([], "https://www.linkedin.com/company/kocostar"),
-    "Kayali": ([], "https://www.linkedin.com/company/kayalibeauty"),
-    "Kiehl's": ([], "https://www.linkedin.com/company/kiehls"),
-    "Kiehl's Since 1851": ([], "https://www.linkedin.com/company/kiehls"),
-    "Kilian Paris": ([], "https://www.linkedin.com/company/kilian-paris"),
-    "Klorane": ([], "https://www.linkedin.com/company/klorane"),
-    "Kosas": ([], "https://www.linkedin.com/company/kosas"),
-    "Kryolan": ([], "https://www.linkedin.com/company/kryolan"),
-    "Kylie Cosmetics": ([], "https://www.linkedin.com/company/kylie-cosmetics"),
-    "L'Erbolario": ([], "https://www.linkedin.com/company/lerbolario"),
-    "L'Occitane": ([], "https://www.linkedin.com/company/loccitane"),
-    "L'Occitane en Provence": ([], "https://www.linkedin.com/company/loccitane"),
-    "LANEIGE": ([], "https://www.linkedin.com/company/laneige"),
-    "LUX": ([], "https://www.linkedin.com/company/lux"),
-    "La Mer": ([], "https://www.linkedin.com/company/la-mer"),
-    "Lancaster": ([], "https://www.linkedin.com/company/lancaster-paris"),
-    "Lattafa": ([], "https://www.linkedin.com/company/lattafa-perfumes"),
-    "Lattafa Perfumes": ([], "https://www.linkedin.com/company/lattafa-perfumes"),
+    "Laura Mercier": ([], "lauramercier.com"),
+    "Lavish Care": ([
+        {"name": "Elsa Egyptiadou", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/elsa-egyptiadou-3a406366/", "email": None, "domain": "lavishcare.eu"},
+    ], "lavishcare.eu"),
+    "Lierac": ([], "https://www.linkedin.com/company/lierac"),
+    "Lili Drogerie": ([
+        {"name": "Alexandros Sideridis", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/alexandros-sideridis-96107b46/", "email": None, "domain": "lilidrogerie.gr"},
+        {"name": "Georgia Panousi", "latest_experience_title": "Marketing Specialist", "url": "https://www.linkedin.com/in/georgina-panousi/", "email": None, "domain": "lilidrogerie.gr"},
+    ], "lilidrogerie.gr"),
+    "Liposan": ([], "https://www.linkedin.com/company/liposan"),
+    "Little Secrets Natural Cosmetics": ([
+        {"name": "Eirini Amygdalia Petridou", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/eirini-amygdalia-petridou-596122297/", "email": None, "domain": "littlesecrets.gr"},
+    ], "littlesecrets.gr"),
+    "Loewe": ([], "loewe.com"),
+    "Lorvenn": ([], "https://www.linkedin.com/company/lorvenn-hair-professionals"),
+    "Lorvenn Hair Professionals": ([], "https://www.linkedin.com/company/lorvenn-hair-professionals"),
+    "MAKE UP FOR EVER": ([], "makeupforever.com"),
+    "MEDIPEEL": ([], "https://www.linkedin.com/company/medipeel"),
+    "MEDUSA GROUP": ([], "medusashop.gr"),
+    "MUA Makeup Academy": ([], "https://www.linkedin.com/company/mua-makeup-academy"),
+    "Makeup Revolution": ([], "https://www.linkedin.com/company/makeup-revolution"),
+    "Makeup by Mario": ([], "makeupbymario.com"),
+    "Makeupland.gr": ([], "https://www.linkedin.com/company/makeupland"),
+    "Mastic Spa": ([
+        {"name": "Apostle Mengoulis", "latest_experience_title": "Digital Marketing Manager", "url": "https://www.linkedin.com/in/apostle-mengoulis-9947519b/", "email": None, "domain": "masticspa.com"},
+        {"name": "Sofia Sodi", "latest_experience_title": "Co-founder & Marketing Director", "url": "https://www.linkedin.com/in/sofia-sodi-6aaa94a6/", "email": None, "domain": "masticspa.com"},
+    ], "masticspa.com"),
+    "Medicube": ([], "https://www.linkedin.com/company/medicube"),
+    "Medik8": ([], "medik8.com"),
+    "Medisei": ([
+        {"name": "Popita Bikof", "latest_experience_title": "Head of Marketing@MEDISEI", "url": "https://www.linkedin.com/in/popita-bikof-2199aa50/", "email": None, "domain": "medisei.gr"},
+        {"name": "Stella Mathioudaki", "latest_experience_title": "Digital Marketing & E-Commerce Specialist", "url": "https://www.linkedin.com/in/stella-mathioudaki/", "email": None, "domain": "medisei.gr"},
+        {"name": "Αμαλία Λυμπέρη", "latest_experience_title": "Marketing Assistant Trainee", "url": "https://www.linkedin.com/in/αμαλία-λυμπέρη-a30387396/", "email": None, "domain": "medisei.gr"},
+    ], "medisei.gr"),
+    "Messinian Spa": ([], "https://www.linkedin.com/company/messinian-luxury"),
+    "Milk Makeup": ([], "milkmakeup.com"),
 }
 _LAST_BATCH_2026_06_22 = {
     "Douleutaras": ([
