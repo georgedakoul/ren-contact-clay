@@ -1118,13 +1118,13 @@
     {
       "brand": "Prada",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "prada",
       "times_advertised": 213,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Prada.json"
     },
     {
       "brand": "Jumbo",
@@ -1228,13 +1228,13 @@
     {
       "brand": "Rare Beauty",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "rarebeautyofficial",
       "times_advertised": 201,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Rare Beauty.json"
     },
     {
       "brand": "Chanel",
@@ -1635,13 +1635,13 @@
     {
       "brand": "Redken",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "redken",
       "times_advertised": 158,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Redken.json"
     },
     {
       "brand": "Bepanthol",
@@ -2471,13 +2471,13 @@
     {
       "brand": "Radiant Professional Make Up",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "hellenica",
       "times_advertised": 104,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 3,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Radiant Professional Make Up.json"
     },
     {
       "brand": "Vistabet",
@@ -3637,13 +3637,13 @@
     {
       "brand": "Pharmasept",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "pharmasept-ltd",
       "times_advertised": 76,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 4,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Pharmasept.json"
     },
     {
       "brand": "Printify",
@@ -4704,13 +4704,13 @@
     {
       "brand": "Radiant Professional",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "hellenica",
       "times_advertised": 59,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 3,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Radiant Professional.json"
     },
     {
       "brand": "Gymnastics stars",
@@ -6189,13 +6189,13 @@
     {
       "brand": "Pixi Beauty",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "pixi-beauty",
       "times_advertised": 45,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Pixi Beauty.json"
     },
     {
       "brand": "Razer",
@@ -6442,13 +6442,13 @@
     {
       "brand": "Phyto Paris",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "phyto",
       "times_advertised": 44,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Phyto Paris.json"
     },
     {
       "brand": "Natasha Denona",
@@ -7179,13 +7179,13 @@
     {
       "brand": "Panthenol Extra",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "medisei-s-a",
       "times_advertised": 40,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 3,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Panthenol Extra.json"
     },
     {
       "brand": "Revolution Beauty",
@@ -8675,13 +8675,13 @@
     {
       "brand": "Refy",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "refy-beauty",
       "times_advertised": 33,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Refy.json"
     },
     {
       "brand": "Coffee Lab",
@@ -8697,13 +8697,13 @@
     {
       "brand": "P.Louise",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "p-louise",
       "times_advertised": 33,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-P.Louise.json"
     },
     {
       "brand": "Golden Smile Dental Care",
@@ -11029,13 +11029,13 @@
     {
       "brand": "Papoutsanis Aromatics",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "papoutsanis",
       "times_advertised": 26,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Papoutsanis Aromatics.json"
     },
     {
       "brand": "Bottega Veneta",
@@ -12415,13 +12415,13 @@
     {
       "brand": "Remington",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "remington-products",
       "times_advertised": 23,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Remington.json"
     },
     {
       "brand": "Paxxi",
@@ -13108,13 +13108,13 @@
     {
       "brand": "Priorin",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "bayer",
       "times_advertised": 22,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 8,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Priorin.json"
     },
     {
       "brand": "Hunkemöller",
@@ -14824,24 +14824,24 @@
     {
       "brand": "Purito",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "purito",
       "times_advertised": 19,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Purito.json"
     },
     {
       "brand": "Rabanne",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "rabanne",
       "times_advertised": 19,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Rabanne.json"
     },
     {
       "brand": "GAMEATHLON",
@@ -15231,13 +15231,13 @@
     {
       "brand": "Physis Laboratory",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "physis-laboratory",
       "times_advertised": 18,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 1,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Physis Laboratory.json"
     },
     {
       "brand": "Ksmedicalproducts",
@@ -16595,13 +16595,13 @@
     {
       "brand": "Origins",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "origins",
       "times_advertised": 17,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Origins.json"
     },
     {
       "brand": "Rodopaki",
@@ -19279,13 +19279,13 @@
     {
       "brand": "PhiBrows",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "phibrows",
       "times_advertised": 14,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-PhiBrows.json"
     },
     {
       "brand": "MADWALK",
@@ -20060,13 +20060,13 @@
     {
       "brand": "PURITO SEOUL",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "purito",
       "times_advertised": 13,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-PURITO SEOUL.json"
     },
     {
       "brand": "Sam Burgers",
@@ -20654,13 +20654,13 @@
     {
       "brand": "Paul Mitchell",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "john-paul-mitchell-systems",
       "times_advertised": 13,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Paul Mitchell.json"
     },
     {
       "brand": "W7 Cosmetics",
@@ -21930,13 +21930,13 @@
     {
       "brand": "Pat McGrath Labs",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "pat-mcgrath-labs",
       "times_advertised": 12,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Pat McGrath Labs.json"
     },
     {
       "brand": "Psychogios Publications",

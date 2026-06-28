@@ -430,7 +430,7 @@ def status_report():
 # Format: brand_name → (contacts_list, domain_hint)
 # contacts_list items: {"name", "latest_experience_title", "url", "email", "domain"}
 # ---------------------------------------------------------------------------
-BATCH = {
+_LAST_BATCH_2026_06_24 = {
     "Miu Miu": ([], "https://www.linkedin.com/company/miu-miu"),
     "Mixsoon": ([], "https://www.linkedin.com/company/mixsoon"),
     "Molton Brown": ([], "moltonbrown.co.uk"),
@@ -459,6 +459,59 @@ BATCH = {
     "Oriflame": ([
         {"name": "despoina noukari", "latest_experience_title": "oriflame marketing", "url": "https://www.linkedin.com/in/despoina-noukari-5a0b9aab/", "email": None, "domain": "oriflame.com"},
     ], "oriflame.com"),
+}
+
+BATCH = {
+    "Origins": ([], "origins.com"),
+    "P.Louise": ([], "https://www.linkedin.com/company/p-louise"),
+    "PURITO SEOUL": ([], "https://www.linkedin.com/company/purito"),
+    "Purito": ([], "https://www.linkedin.com/company/purito"),
+    "Panthenol Extra": ([
+        {"name": "Popita Bikof", "latest_experience_title": "Head of Marketing@MEDISEI", "url": "https://www.linkedin.com/in/popita-bikof-2199aa50/", "email": None, "domain": "medisei.gr"},
+        {"name": "Stella Mathioudaki", "latest_experience_title": "Digital Marketing & E-Commerce Specialist", "url": "https://www.linkedin.com/in/stella-mathioudaki/", "email": None, "domain": "medisei.gr"},
+        {"name": "Αμαλία Λυμπέρη", "latest_experience_title": "Marketing Assistant Trainee", "url": "https://www.linkedin.com/in/αμαλία-λυμπέρη-a30387396/", "email": None, "domain": "medisei.gr"},
+    ], "medisei.gr"),
+    "Papoutsanis Aromatics": ([], "https://www.linkedin.com/company/papoutsanis"),
+    "Pat McGrath Labs": ([], "patmcgrath.com"),
+    "Paul Mitchell": ([], "paulmitchell.com"),
+    "Pharmasept": ([
+        {"name": "Katerina Manta", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/katerina-manta-ab52a237/", "email": None, "domain": "pharmasept.gr"},
+        {"name": "ΕΛΕΝΗ ΑΡΜΥΡΑ", "latest_experience_title": "Logistics and Marketing", "url": "https://www.linkedin.com/in/%ce%b5%ce%bb%ce%b5%ce%bd%ce%b7-%ce%b1%cf%81%ce%bc%cf%85%cf%81%ce%b1-0a7a281a4/", "email": None, "domain": "pharmasept.gr"},
+        {"name": "Angeliki Masvoula", "latest_experience_title": "Brand Marketing Assistant", "url": "https://www.linkedin.com/in/angeliki-masvoula/", "email": None, "domain": "pharmasept.gr"},
+        {"name": "Victoria Plega", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/victoria-plega-558a5626a/", "email": None, "domain": "pharmasept.gr"},
+    ], "pharmasept.gr"),
+    "PhiBrows": ([], "phibrows.com"),
+    "Physis Laboratory": ([
+        {"name": "Nikoletta Pavlopoulou", "latest_experience_title": "Brand Ambassador", "url": "https://www.linkedin.com/in/nikoletta-pavlopoulou/", "email": None, "domain": "moh.gr"},
+    ], "physislaboratory.com"),
+    "Phyto Paris": ([], "https://www.linkedin.com/company/phyto"),
+    "Pixi Beauty": ([], "https://www.linkedin.com/company/pixi-beauty"),
+    "Prada": ([], "prada.com"),
+    "Priorin": ([
+        {"name": "Sonia Mousavere", "latest_experience_title": "Head of Communications & PGA", "url": "https://www.linkedin.com/in/smousavere/", "email": None, "domain": "bayer.com"},
+        {"name": "Thekli Bourtzinou", "latest_experience_title": "Brand Communications and Digital Services Coordinator", "url": "https://www.linkedin.com/in/thekli-bourtzinou-340b3099/", "email": None, "domain": "bayer.com"},
+        {"name": "Kyriakos Nathanail", "latest_experience_title": "Brand Manager / Customer Engagement Team Lead", "url": "https://www.linkedin.com/in/kyriakos-nathanail-7118874/", "email": None, "domain": "bayer.com"},
+        {"name": "Fotis Tsopelas", "latest_experience_title": "Digital Media & eCommerce Manager Consumer Health Division", "url": "https://www.linkedin.com/in/fotis-tsopelas-41b72960/", "email": None, "domain": "bayer.com"},
+        {"name": "Spiros Galousis", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/spiros-galousis-24781746/", "email": None, "domain": "bayer.com"},
+        {"name": "Maria Davit", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/maria-davit-110006115/", "email": None, "domain": "bayer.com"},
+        {"name": "Zoi Arachovitou", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/zoi-arachovitou/", "email": None, "domain": "bayer.com"},
+        {"name": "Eleftherios Filios", "latest_experience_title": "Cluster Brand Manager Opthalmology (GR, CY, MA, IS, ROM, BG)", "url": "https://www.linkedin.com/in/eleftherios-filios-0959b35a/", "email": None, "domain": "bayer.com"},
+    ], "bayer.com"),
+    "Rabanne": ([], "pacorabanne.com"),
+    "Radiant Professional": ([
+        {"name": "Lydia Christoforidou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/lydia-christoforidou-9278a4122/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Electra Papanastasiou", "latest_experience_title": "Marketing Manager, Strategy Lead Seventeen Cosmetics", "url": "https://www.linkedin.com/in/papanastasiou-electra/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Silia Karatza", "latest_experience_title": "Digital Marketing & Social Media Specialist", "url": "https://www.linkedin.com/in/silia-karatza-79b726197/", "email": None, "domain": "hellenica.gr"},
+    ], "hellenica.gr"),
+    "Radiant Professional Make Up": ([
+        {"name": "Lydia Christoforidou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/lydia-christoforidou-9278a4122/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Electra Papanastasiou", "latest_experience_title": "Marketing Manager, Strategy Lead Seventeen Cosmetics", "url": "https://www.linkedin.com/in/papanastasiou-electra/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Silia Karatza", "latest_experience_title": "Digital Marketing & Social Media Specialist", "url": "https://www.linkedin.com/in/silia-karatza-79b726197/", "email": None, "domain": "hellenica.gr"},
+    ], "hellenica.gr"),
+    "Rare Beauty": ([], "rarebeauty.com"),
+    "Redken": ([], "https://www.linkedin.com/company/redken"),
+    "Refy": ([], "refybeauty.com"),
+    "Remington": ([], "https://www.linkedin.com/company/remington-products"),
 }
 _LAST_BATCH_2026_06_22 = {
     "Douleutaras": ([
