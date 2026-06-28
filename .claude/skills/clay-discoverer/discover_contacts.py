@@ -431,42 +431,34 @@ def status_report():
 # contacts_list items: {"name", "latest_experience_title", "url", "email", "domain"}
 # ---------------------------------------------------------------------------
 BATCH = {
-    "Laura Mercier": ([], "lauramercier.com"),
-    "Lavish Care": ([
-        {"name": "Elsa Egyptiadou", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/elsa-egyptiadou-3a406366/", "email": None, "domain": "lavishcare.eu"},
-    ], "lavishcare.eu"),
-    "Lierac": ([], "https://www.linkedin.com/company/lierac"),
-    "Lili Drogerie": ([
-        {"name": "Alexandros Sideridis", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/alexandros-sideridis-96107b46/", "email": None, "domain": "lilidrogerie.gr"},
-        {"name": "Georgia Panousi", "latest_experience_title": "Marketing Specialist", "url": "https://www.linkedin.com/in/georgina-panousi/", "email": None, "domain": "lilidrogerie.gr"},
-    ], "lilidrogerie.gr"),
-    "Liposan": ([], "https://www.linkedin.com/company/liposan"),
-    "Little Secrets Natural Cosmetics": ([
-        {"name": "Eirini Amygdalia Petridou", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/eirini-amygdalia-petridou-596122297/", "email": None, "domain": "littlesecrets.gr"},
-    ], "littlesecrets.gr"),
-    "Loewe": ([], "loewe.com"),
-    "Lorvenn": ([], "https://www.linkedin.com/company/lorvenn-hair-professionals"),
-    "Lorvenn Hair Professionals": ([], "https://www.linkedin.com/company/lorvenn-hair-professionals"),
-    "MAKE UP FOR EVER": ([], "makeupforever.com"),
-    "MEDIPEEL": ([], "https://www.linkedin.com/company/medipeel"),
-    "MEDUSA GROUP": ([], "medusashop.gr"),
-    "MUA Makeup Academy": ([], "https://www.linkedin.com/company/mua-makeup-academy"),
-    "Makeup Revolution": ([], "https://www.linkedin.com/company/makeup-revolution"),
-    "Makeup by Mario": ([], "makeupbymario.com"),
-    "Makeupland.gr": ([], "https://www.linkedin.com/company/makeupland"),
-    "Mastic Spa": ([
-        {"name": "Apostle Mengoulis", "latest_experience_title": "Digital Marketing Manager", "url": "https://www.linkedin.com/in/apostle-mengoulis-9947519b/", "email": None, "domain": "masticspa.com"},
-        {"name": "Sofia Sodi", "latest_experience_title": "Co-founder & Marketing Director", "url": "https://www.linkedin.com/in/sofia-sodi-6aaa94a6/", "email": None, "domain": "masticspa.com"},
-    ], "masticspa.com"),
-    "Medicube": ([], "https://www.linkedin.com/company/medicube"),
-    "Medik8": ([], "medik8.com"),
-    "Medisei": ([
-        {"name": "Popita Bikof", "latest_experience_title": "Head of Marketing@MEDISEI", "url": "https://www.linkedin.com/in/popita-bikof-2199aa50/", "email": None, "domain": "medisei.gr"},
-        {"name": "Stella Mathioudaki", "latest_experience_title": "Digital Marketing & E-Commerce Specialist", "url": "https://www.linkedin.com/in/stella-mathioudaki/", "email": None, "domain": "medisei.gr"},
-        {"name": "Αμαλία Λυμπέρη", "latest_experience_title": "Marketing Assistant Trainee", "url": "https://www.linkedin.com/in/αμαλία-λυμπέρη-a30387396/", "email": None, "domain": "medisei.gr"},
-    ], "medisei.gr"),
-    "Messinian Spa": ([], "https://www.linkedin.com/company/messinian-luxury"),
-    "Milk Makeup": ([], "milkmakeup.com"),
+    "Miu Miu": ([], "https://www.linkedin.com/company/miu-miu"),
+    "Mixsoon": ([], "https://www.linkedin.com/company/mixsoon"),
+    "Molton Brown": ([], "moltonbrown.co.uk"),
+    "Mon Rêve Cosmetics": ([
+        {"name": "Lydia Christoforidou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/lydia-christoforidou-9278a4122/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Electra Papanastasiou", "latest_experience_title": "Marketing Manager, Strategy Lead Seventeen Cosmetics", "url": "https://www.linkedin.com/in/papanastasiou-electra/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Silia Karatza", "latest_experience_title": "Digital Marketing & Social Media Specialist", "url": "https://www.linkedin.com/in/silia-karatza-79b726197/", "email": None, "domain": "hellenica.gr"},
+    ], "hellenica.gr"),
+    "Moroccanoil": ([], "moroccanoil.com"),
+    "Morphe": ([], "https://www.linkedin.com/company/morphe"),
+    "Mugler": ([], "https://www.linkedin.com/company/mugler"),
+    "My 7 Days": ([], "https://www.linkedin.com/company/7days-beauty"),
+    "My7Days": ([], "https://www.linkedin.com/company/7days-beauty"),
+    "NARS Cosmetics": ([], "narscosmetics.com"),
+    "Natasha Denona": ([], "https://www.linkedin.com/company/natasha-denona"),
+    "Natura Siberica": ([], "naturasiberica.ru"),
+    "Neostrata": ([], "neostrata.com"),
+    "Neutrogena": ([], "neutrogena.com"),
+    "Notino": ([], "notino.com"),
+    "Novexpert": ([], "novexpert-lab.fr"),
+    "Nuxe": ([], "nuxe.com"),
+    "OPI": ([], "https://www.linkedin.com/company/opi"),
+    "Olaplex": ([], "https://www.linkedin.com/company/olaplex"),
+    "Old Spice": ([], "https://www.linkedin.com/company/old-spice"),
+    "Organic Shop": ([], "https://www.linkedin.com/company/organic-shop"),
+    "Oriflame": ([
+        {"name": "despoina noukari", "latest_experience_title": "oriflame marketing", "url": "https://www.linkedin.com/in/despoina-noukari-5a0b9aab/", "email": None, "domain": "oriflame.com"},
+    ], "oriflame.com"),
 }
 _LAST_BATCH_2026_06_22 = {
     "Douleutaras": ([

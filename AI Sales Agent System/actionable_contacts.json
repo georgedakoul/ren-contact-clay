@@ -1085,13 +1085,13 @@
     {
       "brand": "Natura Siberica",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "natura-siberica",
       "times_advertised": 216,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Natura Siberica.json"
     },
     {
       "brand": "Essence",
@@ -1503,13 +1503,13 @@
     {
       "brand": "Mon Rêve Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "hellenica",
       "times_advertised": 170,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 3,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Mon Rêve Cosmetics.json"
     },
     {
       "brand": "Minos EMI",
@@ -1965,13 +1965,13 @@
     {
       "brand": "Nuxe",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "nuxe",
       "times_advertised": 132,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Nuxe.json"
     },
     {
       "brand": "Kappas Travel",
@@ -1998,13 +1998,13 @@
     {
       "brand": "Miu Miu",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "miu-miu",
       "times_advertised": 130,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Miu Miu.json"
     },
     {
       "brand": "NIVEA",
@@ -2174,13 +2174,13 @@
     {
       "brand": "Novexpert",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "novexpert",
       "times_advertised": 120,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Novexpert.json"
     },
     {
       "brand": "Solutions Group",
@@ -2339,13 +2339,13 @@
     {
       "brand": "NARS Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "nars-cosmetics",
       "times_advertised": 113,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-NARS Cosmetics.json"
     },
     {
       "brand": "Uber",
@@ -2823,13 +2823,13 @@
     {
       "brand": "My7Days",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "7days-beauty",
       "times_advertised": 93,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-My7Days.json"
     },
     {
       "brand": "Kylie Cosmetics",
@@ -2933,13 +2933,13 @@
     {
       "brand": "Old Spice",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "old-spice",
       "times_advertised": 90,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Old Spice.json"
     },
     {
       "brand": "Dioptra Books",
@@ -3285,13 +3285,13 @@
     {
       "brand": "Notino",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "notino",
       "times_advertised": 83,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Notino.json"
     },
     {
       "brand": "Motorola",
@@ -3362,13 +3362,13 @@
     {
       "brand": "Organic Shop",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "organic-shop",
       "times_advertised": 81,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Organic Shop.json"
     },
     {
       "brand": "GRIGI Make Up",
@@ -4176,13 +4176,13 @@
     {
       "brand": "Oriflame",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "oriflame",
       "times_advertised": 66,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 1,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Oriflame.json"
     },
     {
       "brand": "Anastasia Fakli Collection",
@@ -4770,13 +4770,13 @@
     {
       "brand": "Mugler",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "mugler",
       "times_advertised": 58,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Mugler.json"
     },
     {
       "brand": "InterMed",
@@ -5551,13 +5551,13 @@
     {
       "brand": "Neutrogena",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "neutrogena",
       "times_advertised": 50,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Neutrogena.json"
     },
     {
       "brand": "NESCAFÉ AZERA",
@@ -6156,13 +6156,13 @@
     {
       "brand": "Moroccanoil",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "moroccanoil",
       "times_advertised": 45,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Moroccanoil.json"
     },
     {
       "brand": "Balenciaga",
@@ -6453,13 +6453,13 @@
     {
       "brand": "Natasha Denona",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "natasha-denona",
       "times_advertised": 43,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Natasha Denona.json"
     },
     {
       "brand": "Nolah",
@@ -10226,13 +10226,13 @@
     {
       "brand": "OPI",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "opi",
       "times_advertised": 27,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-OPI.json"
     },
     {
       "brand": "NEEWER",
@@ -11557,13 +11557,13 @@
     {
       "brand": "My 7 Days",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "7days-beauty",
       "times_advertised": 24,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-My 7 Days.json"
     },
     {
       "brand": "Mama Coach Greece",
@@ -11788,13 +11788,13 @@
     {
       "brand": "Mixsoon",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "mixsoon",
       "times_advertised": 24,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Mixsoon.json"
     },
     {
       "brand": "Athens International Airport",
@@ -11832,13 +11832,13 @@
     {
       "brand": "Molton Brown",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "molton-brown",
       "times_advertised": 24,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Molton Brown.json"
     },
     {
       "brand": "SKIMS",
@@ -11887,13 +11887,13 @@
     {
       "brand": "Olaplex",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "olaplex",
       "times_advertised": 24,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Olaplex.json"
     },
     {
       "brand": "Onassis Foundation",
@@ -12558,13 +12558,13 @@
     {
       "brand": "Neostrata",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "neostrata",
       "times_advertised": 22,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Neostrata.json"
     },
     {
       "brand": "Nakas Book House",
@@ -21919,13 +21919,13 @@
     {
       "brand": "Morphe",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "morphe",
       "times_advertised": 12,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Morphe.json"
     },
     {
       "brand": "Pat McGrath Labs",
