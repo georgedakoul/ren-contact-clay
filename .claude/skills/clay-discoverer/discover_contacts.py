@@ -462,6 +462,30 @@ _LAST_BATCH_2026_06_24 = {
 }
 
 BATCH = {
+    "Revolution Beauty": ([], "https://www.linkedin.com/company/revolution-beauty"),
+    "Rhode": ([], "https://www.linkedin.com/company/rhode-skin"),
+    "Rituals": ([], "rituals.com"),
+    "Rodial": ([], "https://www.linkedin.com/company/rodial"),
+    "Roger & Gallet": ([], "https://www.linkedin.com/company/roger-gallet"),
+    "Rowenta": ([], "rowenta.com"),
+    "SOSU Cosmetics": ([], "https://www.linkedin.com/company/sosu-cosmetics"),
+    "SYOSS": ([], "syoss.de"),
+    "Sebastian Professional": ([], "https://www.linkedin.com/company/sebastian-professional"),
+    "Sensodyne": ([], "sensodyne.com"),
+    "Shark Beauty": ([], "https://www.linkedin.com/company/shark-beauty"),
+    "Sheglam": ([], "sheglam.com"),
+    "Shiseido": ([], "shiseido.com"),
+    "Sisley Paris": ([], "https://www.linkedin.com/company/sisley-paris"),
+    "Skin1004": ([], "skin1004.com"),
+    "SkinCeuticals": ([], "skinceuticals.com"),
+    "Sol de Janeiro": ([], "https://www.linkedin.com/company/sol-de-janeiro"),
+    "Some By Mi": ([], "https://www.linkedin.com/company/some-by-mi"),
+    "Summer Fridays": ([], "summerfridays.com"),
+    "Supergoop!": ([], "https://www.linkedin.com/company/supergoop"),
+    "Sweed Beauty": ([], "https://www.linkedin.com/company/sweed-beauty"),
+    "TIRTIR": ([], "https://www.linkedin.com/company/tirtir"),
+}
+_LAST_BATCH_2026_06_26 = {
     "Origins": ([], "origins.com"),
     "P.Louise": ([], "https://www.linkedin.com/company/p-louise"),
     "PURITO SEOUL": ([], "https://www.linkedin.com/company/purito"),

@@ -2097,13 +2097,13 @@
     {
       "brand": "Sol de Janeiro",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "sol-de-janeiro",
       "times_advertised": 123,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Sol de Janeiro.json"
     },
     {
       "brand": "Kapsule.gr",
@@ -2229,13 +2229,13 @@
     {
       "brand": "Rhode",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "rhode-skin",
       "times_advertised": 119,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Rhode.json"
     },
     {
       "brand": "Clinique",
@@ -2284,13 +2284,13 @@
     {
       "brand": "Sheglam",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "www.sheglam.com",
       "times_advertised": 115,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Sheglam.json"
     },
     {
       "brand": "Bobbi Brown",
@@ -2647,13 +2647,13 @@
     {
       "brand": "Rodial",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "rodial",
       "times_advertised": 98,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Rodial.json"
     },
     {
       "brand": "ETHERIO Scent Lab",
@@ -2911,13 +2911,13 @@
     {
       "brand": "SkinCeuticals",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "skinceuticals",
       "times_advertised": 91,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-SkinCeuticals.json"
     },
     {
       "brand": "Huawei",
@@ -4011,13 +4011,13 @@
     {
       "brand": "Skin1004",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "skin1004",
       "times_advertised": 68,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Skin1004.json"
     },
     {
       "brand": "Jet2",
@@ -7047,13 +7047,13 @@
     {
       "brand": "SYOSS",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "syoss",
       "times_advertised": 41,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-SYOSS.json"
     },
     {
       "brand": "Mind Matter",
@@ -7190,13 +7190,13 @@
     {
       "brand": "Revolution Beauty",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "revolution-beauty",
       "times_advertised": 40,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Revolution Beauty.json"
     },
     {
       "brand": "OPPO",
@@ -7828,13 +7828,13 @@
     {
       "brand": "Summer Fridays",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "summer-fridays",
       "times_advertised": 36,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Summer Fridays.json"
     },
     {
       "brand": "Citroën",
@@ -8389,13 +8389,13 @@
     {
       "brand": "Sensodyne",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "sensodyne",
       "times_advertised": 34,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Sensodyne.json"
     },
     {
       "brand": "Spotawheel",
@@ -8917,13 +8917,13 @@
     {
       "brand": "TIRTIR",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "tirtir",
       "times_advertised": 32,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-TIRTIR.json"
     },
     {
       "brand": "Pet Shop 88",
@@ -9401,13 +9401,13 @@
     {
       "brand": "Rituals",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "rituals-cosmetics",
       "times_advertised": 30,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Rituals.json"
     },
     {
       "brand": "Peggy Sue",
@@ -9676,13 +9676,13 @@
     {
       "brand": "Sisley Paris",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "sisley-paris",
       "times_advertised": 29,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Sisley Paris.json"
     },
     {
       "brand": "Demetrios",
@@ -10611,13 +10611,13 @@
     {
       "brand": "Rowenta",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "rowenta",
       "times_advertised": 26,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Rowenta.json"
     },
     {
       "brand": "Humanity Greece",
@@ -10677,13 +10677,13 @@
     {
       "brand": "SOSU Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "sosu-cosmetics",
       "times_advertised": 26,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-SOSU Cosmetics.json"
     },
     {
       "brand": "Ioulia Kallimani",
@@ -11161,13 +11161,13 @@
     {
       "brand": "Roger & Gallet",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "roger-gallet",
       "times_advertised": 25,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Roger & Gallet.json"
     },
     {
       "brand": "Sport Vision",
@@ -12800,13 +12800,13 @@
     {
       "brand": "Shiseido",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "shiseido",
       "times_advertised": 22,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Shiseido.json"
     },
     {
       "brand": "Michalis Hatzigiannis",
@@ -16529,13 +16529,13 @@
     {
       "brand": "Some By Mi",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "some-by-mi",
       "times_advertised": 17,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Some By Mi.json"
     },
     {
       "brand": "Eleonora Zouganeli",
@@ -16661,13 +16661,13 @@
     {
       "brand": "Supergoop!",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "supergoop",
       "times_advertised": 17,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Supergoop!.json"
     },
     {
       "brand": "Babylino",
@@ -17332,13 +17332,13 @@
     {
       "brand": "Sweed Beauty",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "sweed-beauty",
       "times_advertised": 16,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Sweed Beauty.json"
     },
     {
       "brand": "EA Sports",
@@ -19499,13 +19499,13 @@
     {
       "brand": "Sebastian Professional",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "sebastian-professional",
       "times_advertised": 14,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Sebastian Professional.json"
     },
     {
       "brand": "Ekdoseis Oxy",
@@ -21237,13 +21237,13 @@
     {
       "brand": "Shark Beauty",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "shark-beauty",
       "times_advertised": 12,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Shark Beauty.json"
     },
     {
       "brand": "Skiadareses",
