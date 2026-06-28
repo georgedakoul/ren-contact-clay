@@ -62,13 +62,13 @@
     {
       "brand": "Temu",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "temuapp",
       "times_advertised": 1455,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 2,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Temu.json"
     },
     {
       "brand": "Sephora",
@@ -766,13 +766,13 @@
     {
       "brand": "Vichy",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "vichy",
       "times_advertised": 301,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Vichy.json"
     },
     {
       "brand": "Skroutz",
@@ -1668,13 +1668,13 @@
     {
       "brand": "Tarte Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "tartecosmetics",
       "times_advertised": 154,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Tarte Cosmetics.json"
     },
     {
       "brand": "Vinted",
@@ -2075,13 +2075,13 @@
     {
       "brand": "Valentino",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "valentino",
       "times_advertised": 124,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Valentino.json"
     },
     {
       "brand": "Avis",
@@ -2537,13 +2537,13 @@
     {
       "brand": "Uriage",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "uriage",
       "times_advertised": 102,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Uriage.json"
     },
     {
       "brand": "Goody's Burger House",
@@ -2691,13 +2691,13 @@
     {
       "brand": "Too Faced",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "too-faced",
       "times_advertised": 96,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Too Faced.json"
     },
     {
       "brand": "MEGA TV",
@@ -2889,13 +2889,13 @@
     {
       "brand": "Tommy G Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "gavrilis-group-sa",
       "times_advertised": 91,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Tommy G Cosmetics.json"
     },
     {
       "brand": "Untitled Folders",
@@ -3054,13 +3054,13 @@
     {
       "brand": "Tom Ford",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "tom-ford",
       "times_advertised": 88,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Tom Ford.json"
     },
     {
       "brand": "Soul Diet",
@@ -5474,13 +5474,13 @@
     {
       "brand": "Victoria's Secret",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "victorias-secret",
       "times_advertised": 51,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Victoria's Secret.json"
     },
     {
       "brand": "Erre Due",
@@ -6816,13 +6816,13 @@
     {
       "brand": "The Ordinary",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "deciem",
       "times_advertised": 42,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-The Ordinary.json"
     },
     {
       "brand": "DKNY",
@@ -6926,13 +6926,13 @@
     {
       "brand": "Versace",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "versace",
       "times_advertised": 41,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Versace.json"
     },
     {
       "brand": "CodeGrow",
@@ -10501,13 +10501,13 @@
     {
       "brand": "Version Derm",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "version-dermocosmetics",
       "times_advertised": 27,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 1,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Version Derm.json"
     },
     {
       "brand": "extanbebe",
@@ -10666,13 +10666,13 @@
     {
       "brand": "Tatcha",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "tatcha",
       "times_advertised": 26,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Tatcha.json"
     },
     {
       "brand": "SOSU Cosmetics",
@@ -11359,13 +11359,13 @@
     {
       "brand": "Treaclemoon",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "treaclemoon",
       "times_advertised": 25,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Treaclemoon.json"
     },
     {
       "brand": "Tsakiridis Saloni Epiplo",
@@ -12833,13 +12833,13 @@
     {
       "brand": "TRESemmé",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "tresemme",
       "times_advertised": 22,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-TRESemmé.json"
     },
     {
       "brand": "Violanta",
@@ -13812,13 +13812,13 @@
     {
       "brand": "Tecnoskin",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "tecnoskin",
       "times_advertised": 20,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Tecnoskin.json"
     },
     {
       "brand": "Nautica",
@@ -15198,13 +15198,13 @@
     {
       "brand": "Torriden",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "torriden",
       "times_advertised": 19,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Torriden.json"
     },
     {
       "brand": "Oh Polly",
@@ -16485,13 +16485,13 @@
     {
       "brand": "The Inkey List",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "the-inkey-list",
       "times_advertised": 17,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-The Inkey List.json"
     },
     {
       "brand": "Pharmacy Discount",
@@ -17376,13 +17376,13 @@
     {
       "brand": "VT Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "vt-cosmetics",
       "times_advertised": 16,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-VT Cosmetics.json"
     },
     {
       "brand": "Vital Proteins",
@@ -18388,13 +18388,13 @@
     {
       "brand": "The Body Shop",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "the-body-shop",
       "times_advertised": 15,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 2,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-The Body Shop.json"
     },
     {
       "brand": "Zoniou",
@@ -18861,13 +18861,13 @@
     {
       "brand": "Therabody",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "therabody",
       "times_advertised": 14,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Therabody.json"
     },
     {
       "brand": "Glenn Martens",
@@ -19004,13 +19004,13 @@
     {
       "brand": "Umberto Giannini",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "umberto-giannini",
       "times_advertised": 14,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Umberto Giannini.json"
     },
     {
       "brand": "United Kind",
