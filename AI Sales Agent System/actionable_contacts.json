@@ -458,11 +458,11 @@
     {
       "brand": "Benefit Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "benefitcosmetics",
       "times_advertised": 462,
       "has_employee_file": true,
-      "employee_count": 1,
+      "employee_count": 2,
       "emails_known": 0,
       "employee_file": "00-Benefit Cosmetics.json"
     },
@@ -1481,13 +1481,13 @@
     {
       "brand": "YesStyle",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "yesstyle",
       "times_advertised": 170,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-YesStyle.json"
     },
     {
       "brand": "PlayStation",
@@ -1602,13 +1602,13 @@
     {
       "brand": "ghd",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "ghdhair",
       "times_advertised": 161,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-ghd.json"
     },
     {
       "brand": "McDonald's",
@@ -1760,7 +1760,7 @@
       "linkedin_slug": "dove",
       "times_advertised": 148,
       "has_employee_file": true,
-      "employee_count": 17,
+      "employee_count": 18,
       "emails_known": 0,
       "employee_file": "00-Dove.json"
     },
@@ -3120,13 +3120,13 @@
     {
       "brand": "Youth Lab",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "youth-lab-",
       "times_advertised": 86,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 4,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Youth Lab.json"
     },
     {
       "brand": "VICKO",
@@ -6332,13 +6332,13 @@
     {
       "brand": "W7 Makeup",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "w7cosmetics",
       "times_advertised": 44,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-W7 Makeup.json"
     },
     {
       "brand": "89.2 music",
@@ -6673,13 +6673,13 @@
     {
       "brand": "Wella Professionals",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "wella",
       "times_advertised": 42,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Wella Professionals.json"
     },
     {
       "brand": "Ariel",
@@ -7674,13 +7674,13 @@
     {
       "brand": "Wella",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "wella",
       "times_advertised": 37,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Wella.json"
     },
     {
       "brand": "Amino Animo",
@@ -9918,13 +9918,13 @@
     {
       "brand": "WABI",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "wabi-beauty",
       "times_advertised": 28,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-WABI.json"
     },
     {
       "brand": "AS Company",
@@ -10171,13 +10171,13 @@
     {
       "brand": "e.l.f. Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "e-l-f-cosmetics",
       "times_advertised": 28,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-e.l.f. Cosmetics.json"
     },
     {
       "brand": "Christian Louboutin",
@@ -11260,13 +11260,13 @@
     {
       "brand": "W7 Makeup Greece",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "w7cosmetics",
       "times_advertised": 25,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-W7 Makeup Greece.json"
     },
     {
       "brand": "VIUSID",
@@ -12877,13 +12877,13 @@
     {
       "brand": "Zadig & Voltaire",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "zadig-et-voltaire",
       "times_advertised": 22,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Zadig & Voltaire.json"
     },
     {
       "brand": "AEGEAN",
@@ -15264,13 +15264,13 @@
     {
       "brand": "Weleda",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "weleda",
       "times_advertised": 18,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Weleda.json"
     },
     {
       "brand": "Pringles",
@@ -16364,13 +16364,13 @@
     {
       "brand": "r.e.m. beauty",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "rembeauty",
       "times_advertised": 17,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-r.e.m. beauty.json"
     },
     {
       "brand": "Replay",
@@ -20665,13 +20665,13 @@
     {
       "brand": "W7 Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "w7cosmetics",
       "times_advertised": 13,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-W7 Cosmetics.json"
     },
     {
       "brand": "Taycan",
@@ -21545,13 +21545,13 @@
     {
       "brand": "W7",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "w7cosmetics",
       "times_advertised": 12,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-W7.json"
     },
     {
       "brand": "Weber",
