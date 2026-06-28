@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Katerina Antoniou",
+    "job_title": "Marketing and Communications",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/katerina-antoniou-412694b2/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "hugoboss.com",
+    "first_seen": "2026-06-28",
+    "last_seen": "2026-06-28"
+  },
+  {
+    "name": "Dr. Argyro Tsampis",
+    "job_title": "Brand Ambassador",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/dr-argyro-tsampis-89021378/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "hugoboss.com",
+    "first_seen": "2026-06-28",
+    "last_seen": "2026-06-28"
+  }
+]

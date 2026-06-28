@@ -513,13 +513,13 @@
     {
       "brand": "Huda Beauty",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "hudabeauty",
       "times_advertised": 411,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Huda Beauty.json"
     },
     {
       "brand": "Kingbet",
@@ -1140,13 +1140,13 @@
     {
       "brand": "Hondos Center",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "hondoscenter",
       "times_advertised": 212,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 11,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Hondos Center.json"
     },
     {
       "brand": "Museclo",
@@ -1250,13 +1250,13 @@
     {
       "brand": "Giorgio Armani",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "giorgio-armani",
       "times_advertised": 200,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Giorgio Armani.json"
     },
     {
       "brand": "NaturesPlus",
@@ -2493,13 +2493,13 @@
     {
       "brand": "Hermès",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "hermes",
       "times_advertised": 103,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Hermès.json"
     },
     {
       "brand": "Miniso",
@@ -3824,13 +3824,13 @@
     {
       "brand": "Golden Rose",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "golden-rose-cosmetics",
       "times_advertised": 72,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Golden Rose.json"
     },
     {
       "brand": "Brain Balance Consulting",
@@ -3956,13 +3956,13 @@
     {
       "brand": "Glow Recipe",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "glow-recipe",
       "times_advertised": 70,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Glow Recipe.json"
     },
     {
       "brand": "Jacquemus",
@@ -4055,13 +4055,13 @@
     {
       "brand": "Hourglass Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "hourglass-cosmetics",
       "times_advertised": 68,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Hourglass Cosmetics.json"
     },
     {
       "brand": "Longchamp",
@@ -5397,13 +5397,13 @@
     {
       "brand": "Gisou",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "gisou",
       "times_advertised": 51,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Gisou.json"
     },
     {
       "brand": "ΟΛΥΜΠΟΣ",
@@ -7476,13 +7476,13 @@
     {
       "brand": "Guerlain",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "guerlain",
       "times_advertised": 38,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Guerlain.json"
     },
     {
       "brand": "Kidnest",
@@ -7861,13 +7861,13 @@
     {
       "brand": "Inglot",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "inglot",
       "times_advertised": 36,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Inglot.json"
     },
     {
       "brand": "TP-Link",
@@ -8048,13 +8048,13 @@
     {
       "brand": "Haus Labs",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "hauslabs",
       "times_advertised": 35,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Haus Labs.json"
     },
     {
       "brand": "ION Break",
@@ -10061,13 +10061,13 @@
     {
       "brand": "Haus Labs by Lady Gaga",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "hauslabs",
       "times_advertised": 28,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Haus Labs by Lady Gaga.json"
     },
     {
       "brand": "Celestino",
@@ -10380,13 +10380,13 @@
     {
       "brand": "Hugo Boss",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "hugo-boss",
       "times_advertised": 27,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 2,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Hugo Boss.json"
     },
     {
       "brand": "Phos Boutique Santorini",
@@ -11150,13 +11150,13 @@
     {
       "brand": "Jean Paul Gaultier",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "jean-paul-gaultier",
       "times_advertised": 25,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Jean Paul Gaultier.json"
     },
     {
       "brand": "Roger & Gallet",
@@ -11194,13 +11194,13 @@
     {
       "brand": "HaruHaru Wonder",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "haruharu-wonder",
       "times_advertised": 25,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-HaruHaru Wonder.json"
     },
     {
       "brand": "Just Stella",
@@ -13064,13 +13064,13 @@
     {
       "brand": "Glossier",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "glossier",
       "times_advertised": 22,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Glossier.json"
     },
     {
       "brand": "Boudoir Perfumes by Anastazia",
@@ -13130,13 +13130,13 @@
     {
       "brand": "ISDIN",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "isdin",
       "times_advertised": 21,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-ISDIN.json"
     },
     {
       "brand": "Wolfie's Street Food",
@@ -13174,13 +13174,13 @@
     {
       "brand": "Givenchy",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "givenchy",
       "times_advertised": 21,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Givenchy.json"
     },
     {
       "brand": "Celine",
@@ -15858,24 +15858,24 @@
     {
       "brand": "Head & Shoulders",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "head-shoulders",
       "times_advertised": 17,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Head & Shoulders.json"
     },
     {
       "brand": "Helenvita",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "pharmex",
       "times_advertised": 17,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 1,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Helenvita.json"
     },
     {
       "brand": "Holmes Place",
@@ -19554,13 +19554,13 @@
     {
       "brand": "Jeffree Star Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "jeffree-star-cosmetics",
       "times_advertised": 14,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Jeffree Star Cosmetics.json"
     },
     {
       "brand": "Golden Hall",
@@ -21259,13 +21259,13 @@
     {
       "brand": "Issey Miyake",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "issey-miyake",
       "times_advertised": 12,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Issey Miyake.json"
     },
     {
       "brand": "isyourgirlelena",
