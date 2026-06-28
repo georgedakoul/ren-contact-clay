@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Elpida Fardogianni",
+    "job_title": "Marketing Specialist",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/elpida-fardogianni-124877b2/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "juliettearmand.com",
+    "first_seen": "2026-06-28",
+    "last_seen": "2026-06-28"
+  },
+  {
+    "name": "Bill Papaefstratiou",
+    "job_title": "Head of Marketing",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/bill-papaefstratiou-26a4b258/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "juliettearmand.com",
+    "first_seen": "2026-06-28",
+    "last_seen": "2026-06-28"
+  }
+]

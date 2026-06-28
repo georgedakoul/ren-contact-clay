@@ -1063,13 +1063,13 @@
     {
       "brand": "Kiehl's",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "kiehls",
       "times_advertised": 217,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Kiehl's.json"
     },
     {
       "brand": "Olympiacos FC",
@@ -1305,13 +1305,13 @@
     {
       "brand": "LANEIGE",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "laneige",
       "times_advertised": 187,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-LANEIGE.json"
     },
     {
       "brand": "AEK FC",
@@ -2834,13 +2834,13 @@
     {
       "brand": "Kylie Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "kylie-cosmetics",
       "times_advertised": 93,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Kylie Cosmetics.json"
     },
     {
       "brand": "Oral-B",
@@ -4231,13 +4231,13 @@
     {
       "brand": "Jo Malone London",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "jo-malone-london",
       "times_advertised": 65,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Jo Malone London.json"
     },
     {
       "brand": "SKY express",
@@ -4693,13 +4693,13 @@
     {
       "brand": "Kiehl's Since 1851",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "kiehls",
       "times_advertised": 59,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Kiehl's Since 1851.json"
     },
     {
       "brand": "Radiant Professional",
@@ -5727,13 +5727,13 @@
     {
       "brand": "Kosas",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "kosas",
       "times_advertised": 49,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Kosas.json"
     },
     {
       "brand": "My aesthetic plan",
@@ -6563,13 +6563,13 @@
     {
       "brand": "LUX",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "lux",
       "times_advertised": 43,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-LUX.json"
     },
     {
       "brand": "MEDUSA GROUP",
@@ -8037,13 +8037,13 @@
     {
       "brand": "Kayali",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "kayalibeauty",
       "times_advertised": 35,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Kayali.json"
     },
     {
       "brand": "Haus Labs",
@@ -8279,13 +8279,13 @@
     {
       "brand": "Juliette Armand",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "juliette-armand-s-a-",
       "times_advertised": 34,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 2,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "00-Juliette Armand.json"
     },
     {
       "brand": "Angie's Nail World",
@@ -8334,13 +8334,13 @@
     {
       "brand": "K18 Hair",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "k18hair",
       "times_advertised": 34,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-K18 Hair.json"
     },
     {
       "brand": "GET AP Studio",
@@ -8565,13 +8565,13 @@
     {
       "brand": "Kryolan",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "kryolan",
       "times_advertised": 33,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Kryolan.json"
     },
     {
       "brand": "Marc Jacobs",
@@ -8873,13 +8873,13 @@
     {
       "brand": "L'Occitane",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "loccitane",
       "times_advertised": 32,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-L'Occitane.json"
     },
     {
       "brand": "Primer Music Festival",
@@ -10039,13 +10039,13 @@
     {
       "brand": "L'Occitane en Provence",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "Empty",
       "linkedin_slug": "loccitane",
       "times_advertised": 28,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-L'Occitane en Provence.json"
     },
     {
       "brand": "Fresh Patisserie",
@@ -11480,13 +11480,13 @@
     {
       "brand": "Lancaster",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "lancaster-paris",
       "times_advertised": 25,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Lancaster.json"
     },
     {
       "brand": "Vania Apostolidou Dance Studio",
@@ -12437,13 +12437,13 @@
     {
       "brand": "Lattafa Perfumes",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "lattafa-perfumes",
       "times_advertised": 23,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Lattafa Perfumes.json"
     },
     {
       "brand": "Marks & Spencer",
@@ -12756,13 +12756,13 @@
     {
       "brand": "L'Erbolario",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "lerbolario",
       "times_advertised": 22,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-L'Erbolario.json"
     },
     {
       "brand": "Lavranos Delimeat",
@@ -13361,13 +13361,13 @@
     {
       "brand": "La Mer",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "la-mer",
       "times_advertised": 21,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-La Mer.json"
     },
     {
       "brand": "Floofers",
@@ -15418,13 +15418,13 @@
     {
       "brand": "Kilian Paris",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "kilian-paris",
       "times_advertised": 18,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Kilian Paris.json"
     },
     {
       "brand": "Krispy Kreme",
@@ -15935,24 +15935,24 @@
     {
       "brand": "KOCOSTAR",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "kocostar",
       "times_advertised": 17,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-KOCOSTAR.json"
     },
     {
       "brand": "Lattafa",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "lattafa-perfumes",
       "times_advertised": 17,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Lattafa.json"
     },
     {
       "brand": "Fenomilano",
@@ -19136,13 +19136,13 @@
     {
       "brand": "Klorane",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "klorane",
       "times_advertised": 14,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-Klorane.json"
     },
     {
       "brand": "Katogi Averoff",
@@ -20170,13 +20170,13 @@
     {
       "brand": "KIKO",
       "industry": "Beauty",
-      "coverage_status": "Uncovered",
+      "coverage_status": "Empty",
       "linkedin_slug": "kiko-milano",
       "times_advertised": 13,
-      "has_employee_file": false,
+      "has_employee_file": true,
       "employee_count": 0,
       "emails_known": 0,
-      "employee_file": null
+      "employee_file": "ZZ-KIKO.json"
     },
     {
       "brand": "NOUNOU",
