@@ -1,0 +1,158 @@
+{
+  "n_rows": 26,
+  "tiers": [
+    [
+      "nano",
+      0,
+      10000
+    ],
+    [
+      "micro",
+      10000,
+      50000
+    ],
+    [
+      "mid",
+      50000,
+      200000
+    ],
+    [
+      "macro",
+      200000,
+      1000000
+    ],
+    [
+      "mega",
+      1000000,
+      1000000000000
+    ]
+  ],
+  "models": {
+    "followers": {
+      "base": "followers",
+      "global_ratio": 0.055578,
+      "tiers": {
+        "nano": {
+          "n": 3,
+          "ratio": 0.067182,
+          "ratio_low": 0.048989,
+          "ratio_high": 0.854814
+        },
+        "micro": {
+          "n": 9,
+          "ratio": 0.099676,
+          "ratio_low": 0.048644,
+          "ratio_high": 0.11533
+        },
+        "mid": {
+          "n": 7,
+          "ratio": 0.054758,
+          "ratio_low": 0.031578,
+          "ratio_high": 0.119248
+        },
+        "macro": {
+          "n": 7,
+          "ratio": 0.022611,
+          "ratio_low": 0.0212,
+          "ratio_high": 0.132362
+        },
+        "mega": {
+          "n": 0,
+          "ratio": 0.055578,
+          "ratio_low": 0.055578,
+          "ratio_high": 0.055578,
+          "borrowed_global": true
+        }
+      }
+    },
+    "feed_views": {
+      "base": "feed_views",
+      "global_ratio": 0.072283,
+      "tiers": {
+        "nano": {
+          "n": 3,
+          "ratio": 0.086705,
+          "ratio_low": 0.03771,
+          "ratio_high": 0.169785
+        },
+        "micro": {
+          "n": 9,
+          "ratio": 0.067872,
+          "ratio_low": 0.04258,
+          "ratio_high": 0.151131
+        },
+        "mid": {
+          "n": 7,
+          "ratio": 0.069689,
+          "ratio_low": 0.041131,
+          "ratio_high": 0.075224
+        },
+        "macro": {
+          "n": 7,
+          "ratio": 0.134173,
+          "ratio_low": 0.01745,
+          "ratio_high": 0.148427
+        },
+        "mega": {
+          "n": 0,
+          "ratio": 0.072283,
+          "ratio_low": 0.072283,
+          "ratio_high": 0.072283,
+          "borrowed_global": true
+        }
+      }
+    },
+    "engagement": {
+      "base": "engagement",
+      "global_ratio": 1.863808,
+      "tiers": {
+        "nano": {
+          "n": 3,
+          "ratio": 2.227106,
+          "ratio_low": 1.503448,
+          "ratio_high": 3.65173
+        },
+        "micro": {
+          "n": 9,
+          "ratio": 1.881679,
+          "ratio_low": 1.562352,
+          "ratio_high": 6.623925
+        },
+        "mid": {
+          "n": 7,
+          "ratio": 1.309684,
+          "ratio_low": 0.967582,
+          "ratio_high": 2.877601
+        },
+        "macro": {
+          "n": 7,
+          "ratio": 6.852834,
+          "ratio_low": 0.92748,
+          "ratio_high": 14.118812
+        },
+        "mega": {
+          "n": 0,
+          "ratio": 1.863808,
+          "ratio_low": 1.863808,
+          "ratio_high": 1.863808,
+          "borrowed_global": true
+        }
+      }
+    }
+  },
+  "mape": {
+    "followers": {
+      "loo_mape_pct": 123.43,
+      "n_scored": 26
+    },
+    "feed_views": {
+      "loo_mape_pct": 153.51,
+      "n_scored": 26
+    },
+    "engagement": {
+      "loo_mape_pct": 177.99,
+      "n_scored": 26
+    }
+  },
+  "recommended_base": "followers"
+}

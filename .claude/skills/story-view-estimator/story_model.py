@@ -30,7 +30,11 @@ DEFAULT_TIERS = [
     ["macro", 200_000, 1_000_000],
     ["mega", 1_000_000, 10**12],
 ]
-BASE_KEYS = {"followers": "followers", "feed_views": "avg_feed_views"}
+# base name -> row key holding that base value.
+# "engagement" = avg feed engagement/post (likes+comments+shares+saves); proxy for the
+# creator's ACTIVE audience, which story viewers track better than raw follower count.
+# (active_audience = followers * engagement_rate is algebraically == avg_engagement, so not separate.)
+BASE_KEYS = {"followers": "followers", "feed_views": "avg_feed_views", "engagement": "avg_engagement"}
 
 
 def tier_of(followers, tiers):
@@ -118,13 +122,17 @@ def calibrate(rows, tiers):
     return result
 
 
-def predict(cal, followers, feed_views=None, base="auto"):
+def predict(cal, followers, features=None, base="auto"):
+    """features: optional {"feed_views": N, "engagement": N}. followers always available
+    and used for tiering. Falls back to the followers base if the chosen base value is missing."""
     bands = cal["tiers"]
+    features = features or {}
     if base == "auto":
         base = cal.get("recommended_base", "followers")
-    if base == "feed_views" and not feed_views:
+    base_val = followers if base == "followers" else features.get(base)
+    if not base_val:
         base = "followers"  # fall back if the alt base value wasn't supplied
-    base_val = followers if base == "followers" else feed_views
+        base_val = followers
     t = tier_of(followers, bands)
     m = cal["models"][base]["tiers"][t]
     if m["ratio"] is None or not base_val:
@@ -178,7 +186,8 @@ def main():
     p = sub.add_parser("predict"); p.add_argument("coeffs")
     p.add_argument("--followers", type=int, required=True)
     p.add_argument("--feed-views", type=int, default=None)
-    p.add_argument("--base", default="auto", choices=["auto", "followers", "feed_views"])
+    p.add_argument("--avg-engagement", type=int, default=None)
+    p.add_argument("--base", default="auto", choices=["auto", "followers", "feed_views", "engagement"])
     sub.add_parser("selftest")
     a = ap.parse_args()
 
@@ -194,7 +203,8 @@ def main():
                           "mape": cal["mape"], "n_rows": cal["n_rows"]}, indent=2))
     elif a.cmd == "predict":
         cal = json.loads(Path(a.coeffs).read_text())
-        print(json.dumps(predict(cal, a.followers, a.feed_views, a.base), indent=2))
+        feats = {"feed_views": a.feed_views, "engagement": a.avg_engagement}
+        print(json.dumps(predict(cal, a.followers, feats, a.base), indent=2))
 
 
 if __name__ == "__main__":

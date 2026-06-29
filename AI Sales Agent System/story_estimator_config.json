@@ -1,0 +1,25 @@
+{
+  "defaults": {
+    "calibration": {
+      "platforms": ["instagram"],
+      "countries": ["Greece"],
+      "target_sample_size": 60,
+      "min_stories_per_creator": 5,
+      "stories_lookback_page_size": 30,
+      "exclude_zero_view_stories": true,
+      "drop_story_view_outliers_iqr": true
+    },
+    "tiers": [
+      ["nano", 0, 10000],
+      ["micro", 10000, 50000],
+      ["mid", 50000, 200000],
+      ["macro", 200000, 1000000],
+      ["mega", 1000000, 1000000000000]
+    ],
+    "base_priority": ["followers", "feed_views"],
+    "output_dir": "AI Sales Agent System/output/story-view-estimator",
+    "coeffs_file": "AI Sales Agent System/output/story-view-estimator/story_coeffs.json",
+    "recalibrate_after_days": 30
+  },
+  "overrides": {}
+}

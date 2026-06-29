@@ -1,0 +1,26 @@
+{
+  "_note": "Seed calibration 2026-06-29. real_story_views = median of non-zero recent story view_counts (5 most-recent stories/creator, profile-scoped page). feed_views = normal_stats.avg_views (organic feed/reel). Greece IG, shared_insights=true.",
+  "tiers": [
+    ["nano", 0, 10000],
+    ["micro", 10000, 50000],
+    ["mid", 50000, 200000],
+    ["macro", 200000, 1000000],
+    ["mega", 1000000, 1000000000000]
+  ],
+  "rows": [
+    {"handle": "apostolos_kanellos", "followers": 48859, "avg_feed_views": 97723, "real_story_views": 5224},
+    {"handle": "spiros.margar",      "followers": 48780, "avg_feed_views": 53761, "real_story_views": 2465},
+    {"handle": "petroulavasilidi",   "followers": 44698, "avg_feed_views": 95578, "real_story_views": 3757},
+    {"handle": "afroditi__tzima",    "followers": 41665, "avg_feed_views": 25738, "real_story_views": 4153},
+    {"handle": "nikoskallgram",      "followers": 38993, "avg_feed_views": 34243, "real_story_views": 4825},
+    {"handle": "emilyvagia",         "followers": 185530, "avg_feed_views": 94609, "real_story_views": 7084},
+    {"handle": "gs_personaltraining","followers": 174622, "avg_feed_views": 127113, "real_story_views": 9562},
+    {"handle": "foivos_bellos",      "followers": 154064, "avg_feed_views": 101205, "real_story_views": 4865},
+    {"handle": "fosbloque",          "followers": 146541, "avg_feed_views": 140232, "real_story_views": 5583},
+    {"handle": "filio_lou",          "followers": 406942, "avg_feed_views": 494381, "real_story_views": 8627},
+    {"handle": "stela_passari",      "followers": 430941, "real_story_views": 57040},
+    {"handle": "katerina_papoutsaki","followers": 351819, "real_story_views": 7955},
+    {"handle": "ancientmemes",       "followers": 344806, "avg_feed_views": 51288, "real_story_views": 7497},
+    {"handle": "elena_mariposa",     "followers": 329358, "avg_feed_views": 93878, "real_story_views": 13934}
+  ]
+}
