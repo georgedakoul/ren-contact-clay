@@ -54,6 +54,7 @@ Use `find-and-enrich-contacts-at-company` with the brand's **domain** (not Linke
 
 ```
 companyIdentifier: "stoiximan.gr"          ← from DOMAIN_MAP or status report
+numberOfContacts: 11
 contactFilters: { locations: ["Greece"] }
 ```
 

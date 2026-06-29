@@ -10,7 +10,7 @@ Usage:
 
 3-phase Clay workflow:
   Phase 1 — Employee discovery:
-    find-and-enrich-contacts-at-company(companyIdentifier=<domain>, contactFilters={locations:["Greece"]})
+    find-and-enrich-contacts-at-company(companyIdentifier=<domain>, numberOfContacts=PHASE1_NUM_CONTACTS, contactFilters={locations:["Greece"]})
     → raw employees (name + title + LinkedIn URL, no email needed yet)
   Phase 2 — Save + title filter:
     Edit BATCH dict, run `python discover_contacts.py save`
@@ -34,7 +34,8 @@ ROOT          = Path(__file__).resolve().parents[3]
 STORE_DIR     = ROOT / "AI Sales Agent System" / "output" / "employees"
 CONTACTS_FILE = ROOT / "AI Sales Agent System" / "actionable_contacts.json"
 EXPORT_PATH   = ROOT / "AI Sales Agent System" / "output" / "contacts_export.xlsx"
-TODAY         = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+TODAY               = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+PHASE1_NUM_CONTACTS = 11   # numberOfContacts passed to find-and-enrich-contacts-at-company
 STORE_DIR.mkdir(parents=True, exist_ok=True)
 
 # ---------------------------------------------------------------------------
