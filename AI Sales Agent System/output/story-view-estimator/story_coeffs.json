@@ -152,7 +152,22 @@
     "engagement": {
       "loo_mape_pct": 177.99,
       "n_scored": 26
+    },
+    "powerlaw_niche": {
+      "loo_mape_pct": 74.13,
+      "n_scored": 26
     }
   },
-  "recommended_base": "followers"
+  "powerlaw_niche": {
+    "type": "powerlaw_niche",
+    "betas": [
+      0.146908,
+      0.690704,
+      0.797092
+    ],
+    "loo_mape_pct": 74.13,
+    "n": 26,
+    "form": "story = exp(b0 + b1*ln(followers) + b2*niche); niche 1=personal 0=promo"
+  },
+  "recommended_base": "powerlaw_niche"
 }

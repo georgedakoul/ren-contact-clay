@@ -51,3 +51,4 @@ AI Sales Agent System/message_crafter_config.json
 
 # Other configs not needed by clay agent
 AI Sales Agent System/linkedin_discoverer_config.json
+service_account.json

@@ -5,6 +5,7 @@ Usage:
   python discover_contacts.py save                     → save the BATCH dict below
   python discover_contacts.py enrich_emails Brand1 … → print JSON for find-and-enrich-list-of-contacts
   python discover_contacts.py export                   → export all contacts to Excel
+  python discover_contacts.py sync_sheets              → push new contacts (with email) to shared Google Sheet
   python discover_contacts.py mark_empty   Brand1 [Brand2 ...]
   python discover_contacts.py unmark_empty Brand1 [Brand2 ...]
 
@@ -34,6 +35,10 @@ ROOT          = Path(__file__).resolve().parents[3]
 STORE_DIR     = ROOT / "AI Sales Agent System" / "output" / "employees"
 CONTACTS_FILE = ROOT / "AI Sales Agent System" / "actionable_contacts.json"
 EXPORT_PATH   = ROOT / "AI Sales Agent System" / "output" / "contacts_export.xlsx"
+
+# Google Sheets sync — set SHEET_ID after creating the sheet (see SKILL.md setup guide)
+SHEET_ID               = ""   # e.g. "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgVE2upms"
+SHEETS_SERVICE_ACCOUNT = Path(__file__).parent / "service_account.json"
 TODAY               = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 PHASE1_NUM_CONTACTS = 11   # numberOfContacts passed to find-and-enrich-contacts-at-company
 STORE_DIR.mkdir(parents=True, exist_ok=True)
@@ -932,6 +937,68 @@ def git_sync():
     print(f"git_sync: pushed — '{msg}'")
 
 
+def sync_to_sheets():
+    """Push contacts with emails to the shared Google Sheet. First run = all; subsequent = new only."""
+    try:
+        import gspread
+        from google.oauth2.service_account import Credentials
+    except ImportError:
+        print("Missing deps. Run: pip3 install gspread google-auth --break-system-packages")
+        return
+
+    if not SHEET_ID:
+        print("Set SHEET_ID in discover_contacts.py first (see SKILL.md setup guide).")
+        return
+    if not SHEETS_SERVICE_ACCOUNT.exists():
+        print(f"Service account JSON not found: {SHEETS_SERVICE_ACCOUNT}")
+        return
+
+    scopes = ["https://www.googleapis.com/auth/spreadsheets"]
+    creds  = Credentials.from_service_account_file(str(SHEETS_SERVICE_ACCOUNT), scopes=scopes)
+    gc     = gspread.authorize(creds)
+    ws     = gc.open_by_key(SHEET_ID).sheet1
+
+    existing = ws.get_all_values()
+    if not existing:
+        ws.append_row(["Brand", "Status", "Name", "Job Title", "Email", "LinkedIn URL", "Domain", "First Seen", "Last Seen"])
+        known_emails = set()
+    else:
+        email_col    = existing[0].index("Email") if "Email" in existing[0] else 4
+        known_emails = {r[email_col].lower() for r in existing[1:] if len(r) > email_col and r[email_col] not in ("", "—")}
+
+    store    = _scan_store()
+    new_rows = []
+    for brand, info in sorted(store.items()):
+        prefix = info["_prefix"]
+        if prefix == "ZZ-":
+            continue
+        f = STORE_DIR / f"{prefix}{brand}.json"
+        if not f.exists():
+            continue
+        status   = "Covered" if prefix == "" else "LinkedIn-only"
+        contacts = json.loads(f.read_text(encoding="utf-8"))
+        for c in contacts:
+            email = (c.get("email") or "").strip()
+            if not email or email.lower() in known_emails:
+                continue
+            new_rows.append([
+                brand, status,
+                c.get("name") or "—",
+                c.get("job_title") or "—",
+                email,
+                c.get("linkedin_url") or "—",
+                c.get("domain") or "—",
+                c.get("first_seen") or "—",
+                c.get("last_seen") or "—",
+            ])
+
+    if not new_rows:
+        print("No new contacts to sync.")
+        return
+    ws.append_rows(new_rows, value_input_option="USER_ENTERED")
+    print(f"Synced {len(new_rows)} new contacts → Google Sheets.")
+
+
 def export_excel():
     try:
         from openpyxl import Workbook
@@ -1101,6 +1168,8 @@ if __name__ == "__main__":
         purge_banned()
     elif "export" in sys.argv:
         export_excel()
+    elif "sync_sheets" in sys.argv:
+        sync_to_sheets()
     elif "mark_empty" in sys.argv:
         idx = sys.argv.index("mark_empty")
         brands = sys.argv[idx + 1:]

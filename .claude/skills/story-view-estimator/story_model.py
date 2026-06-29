@@ -18,6 +18,7 @@ CLI:
 """
 import argparse
 import json
+import math
 import statistics as st
 import sys
 from pathlib import Path
@@ -160,6 +161,11 @@ def calibrate(rows, tiers):
         result["models"][base] = fit_one_base(rows, tiers, base)
         m, n = loo_mape(rows, tiers, base)
         result["mape"][base] = {"loo_mape_pct": m, "n_scored": n}
+    # niche power-law model (best when rows carry a niche label)
+    pn = fit_powerlaw_niche(rows)
+    if pn:
+        result["powerlaw_niche"] = pn
+        result["mape"]["powerlaw_niche"] = {"loo_mape_pct": pn["loo_mape_pct"], "n_scored": pn["n"]}
     # recommend the base with the lower (non-null) MAPE
     scored = {b: v["loo_mape_pct"] for b, v in result["mape"].items()
               if v["loo_mape_pct"] is not None}
@@ -174,6 +180,16 @@ def predict(cal, followers, features=None, base="auto"):
     features = features or {}
     if base == "auto":
         base = cal.get("recommended_base", "followers")
+    if base == "powerlaw_niche" and cal.get("powerlaw_niche"):
+        b0, b1, b2 = cal["powerlaw_niche"]["betas"]
+        niche = float(features.get("niche", 0) or 0)
+        est = math.exp(b0 + b1 * math.log(followers) + b2 * niche)
+        return {"tier": tier_of(followers, bands), "base": "powerlaw_niche",
+                "niche": int(niche), "estimate": round(est),
+                # ±1 the model's MAPE as a rough band
+                "low": round(est * (1 - cal["powerlaw_niche"]["loo_mape_pct"] / 100)),
+                "high": round(est * (1 + cal["powerlaw_niche"]["loo_mape_pct"] / 100)),
+                "loo_mape_pct": cal["powerlaw_niche"]["loo_mape_pct"], "n": cal["powerlaw_niche"]["n"]}
     base_val = followers if base == "followers" else features.get(base)
     if not base_val:
         base = "followers"  # fall back if the alt base value wasn't supplied
@@ -232,7 +248,10 @@ def main():
     p.add_argument("--followers", type=int, required=True)
     p.add_argument("--feed-views", type=int, default=None)
     p.add_argument("--avg-engagement", type=int, default=None)
-    p.add_argument("--base", default="auto", choices=["auto", "followers", "feed_views", "engagement"])
+    p.add_argument("--niche", type=int, default=None, choices=[0, 1],
+                   help="1=personal/lifestyle/personality, 0=promotional/aesthetic/aggregator")
+    p.add_argument("--base", default="auto",
+                   choices=["auto", "followers", "feed_views", "engagement", "powerlaw_niche"])
     sub.add_parser("selftest")
     a = ap.parse_args()
 
@@ -248,7 +267,7 @@ def main():
                           "mape": cal["mape"], "n_rows": cal["n_rows"]}, indent=2))
     elif a.cmd == "predict":
         cal = json.loads(Path(a.coeffs).read_text())
-        feats = {"feed_views": a.feed_views, "engagement": a.avg_engagement}
+        feats = {"feed_views": a.feed_views, "engagement": a.avg_engagement, "niche": a.niche}
         print(json.dumps(predict(cal, a.followers, feats, a.base), indent=2))
 
 

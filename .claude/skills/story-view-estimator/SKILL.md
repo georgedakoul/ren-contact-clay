@@ -19,18 +19,19 @@ tier's ratios gives a low/high band. The math + a self-test live in `story_model
 
 > ### ⚠️ Accuracy reality (measured 2026-06-29, 26-creator Greek IG set)
 > **Story views are only weakly predictable from public metrics.** This is a low-confidence
-> estimator — treat its output as an order-of-magnitude range, never a precise number.
+> estimator — treat output as an order-of-magnitude range, never a precise number.
 > - story-views / followers ratio spans **1.2%–85%** across creators (70× spread).
-> - Leave-one-out MAPE: followers **123%**, feed_views **154%**, engagement **178%** (engagement
->   does NOT help). A power-law (log-log OLS) on feed_views is the best variant at **~87%** MAPE.
-> - Best correlate: avg feed views, log-log r≈0.71. Still not decision-grade.
-> - **Root cause**: story reach is a creator-behaviour signal (how "personal"/story-active the
->   account is — lifestyle/mum/personal creators run 15–85%, aggregator/aesthetic/music accounts
->   ~1–4%), largely decoupled from any public feed count. A numeric-only model can't see it.
+> - Leave-one-out MAPE by model: followers-ratio **123%**, feed_views **154%**, engagement
+>   **178%** (engagement does NOT help). **Best = `powerlaw_niche`: 74%** —
+>   `story = exp(b0 + b1·ln(followers) + b2·niche)`, the recommended base.
+> - **Niche is the single biggest lever.** Personal/lifestyle/personality accounts run ~8.4%
+>   median story-reach vs ~3.6% for promotional/aesthetic/aggregator/science/music (2.3×).
+> - Even so, 74% MAPE means a 10k estimate could really be ~3k–19k. Residual variance is intrinsic
+>   (e.g. story-heavy mum accounts can hit 20–85% reach and still under-predict).
 >
-> **Honest recommendation**: for an off-platform creator, report a wide tier range + "low
-> confidence, story reach varies heavily by creator type", not a point estimate. The only exact
-> source is Renfluence's own data (shared_insights=true). Don't oversell this number to the CEO.
+> **Honest recommendation**: report the `powerlaw_niche` point + its wide band + "low confidence,
+> varies heavily by creator type". The only exact source is Renfluence's own data
+> (shared_insights=true). Don't oversell this number to the CEO.
 
 > **MCP-side note (surface to the team):** the cleanest home for this is server-side. Renfluence
 > already has real story views for the whole `shared_insights=true` population — far more than a
@@ -95,12 +96,18 @@ and wants an estimated avg story view count.
   `get_profile_overviews([uuid])` → take `follower_count` and `avg_views`. If
   `shared_insights==true`, tell the user the **real** story views are available directly
   (`search_media` stories) — no estimate needed.
+- **Classify niche** (drives the recommended model): set `--niche 1` for
+  personal / lifestyle / personality / mum / comedy / "girl-next-door" creators (devoted story
+  audience); `--niche 0` for promotional / aesthetic / fashion-catalog / aggregator-meme /
+  science-explainer / music-artist accounts (weak story audience). Judge from bio + content.
 
 ### B2. Predict
 ```
-python story_model.py predict <cfg.coeffs_file> --followers <N> [--feed-views <N>]
+python story_model.py predict <cfg.coeffs_file> --followers <N> --niche <0|1>
 ```
-Output: `estimate`, `low`, `high` (band), tier used, and the tier's sample size.
+Uses the recommended `powerlaw_niche` model. Output: `estimate`, `low`, `high` (wide band),
+niche used, and the model's LOO-MAPE. Without `--niche`, it falls back to the followers-ratio
+model (worse). State plainly it's a **low-confidence estimate** (see accuracy note above).
 
 ### B3. Report
 Give the point estimate with the low–high band and the tier it fell in. State plainly it's an

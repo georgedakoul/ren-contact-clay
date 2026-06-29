@@ -1,0 +1,240 @@
+{
+  "_note": "Calibration v2, 2026-06-29. 27 Greece IG shared_insights=true creators across nano/micro/mid/macro. real_story_views = median of non-zero recent story view_counts. avg_engagement, avg_feed_views from normal_stats (organic); for stela/katerina the only stats available were stat_type=ads (avg_engagement/avg_views are ad-stats, flagged _ads). efigkouta held out as test (NOT in this set). v3: + niche label (1=personal/lifestyle/personality, 0=promo/aesthetic/aggregator/science/music).",
+  "tiers": [
+    [
+      "nano",
+      0,
+      10000
+    ],
+    [
+      "micro",
+      10000,
+      50000
+    ],
+    [
+      "mid",
+      50000,
+      200000
+    ],
+    [
+      "macro",
+      200000,
+      1000000
+    ],
+    [
+      "mega",
+      1000000,
+      1000000000000
+    ]
+  ],
+  "rows": [
+    {
+      "handle": "oolianeoff",
+      "followers": 9050,
+      "avg_feed_views": 3581,
+      "avg_engagement": 273,
+      "real_story_views": 608,
+      "niche": 1
+    },
+    {
+      "handle": "konsty_bax",
+      "followers": 8900,
+      "avg_feed_views": 11562,
+      "avg_engagement": 290,
+      "real_story_views": 436,
+      "niche": 1
+    },
+    {
+      "handle": "n_dark_paradise",
+      "followers": 9629,
+      "avg_feed_views": 94931,
+      "avg_engagement": 2254,
+      "real_story_views": 8231,
+      "niche": 1
+    },
+    {
+      "handle": "afroditi__tzima",
+      "followers": 41665,
+      "avg_feed_views": 25738,
+      "avg_engagement": 293,
+      "real_story_views": 4153,
+      "niche": 1
+    },
+    {
+      "handle": "nikoskallgram",
+      "followers": 38993,
+      "avg_feed_views": 34243,
+      "avg_engagement": 800,
+      "real_story_views": 4825,
+      "niche": 1
+    },
+    {
+      "handle": "petroulavasilidi",
+      "followers": 44698,
+      "avg_feed_views": 95578,
+      "avg_engagement": 2499,
+      "real_story_views": 3757,
+      "niche": 1
+    },
+    {
+      "handle": "spiros.margar",
+      "followers": 48780,
+      "avg_feed_views": 53761,
+      "avg_engagement": 1310,
+      "real_story_views": 2465,
+      "niche": 1
+    },
+    {
+      "handle": "apostolos_kanellos",
+      "followers": 48859,
+      "avg_feed_views": 97723,
+      "avg_engagement": 2830,
+      "real_story_views": 5224,
+      "niche": 1
+    },
+    {
+      "handle": "aphrodite_kourtaki",
+      "followers": 38069,
+      "avg_feed_views": 108714,
+      "avg_engagement": 2708,
+      "real_story_views": 1356,
+      "niche": 0
+    },
+    {
+      "handle": "pinelopi.anastasiadou",
+      "followers": 35498,
+      "avg_feed_views": 79098,
+      "avg_engagement": 4056,
+      "real_story_views": 6576,
+      "niche": 1
+    },
+    {
+      "handle": "super.foteini",
+      "followers": 34841,
+      "avg_feed_views": 24001,
+      "avg_engagement": 438,
+      "real_story_views": 1629,
+      "niche": 0
+    },
+    {
+      "handle": "liakimak",
+      "followers": 35622,
+      "avg_feed_views": 18746,
+      "avg_engagement": 494,
+      "real_story_views": 3565,
+      "niche": 1
+    },
+    {
+      "handle": "mikedokas",
+      "followers": 103037,
+      "avg_feed_views": 83385,
+      "avg_engagement": 4182,
+      "real_story_views": 5811,
+      "niche": 1
+    },
+    {
+      "handle": "frantalina_",
+      "followers": 128740,
+      "avg_feed_views": 124658,
+      "avg_engagement": 5335,
+      "real_story_views": 15352,
+      "niche": 1
+    },
+    {
+      "handle": "marseaux.wnc",
+      "followers": 138198,
+      "avg_feed_views": 492816,
+      "avg_engagement": 16436,
+      "real_story_views": 20270,
+      "niche": 0
+    },
+    {
+      "handle": "nicos_tzavaras",
+      "followers": 145339,
+      "avg_feed_views": 64754,
+      "avg_engagement": 2796,
+      "real_story_views": 1729,
+      "niche": 0
+    },
+    {
+      "handle": "foivos_bellos",
+      "followers": 154064,
+      "avg_feed_views": 101205,
+      "avg_engagement": 5028,
+      "real_story_views": 4865,
+      "niche": 1
+    },
+    {
+      "handle": "gs_personaltraining",
+      "followers": 174622,
+      "avg_feed_views": 127113,
+      "avg_engagement": 7301,
+      "real_story_views": 9562,
+      "niche": 1
+    },
+    {
+      "handle": "emilyvagia",
+      "followers": 185530,
+      "avg_feed_views": 94609,
+      "avg_engagement": 2323,
+      "real_story_views": 7084,
+      "niche": 0
+    },
+    {
+      "handle": "vasiliki_tsertseli",
+      "followers": 201344,
+      "avg_feed_views": 210645,
+      "avg_engagement": 6208,
+      "real_story_views": 2383,
+      "niche": 0
+    },
+    {
+      "handle": "home.homie.home",
+      "followers": 214229,
+      "avg_feed_views": 115914,
+      "avg_engagement": 2158,
+      "real_story_views": 37582,
+      "niche": 1
+    },
+    {
+      "handle": "elena_mariposa",
+      "followers": 329358,
+      "avg_feed_views": 93878,
+      "avg_engagement": 1969,
+      "real_story_views": 13934,
+      "niche": 1
+    },
+    {
+      "handle": "ancientmemes",
+      "followers": 344806,
+      "avg_feed_views": 51288,
+      "avg_engagement": 1094,
+      "real_story_views": 7497,
+      "niche": 0
+    },
+    {
+      "handle": "katerina_papoutsaki",
+      "followers": 351819,
+      "avg_feed_views": 233233,
+      "avg_engagement": 8577,
+      "real_story_views": 7955,
+      "niche": 1
+    },
+    {
+      "handle": "filio_lou",
+      "followers": 406942,
+      "avg_feed_views": 494381,
+      "avg_engagement": 8420,
+      "real_story_views": 8627,
+      "niche": 1
+    },
+    {
+      "handle": "stela_passari",
+      "followers": 430941,
+      "avg_feed_views": 425122,
+      "avg_engagement": 4040,
+      "real_story_views": 57040,
+      "niche": 1
+    }
+  ]
+}
