@@ -619,13 +619,13 @@
     {
       "brand": "Kiko Milano",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Empty",
       "linkedin_slug": "kiko-milano",
       "times_advertised": 385,
       "has_employee_file": true,
-      "employee_count": 6,
+      "employee_count": 0,
       "emails_known": 0,
-      "employee_file": "00-Kiko Milano.json",
+      "employee_file": "ZZ-Kiko Milano.json",
       "domain": "kikocosmetics.com"
     },
     {
@@ -9403,13 +9403,13 @@
     {
       "brand": "ANAPLASIS",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Empty",
       "linkedin_slug": "anaplasis-greece",
       "times_advertised": 33,
       "has_employee_file": true,
-      "employee_count": 1,
+      "employee_count": 0,
       "emails_known": 0,
-      "employee_file": "00-ANAPLASIS.json",
+      "employee_file": "ZZ-ANAPLASIS.json",
       "domain": "anaplasis.gr"
     },
     {
