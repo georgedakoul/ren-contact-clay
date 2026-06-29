@@ -619,13 +619,13 @@
     {
       "brand": "Kiko Milano",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "kiko-milano",
       "times_advertised": 385,
       "has_employee_file": true,
-      "employee_count": 3,
-      "emails_known": 3,
-      "employee_file": "Kiko Milano.json",
+      "employee_count": 6,
+      "emails_known": 0,
+      "employee_file": "00-Kiko Milano.json",
       "domain": "kikocosmetics.com"
     },
     {
@@ -4339,13 +4339,13 @@
     {
       "brand": "Clinéa",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Covered",
       "linkedin_slug": "sarantis",
       "times_advertised": 69,
       "has_employee_file": true,
       "employee_count": 18,
-      "emails_known": 0,
-      "employee_file": "00-Clinéa.json",
+      "emails_known": 18,
+      "employee_file": "Clinéa.json",
       "domain": "sarantisgroup.com"
     },
     {
@@ -6427,13 +6427,13 @@
     {
       "brand": "Colgate",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Covered",
       "linkedin_slug": "colgate-palmolive",
       "times_advertised": 47,
       "has_employee_file": true,
       "employee_count": 8,
-      "emails_known": 0,
-      "employee_file": "00-Colgate.json",
+      "emails_known": 8,
+      "employee_file": "Colgate.json",
       "domain": "colgatepalmolive.com"
     },
     {
@@ -8347,13 +8347,13 @@
     {
       "brand": "Garden",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Covered",
       "linkedin_slug": "garden-beauty-products",
       "times_advertised": 37,
       "has_employee_file": true,
       "employee_count": 3,
-      "emails_known": 0,
-      "employee_file": "00-Garden.json",
+      "emails_known": 3,
+      "employee_file": "Garden.json",
       "domain": "gardenofficial.com"
     },
     {
@@ -18583,13 +18583,13 @@
     {
       "brand": "A-Derma",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Covered",
       "linkedin_slug": "pierre-fabre",
       "times_advertised": 16,
       "has_employee_file": true,
       "employee_count": 7,
-      "emails_known": 0,
-      "employee_file": "00-A-Derma.json",
+      "emails_known": 7,
+      "employee_file": "A-Derma.json",
       "domain": "pierre-fabre.com"
     },
     {
