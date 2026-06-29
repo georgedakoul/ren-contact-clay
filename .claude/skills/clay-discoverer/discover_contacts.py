@@ -37,7 +37,7 @@ CONTACTS_FILE = ROOT / "AI Sales Agent System" / "actionable_contacts.json"
 EXPORT_PATH   = ROOT / "AI Sales Agent System" / "output" / "contacts_export.xlsx"
 
 # Google Sheets sync — set SHEET_ID after creating the sheet (see SKILL.md setup guide)
-SHEET_ID               = ""   # e.g. "1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgVE2upms"
+SHEET_ID               = "1g3rpo6P2drPwhcDHWkLdmAqRCy3W6y6jbN_T5_THirw"
 SHEETS_SERVICE_ACCOUNT = Path(__file__).parent / "service_account.json"
 TODAY               = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 PHASE1_NUM_CONTACTS = 11   # numberOfContacts passed to find-and-enrich-contacts-at-company
@@ -938,16 +938,20 @@ def git_sync():
 
 
 def sync_to_sheets():
-    """Push contacts with emails to the shared Google Sheet. First run = all; subsequent = new only."""
+    """Append new contacts (with emails) to the shared Google Sheet.
+    Matches the sheet's existing column layout. Never modifies existing rows.
+    Gray background applied to all appended rows.
+    """
     try:
         import gspread
+        import gspread.utils
         from google.oauth2.service_account import Credentials
     except ImportError:
         print("Missing deps. Run: pip3 install gspread google-auth --break-system-packages")
         return
 
     if not SHEET_ID:
-        print("Set SHEET_ID in discover_contacts.py first (see SKILL.md setup guide).")
+        print("Set SHEET_ID in discover_contacts.py first.")
         return
     if not SHEETS_SERVICE_ACCOUNT.exists():
         print(f"Service account JSON not found: {SHEETS_SERVICE_ACCOUNT}")
@@ -960,11 +964,38 @@ def sync_to_sheets():
 
     existing = ws.get_all_values()
     if not existing:
-        ws.append_row(["Brand", "Status", "Name", "Job Title", "Email", "LinkedIn URL", "Domain", "First Seen", "Last Seen"])
-        known_emails = set()
-    else:
-        email_col    = existing[0].index("Email") if "Email" in existing[0] else 4
-        known_emails = {r[email_col].lower() for r in existing[1:] if len(r) > email_col and r[email_col] not in ("", "—")}
+        print("Sheet has no headers — set up the sheet manually first.")
+        return
+
+    headers = existing[0]
+    ncols   = len(headers)
+
+    def _col(name):
+        return headers.index(name) if name in headers else None
+
+    ci_num     = _col("#")
+    ci_company = _col("Company")
+    ci_name    = _col("Full Name")
+    ci_title   = _col("Job Title")
+    ci_email   = _col("Email")
+
+    if ci_email is None:
+        print("No 'Email' column found in sheet headers.")
+        return
+
+    # Dedup by email — never touch existing rows
+    known_emails = {
+        r[ci_email].strip().lower()
+        for r in existing[1:]
+        if len(r) > ci_email and r[ci_email].strip() not in ("", "—")
+    }
+
+    # Next # value (auto-increment from max existing)
+    next_num = 1
+    if ci_num is not None:
+        nums = [int(r[ci_num]) for r in existing[1:] if len(r) > ci_num and r[ci_num].strip().isdigit()]
+        if nums:
+            next_num = max(nums) + 1
 
     store    = _scan_store()
     new_rows = []
@@ -975,28 +1006,35 @@ def sync_to_sheets():
         f = STORE_DIR / f"{prefix}{brand}.json"
         if not f.exists():
             continue
-        status   = "Covered" if prefix == "" else "LinkedIn-only"
-        contacts = json.loads(f.read_text(encoding="utf-8"))
-        for c in contacts:
+        for c in json.loads(f.read_text(encoding="utf-8")):
             email = (c.get("email") or "").strip()
             if not email or email.lower() in known_emails:
                 continue
-            new_rows.append([
-                brand, status,
-                c.get("name") or "—",
-                c.get("job_title") or "—",
-                email,
-                c.get("linkedin_url") or "—",
-                c.get("domain") or "—",
-                c.get("first_seen") or "—",
-                c.get("last_seen") or "—",
-            ])
+            row = [""] * ncols
+            if ci_num     is not None: row[ci_num]     = next_num
+            if ci_company is not None: row[ci_company] = brand
+            if ci_name    is not None: row[ci_name]    = c.get("name") or ""
+            if ci_title   is not None: row[ci_title]   = c.get("job_title") or ""
+            row[ci_email] = email
+            new_rows.append(row)
+            known_emails.add(email.lower())
+            next_num += 1
 
     if not new_rows:
         print("No new contacts to sync.")
         return
+
+    first_new_row = len(existing) + 1  # 1-indexed sheet row
     ws.append_rows(new_rows, value_input_option="USER_ENTERED")
-    print(f"Synced {len(new_rows)} new contacts → Google Sheets.")
+
+    # #e7e6e6 background on columns A–J only
+    last_new_row = first_new_row + len(new_rows) - 1
+    ws.format(
+        f"A{first_new_row}:J{last_new_row}",
+        {"backgroundColor": {"red": 0.906, "green": 0.902, "blue": 0.902}},
+    )
+
+    print(f"Synced {len(new_rows)} new contacts → rows {first_new_row}–{last_new_row}.")
 
 
 def export_excel():
