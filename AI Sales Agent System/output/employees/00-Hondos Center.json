@@ -41,9 +41,9 @@
     "email": null,
     "linkedin_url": "https://www.linkedin.com/in/zafiris-loukidis-8975603a/",
     "verified": false,
-    "active": true,
+    "active": false,
     "source": "clay",
-    "domain": "https://www.linkedin.com/company/hondoscenter",
+    "domain": "hondoscenter.com",
     "first_seen": "2026-06-28",
     "last_seen": "2026-06-29"
   },
