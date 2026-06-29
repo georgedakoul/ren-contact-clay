@@ -515,6 +515,7 @@ BATCH = {
         {"name": "Paraskevi Alexandra Pania", "latest_experience_title": "Group Brand Manager", "url": "https://www.linkedin.com/in/vivian-pania/", "email": None, "domain": "sarantisgroup.com"},
         {"name": "Ioanna Maria Vikatou", "latest_experience_title": "Brand Manager Noxzema", "url": "https://www.linkedin.com/in/ioannamariavikatou/", "email": None, "domain": "sarantisgroup.com"},
         {"name": "Maria Fotopoulou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/maria-fotopoulou-63754233/", "email": None, "domain": "sarantisgroup.com"},
+        {"name": "Michalis Pantavos", "latest_experience_title": "External Advisor & Project Manager", "url": "https://www.linkedin.com/in/michalis-pantavos-2a41364/", "email": None, "domain": None},
     ], "sarantisgroup.com"),
     "Colgate": ([
         {"name": "Iro Kikioni", "latest_experience_title": "Retail Marketing Assistant  • Customer Development", "url": "https://www.linkedin.com/in/irokikioni/", "email": None, "domain": "colgatepalmolive.com"},
@@ -561,6 +562,66 @@ BATCH = {
         {"name": "Maria Kounelaki", "latest_experience_title": "NPD & Marketing Director", "url": "https://www.linkedin.com/in/maria-kounelaki-7543a349/", "email": None, "domain": "youthlab.com"},
         {"name": "Nantia Kavvadia", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/nantia-kavvadia-47a9bb359/", "email": None, "domain": "youthlab.com"},
     ], "youthlab.com"),
+    "Froika": ([
+        {"name": "Kelly Kottari", "latest_experience_title": "Marketing Coordinator", "url": "https://www.linkedin.com/in/kellykottari/", "email": None, "domain": "froika.com"},
+    ], "froika.com"),
+    "Garden": ([
+        {"name": "Dora Dimaki", "latest_experience_title": "Marketing Director", "url": "https://www.linkedin.com/in/dora-dimaki-82bb81115/", "email": None, "domain": "gardenofficial.com"},
+        {"name": "Dafni Karouta", "latest_experience_title": "Social Media Marketing Specialist", "url": "https://www.linkedin.com/in/dafni-karouta-a26a822a1/", "email": None, "domain": "gardenofficial.com"},
+        {"name": "Chrysa Chamamtzi", "latest_experience_title": "Digital Marketing Manager", "url": "https://www.linkedin.com/in/chrysa-chamamtzi-26946422a/", "email": None, "domain": "gardenofficial.com"},
+    ], "gardenofficial.com"),
+    "Helenvita": ([
+        {"name": "Ioanna G.", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/ioanna-grigoriou-28159b29/", "email": None, "domain": "pharmex.gr"},
+    ], "pharmex.gr"),
+    "Hondos Center": ([
+        {"name": "Athina Bada", "latest_experience_title": "Communication & Marketing Specialist", "url": "https://www.linkedin.com/in/athina-bada-19100b82/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Niki Gkaranatsiou", "latest_experience_title": "Social Media Manager & Photographer", "url": "https://www.linkedin.com/in/niki-gkaranatsiou-8271b0294/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Ilektra Karalazou", "latest_experience_title": "Digital Marketing Specialist | Key Account Manager", "url": "https://www.linkedin.com/in/ilektra-karalazou/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Zafiris Loukidis", "latest_experience_title": "TITANIA INVESTMENTS", "url": "https://www.linkedin.com/in/zafiris-loukidis-8975603a/", "email": None, "domain": None},
+        {"name": "Φαίη Πουλάκη", "latest_experience_title": "Digital Marketing Specialist | Key Account Manager", "url": "https://www.linkedin.com/in/φαίη-πουλάκη-935576152/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Eleni Efthymiou", "latest_experience_title": "E commerce & Digital Specialist", "url": "https://www.linkedin.com/in/eleni-efthymiou-91761b9/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Vassilia Souli", "latest_experience_title": "Social Media and Community Specialist", "url": "https://www.linkedin.com/in/vassilia-souli-9106a21a6/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Despina Malamidi", "latest_experience_title": "Digital Marketing Specialist | Key Account Manager", "url": "https://www.linkedin.com/in/despina-malamidi-554078200/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Christina Xouri", "latest_experience_title": "Digital Content & Social Media", "url": "https://www.linkedin.com/in/christina-xouri/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Danai Golpinou", "latest_experience_title": "Digital Merchandiser | Key Account Manager", "url": "https://www.linkedin.com/in/danai-golpinou-658b25182/", "email": None, "domain": "hondoscenter.com"},
+        {"name": "Markella Ntouni", "latest_experience_title": "Eshop and Social Media Manager", "url": "https://www.linkedin.com/in/markella-ntouni-712272277/", "email": None, "domain": "hondoscenter.com"},
+    ], "hondoscenter.com"),
+    "Hugo Boss": ([
+        {"name": "Katerina Antoniou", "latest_experience_title": "Marketing and Communications", "url": "https://www.linkedin.com/in/katerina-antoniou-412694b2/", "email": None, "domain": "hugoboss.com"},
+        {"name": "Dr. Argyro Tsampis", "latest_experience_title": "Brand Ambassador", "url": "https://www.linkedin.com/in/dr-argyro-tsampis-89021378/", "email": None, "domain": "hugoboss.com"},
+    ], "hugoboss.com"),
+    "Juliette Armand": ([
+        {"name": "Elpida Fardogianni", "latest_experience_title": "Marketing Specialist", "url": "https://www.linkedin.com/in/elpida-fardogianni-124877b2/", "email": None, "domain": "juliettearmand.com"},
+        {"name": "Bill Papaefstratiou", "latest_experience_title": "Head of Marketing", "url": "https://www.linkedin.com/in/bill-papaefstratiou-26a4b258/", "email": None, "domain": "juliettearmand.com"},
+    ], "juliettearmand.com"),
+    "Lavish Care": ([
+        {"name": "Elsa Egyptiadou", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/elsa-egyptiadou-3a406366/", "email": None, "domain": "lavishcare.eu"},
+    ], "lavishcare.eu"),
+    "Lili Drogerie": ([
+        {"name": "Alexandros Sideridis", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/alexandros-sideridis-96107b46/", "email": None, "domain": "lilidrogerie.gr"},
+        {"name": "Georgia Panousi", "latest_experience_title": "Marketing Specialist", "url": "https://www.linkedin.com/in/georgina-panousi/", "email": None, "domain": "lilidrogerie.gr"},
+    ], "lilidrogerie.gr"),
+    "Little Secrets Natural Cosmetics": ([
+        {"name": "Eirini Amygdalia Petridou", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/eirini-amygdalia-petridou-596122297/", "email": None, "domain": "littlesecrets.gr"},
+    ], "littlesecrets.gr"),
+    "MAC Cosmetics": ([
+        {"name": "Eirini Nikolakea", "latest_experience_title": "Product Marketing Executive", "url": "https://www.linkedin.com/in/eirini-nikolakea/", "email": None, "domain": "maccosmetics.com"},
+        {"name": "Eleni Charitopoulou", "latest_experience_title": "Digital Marketing Specialist", "url": "https://www.linkedin.com/in/eleni-charitopoulou-b8b617162/", "email": None, "domain": "maccosmetics.com"},
+    ], "maccosmetics.com"),
+    "Mastic Spa": ([
+        {"name": "Apostle Mengoulis", "latest_experience_title": "Digital Marketing Manager", "url": "https://www.linkedin.com/in/apostle-mengoulis-9947519b/", "email": None, "domain": "masticspa.com"},
+        {"name": "Sofia Sodi", "latest_experience_title": "Co-founder & Marketing Director", "url": "https://www.linkedin.com/in/sofia-sodi-6aaa94a6/", "email": None, "domain": "masticspa.com"},
+    ], "masticspa.com"),
+    "Medisei": ([
+        {"name": "Popita Bikof", "latest_experience_title": "Head of Marketing@MEDISEI", "url": "https://www.linkedin.com/in/popita-bikof-2199aa50/", "email": None, "domain": "medisei.gr"},
+        {"name": "Stella Mathioudaki", "latest_experience_title": "Digital Marketing & E-Commerce Specialist", "url": "https://www.linkedin.com/in/stella-mathioudaki/", "email": None, "domain": "medisei.gr"},
+        {"name": "Αμαλία Λυμπέρη", "latest_experience_title": "Marketing Assistant Trainee", "url": "https://www.linkedin.com/in/αμαλία-λυμπέρη-a30387396/", "email": None, "domain": "medisei.gr"},
+    ], "medisei.gr"),
+    "Mon Rêve Cosmetics": ([
+        {"name": "Lydia Christoforidou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/lydia-christoforidou-9278a4122/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Electra Papanastasiou", "latest_experience_title": "Marketing Manager, Strategy Lead Seventeen Cosmetics", "url": "https://www.linkedin.com/in/papanastasiou-electra/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Silia Karatza", "latest_experience_title": "Digital Marketing & Social Media Specialist", "url": "https://www.linkedin.com/in/silia-karatza-79b726197/", "email": None, "domain": "hellenica.gr"},
+    ], "hellenica.gr"),
 }
 _LAST_BATCH_2026_06_26 = {
     "Origins": ([], "origins.com"),

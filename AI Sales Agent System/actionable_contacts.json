@@ -238,13 +238,13 @@
     {
       "brand": "MAC Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": "mac-cosmetics",
       "times_advertised": 683,
       "has_employee_file": true,
-      "employee_count": 0,
+      "employee_count": 2,
       "emails_known": 0,
-      "employee_file": "MAC Cosmetics.json"
+      "employee_file": "00-MAC Cosmetics.json"
     },
     {
       "brand": "Dior",
@@ -1144,7 +1144,7 @@
       "linkedin_slug": "hondoscenter",
       "times_advertised": 212,
       "has_employee_file": true,
-      "employee_count": 11,
+      "employee_count": 12,
       "emails_known": 0,
       "employee_file": "00-Hondos Center.json"
     },
