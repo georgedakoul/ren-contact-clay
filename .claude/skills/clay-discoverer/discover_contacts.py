@@ -1031,6 +1031,21 @@ BATCH = {
         {"name": "ΕΛΕΝΗ ΑΡΜΥΡΑ", "latest_experience_title": "Logistics and Marketing", "url": "https://www.linkedin.com/in/ελενη-αρμυρα-0a7a281a4/", "email": None, "domain": "pharmasept.gr"},
         {"name": "Victoria Plega", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/victoria-plega-558a5626a/", "email": None, "domain": "pharmasept.gr"},
     ], "https://www.linkedin.com/company/pharmasept-ltd"),
+    "Priorin": ([
+        {"name": "Sonia Mousavere", "latest_experience_title": "Head of Communications & PGA", "url": "https://www.linkedin.com/in/smousavere/", "email": None, "domain": "bayer.com"},
+        {"name": "Eleftherios Filios", "latest_experience_title": "Cluster Brand Manager Opthalmology (GR, CY, MA, IS, ROM, BG)", "url": "https://www.linkedin.com/in/eleftherios-filios-0959b35a/", "email": None, "domain": "bayer.com"},
+        {"name": "Fotis Tsopelas", "latest_experience_title": "Digital Media & eCommerce Manager Consumer Health Division", "url": "https://www.linkedin.com/in/fotis-tsopelas-41b72960/", "email": None, "domain": "bayer.com"},
+        {"name": "Spiros Galousis", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/spiros-galousis-24781746/", "email": None, "domain": "bayer.com"},
+        {"name": "Kyriakos Nathanail", "latest_experience_title": "Brand Manager / Customer Engagement Team Lead", "url": "https://www.linkedin.com/in/kyriakos-nathanail-7118874/", "email": None, "domain": "bayer.com"},
+        {"name": "Thekli Bourtzinou", "latest_experience_title": "Brand Communications and Digital Services Coordinator", "url": "https://www.linkedin.com/in/thekli-bourtzinou-340b3099/", "email": None, "domain": "bayer.com"},
+        {"name": "Maria Davit", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/maria-davit-110006115/", "email": None, "domain": "bayer.com"},
+        {"name": "Zoi Arachovitou", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/zoi-arachovitou/", "email": None, "domain": "bayer.com"},
+    ], "https://www.linkedin.com/company/bayer"),
+    "Radiant Professional": ([
+        {"name": "Lydia Christoforidou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/lydia-christoforidou-9278a4122/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Electra Papanastasiou", "latest_experience_title": "Marketing Manager, Strategy Lead Seventeen Cosmetics", "url": "https://www.linkedin.com/in/papanastasiou-electra/", "email": None, "domain": "hellenica.gr"},
+        {"name": "Silia Karatza", "latest_experience_title": "Digital Marketing & Social Media Specialist", "url": "https://www.linkedin.com/in/silia-karatza-79b726197/", "email": None, "domain": "hellenica.gr"},
+    ], "https://www.linkedin.com/company/hellenica"),
 }
 
 
