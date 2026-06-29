@@ -467,7 +467,7 @@ _LAST_BATCH_2026_06_24 = {
     ], "oriflame.com"),
 }
 
-BATCH = {
+_LAST_BATCH_2026_06_29 = {
     "Kiko Milano": ([
         {"name": "John KAMILAKIS",       "latest_experience_title": "Marketing Director KIKO MILANO – GR,CY,BG,RO,CZ",  "url": "https://www.linkedin.com/in/ioanniskamilakis/",         "email": None, "domain": "kikocosmetics.com"},
         {"name": "Katerina Zerva",        "latest_experience_title": "Brand Marketing Manager- East Europe",              "url": "https://www.linkedin.com/in/kzerva/",                   "email": None, "domain": "kikocosmetics.com"},
@@ -916,6 +916,14 @@ _LAST_BATCH = {
         {"name": "Daniel Artisiuk", "latest_experience_title": "Senior Country Manager | B2B Sales & Partnerships, EU Markets", "url": "https://www.linkedin.com/in/danielartisiuk/", "email": None, "domain": "carvertical.com"},
     ], "carvertical.com"),
 }
+
+
+# ---------------------------------------------------------------------------
+# BATCH — populated by Claude after each round of Clay MCP calls.
+# Format: brand_name → (contacts_list, domain_hint)
+# contacts_list items: {"name", "latest_experience_title", "url", "email", "domain"}
+# ---------------------------------------------------------------------------
+BATCH = {}
 
 
 def git_sync():
