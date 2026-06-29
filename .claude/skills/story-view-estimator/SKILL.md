@@ -13,9 +13,24 @@ real `view_count` from `search_media(media_types=["story"])`). For everyone else
 or not connected), stories return `view_count=0`. This skill fits a model on the creators we
 *can* see and applies it to the ones we can't.
 
-**Model**: `story_views ≈ median_ratio[follower_tier] × base`, where `base` is follower count
-(primary) or avg feed/reel views (alternate). Median ratio per tier (outlier-robust); IQR of
-the tier's ratios gives a low/high band. The math + a self-test live in `story_model.py`.
+**Model**: `story_views ≈ median_ratio[follower_tier] × base`, where `base` is follower count,
+avg feed/reel views, or avg feed engagement. Median ratio per tier (outlier-robust); IQR of the
+tier's ratios gives a low/high band. The math + a self-test live in `story_model.py`.
+
+> ### ⚠️ Accuracy reality (measured 2026-06-29, 26-creator Greek IG set)
+> **Story views are only weakly predictable from public metrics.** This is a low-confidence
+> estimator — treat its output as an order-of-magnitude range, never a precise number.
+> - story-views / followers ratio spans **1.2%–85%** across creators (70× spread).
+> - Leave-one-out MAPE: followers **123%**, feed_views **154%**, engagement **178%** (engagement
+>   does NOT help). A power-law (log-log OLS) on feed_views is the best variant at **~87%** MAPE.
+> - Best correlate: avg feed views, log-log r≈0.71. Still not decision-grade.
+> - **Root cause**: story reach is a creator-behaviour signal (how "personal"/story-active the
+>   account is — lifestyle/mum/personal creators run 15–85%, aggregator/aesthetic/music accounts
+>   ~1–4%), largely decoupled from any public feed count. A numeric-only model can't see it.
+>
+> **Honest recommendation**: for an off-platform creator, report a wide tier range + "low
+> confidence, story reach varies heavily by creator type", not a point estimate. The only exact
+> source is Renfluence's own data (shared_insights=true). Don't oversell this number to the CEO.
 
 > **MCP-side note (surface to the team):** the cleanest home for this is server-side. Renfluence
 > already has real story views for the whole `shared_insights=true` population — far more than a

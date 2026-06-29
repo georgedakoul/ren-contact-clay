@@ -109,6 +109,51 @@ def loo_mape(rows, tiers, base):
     return round(100 * sum(errs) / len(errs), 2) if errs else None, len(errs)
 
 
+def _ols(X, y):
+    """Least squares via normal equations + Gaussian elimination. stdlib only."""
+    n, p = len(X), len(X[0])
+    XtX = [[sum(X[k][i] * X[k][j] for k in range(n)) for j in range(p)] for i in range(p)]
+    Xty = [sum(X[k][i] * y[k] for k in range(n)) for i in range(p)]
+    A = [XtX[i][:] + [Xty[i]] for i in range(p)]
+    for c in range(p):
+        piv = max(range(c, p), key=lambda r: abs(A[r][c]))
+        A[c], A[piv] = A[piv], A[c]
+        dv = A[c][c]
+        A[c] = [v / dv for v in A[c]]
+        for r in range(p):
+            if r != c:
+                f = A[r][c]
+                A[r] = [A[r][k] - f * A[c][k] for k in range(p + 1)]
+    return [A[i][p] for i in range(p)]
+
+
+def _design(r):
+    """[1, ln(followers), niche]. niche: 1=personal/lifestyle, 0=promotional/aggregator."""
+    return [1.0, math.log(r["followers"]), float(r.get("niche", 0))]
+
+
+def fit_powerlaw_niche(rows):
+    """Power-law on followers with a niche offset: ln(story) = b0 + b1·ln(followers) + b2·niche.
+    Best model found (LOO-MAPE ~74% vs ~123% for the tier-ratio model) — niche (a creator-type
+    label) is the single biggest lever. Still rough; story reach has high intrinsic variance."""
+    usable = [r for r in rows if (r.get("real_story_views") or 0) > 0 and "niche" in r]
+    if len(usable) < 4:
+        return None
+    X = [_design(r) for r in usable]
+    y = [math.log(r["real_story_views"]) for r in usable]
+    betas = _ols(X, y)
+    errs = []
+    for i in range(len(usable)):
+        tr = [usable[j] for j in range(len(usable)) if j != i]
+        b = _ols([_design(r) for r in tr], [math.log(r["real_story_views"]) for r in tr])
+        xi = _design(usable[i])
+        pred = math.exp(sum(bi * xv for bi, xv in zip(b, xi)))
+        errs.append(abs(pred - usable[i]["real_story_views"]) / usable[i]["real_story_views"])
+    return {"type": "powerlaw_niche", "betas": [round(x, 6) for x in betas],
+            "loo_mape_pct": round(100 * sum(errs) / len(errs), 2), "n": len(usable),
+            "form": "story = exp(b0 + b1*ln(followers) + b2*niche); niche 1=personal 0=promo"}
+
+
 def calibrate(rows, tiers):
     result = {"n_rows": len(rows), "tiers": tiers, "models": {}, "mape": {}}
     for base in BASE_KEYS:
