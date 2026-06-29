@@ -938,14 +938,16 @@ def git_sync():
 
 
 def sync_to_sheets():
-    """Append new contacts (with emails) to the shared Google Sheet.
-    Matches the sheet's existing column layout. Never modifies existing rows.
-    Gray background applied to all appended rows.
+    """Sync new contacts to shared Google Sheet + backfill LinkedIn on existing rows.
+    - Deduplicates by email AND by (brand, normalized name)
+    - Inserts new contacts under their existing brand group (not at bottom)
+    - New brands (not yet in sheet) go at the bottom
+    - Never deletes or overwrites existing cell values
     """
     try:
         import gspread
-        import gspread.utils
         from google.oauth2.service_account import Credentials
+        from collections import defaultdict
     except ImportError:
         print("Missing deps. Run: pip3 install gspread google-auth --break-system-packages")
         return
@@ -957,6 +959,17 @@ def sync_to_sheets():
         print(f"Service account JSON not found: {SHEETS_SERVICE_ACCOUNT}")
         return
 
+    def _norm(n):
+        return re.sub(r'\s+', ' ', (n or "").strip().lower())
+
+    def _col_letter(idx):  # 0-indexed → "A", "B", ..., "AA", ...
+        s = ""
+        idx += 1
+        while idx:
+            idx, r = divmod(idx - 1, 26)
+            s = chr(65 + r) + s
+        return s
+
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
     creds  = Credentials.from_service_account_file(str(SHEETS_SERVICE_ACCOUNT), scopes=scopes)
     gc     = gspread.authorize(creds)
@@ -964,7 +977,7 @@ def sync_to_sheets():
 
     existing = ws.get_all_values()
     if not existing:
-        print("Sheet has no headers — set up the sheet manually first.")
+        print("Sheet has no headers — set up manually first.")
         return
 
     headers = existing[0]
@@ -973,68 +986,142 @@ def sync_to_sheets():
     def _col(name):
         return headers.index(name) if name in headers else None
 
-    ci_num     = _col("#")
-    ci_company = _col("Company")
-    ci_name    = _col("Full Name")
-    ci_title   = _col("Job Title")
-    ci_email   = _col("Email")
+    ci_num   = _col("#")
+    ci_co    = _col("Company")
+    ci_tadv  = _col("Times_Advertised")
+    ci_ind   = _col("Industry")
+    ci_name  = _col("Full Name")
+    ci_title = _col("Job Title")
+    ci_email = _col("Email")
+    ci_li    = _col("LinkedIn")
 
     if ci_email is None:
-        print("No 'Email' column found in sheet headers.")
+        print("No 'Email' column in sheet.")
         return
 
-    # Dedup by email — never touch existing rows
-    known_emails = {
-        r[ci_email].strip().lower()
-        for r in existing[1:]
-        if len(r) > ci_email and r[ci_email].strip() not in ("", "—")
-    }
+    ac_data    = json.loads(CONTACTS_FILE.read_text(encoding="utf-8"))
+    brand_meta = {b["brand"]: b for b in ac_data["brands"]}
 
-    # Next # value (auto-increment from max existing)
+    # Build email → contact map for LinkedIn backfill
+    store            = _scan_store()
+    email_to_contact = {}
+    for brand, info in store.items():
+        if info["_prefix"] == "ZZ-":
+            continue
+        f = STORE_DIR / f"{info['_prefix']}{brand}.json"
+        if not f.exists():
+            continue
+        for c in json.loads(f.read_text(encoding="utf-8")):
+            em = (c.get("email") or "").strip().lower()
+            if em:
+                email_to_contact[em] = {"brand": brand, **c}
+
+    # Scan existing rows: known emails, known (brand,name) pairs, brand→last row index
+    known_emails = set()
+    known_names  = set()   # (brand_lower, norm_name)
+    brand_last_row = {}    # brand → last 1-indexed sheet row that contains it
+
+    for row_idx, r in enumerate(existing[1:], start=2):
+        em  = r[ci_email].strip().lower() if len(r) > ci_email else ""
+        co  = (r[ci_co].strip()  if ci_co  is not None and len(r) > ci_co  else "")
+        nm  = (r[ci_name].strip() if ci_name is not None and len(r) > ci_name else "")
+        if em:
+            known_emails.add(em)
+        if co and nm:
+            known_names.add((co.lower(), _norm(nm)))
+        if co:
+            brand_last_row[co] = row_idx
+
+    # --- Pass 1: backfill LinkedIn on existing rows missing it ---
+    li_updates = []
+    if ci_li is not None:
+        for row_idx, r in enumerate(existing[1:], start=2):
+            em     = r[ci_email].strip().lower() if len(r) > ci_email else ""
+            li_val = (r[ci_li].strip()           if len(r) > ci_li   else "")
+            if em and not li_val and em in email_to_contact:
+                li_url = email_to_contact[em].get("linkedin_url") or ""
+                if li_url:
+                    li_updates.append({"range": f"{_col_letter(ci_li)}{row_idx}", "values": [[li_url]]})
+    if li_updates:
+        ws.batch_update(li_updates, value_input_option="USER_ENTERED")
+        print(f"Backfilled LinkedIn for {len(li_updates)} existing contacts.")
+
+    # --- Pass 2: collect new contacts grouped by brand ---
     next_num = 1
     if ci_num is not None:
         nums = [int(r[ci_num]) for r in existing[1:] if len(r) > ci_num and r[ci_num].strip().isdigit()]
         if nums:
             next_num = max(nums) + 1
 
-    store    = _scan_store()
-    new_rows = []
+    gray = {"backgroundColor": {"red": 0.906, "green": 0.902, "blue": 0.902}}
+    new_by_brand = defaultdict(list)
+
     for brand, info in sorted(store.items()):
-        prefix = info["_prefix"]
-        if prefix == "ZZ-":
+        if info["_prefix"] == "ZZ-":
             continue
-        f = STORE_DIR / f"{prefix}{brand}.json"
+        f = STORE_DIR / f"{info['_prefix']}{brand}.json"
         if not f.exists():
             continue
+        meta = brand_meta.get(brand, {})
         for c in json.loads(f.read_text(encoding="utf-8")):
             email = (c.get("email") or "").strip()
-            if not email or email.lower() in known_emails:
+            if not email:
+                continue
+            if email.lower() in known_emails:
+                continue
+            name_key = (brand.lower(), _norm(c.get("name") or ""))
+            if name_key in known_names:
                 continue
             row = [""] * ncols
-            if ci_num     is not None: row[ci_num]     = next_num
-            if ci_company is not None: row[ci_company] = brand
-            if ci_name    is not None: row[ci_name]    = c.get("name") or ""
-            if ci_title   is not None: row[ci_title]   = c.get("job_title") or ""
+            if ci_num   is not None: row[ci_num]   = next_num
+            if ci_co    is not None: row[ci_co]    = brand
+            if ci_tadv  is not None: row[ci_tadv]  = meta.get("times_advertised") or ""
+            if ci_ind   is not None: row[ci_ind]   = meta.get("industry") or ""
+            if ci_name  is not None: row[ci_name]  = c.get("name") or ""
+            if ci_title is not None: row[ci_title] = c.get("job_title") or ""
+            if ci_li    is not None: row[ci_li]    = c.get("linkedin_url") or ""
             row[ci_email] = email
-            new_rows.append(row)
+            new_by_brand[brand].append(row)
             known_emails.add(email.lower())
+            known_names.add(name_key)
             next_num += 1
 
-    if not new_rows:
-        print("No new contacts to sync.")
+    if not new_by_brand:
+        print("No new contacts to add.")
         return
 
-    first_new_row = len(existing) + 1  # 1-indexed sheet row
-    ws.append_rows(new_rows, value_input_option="USER_ENTERED")
+    # Brands already in sheet: insert below their last row (process bottom-up)
+    in_sheet  = [(brand_last_row[b], b, rows) for b, rows in new_by_brand.items() if b in brand_last_row]
+    new_brands = [(b, rows)                    for b, rows in new_by_brand.items() if b not in brand_last_row]
+    in_sheet.sort(key=lambda x: x[0], reverse=True)
 
-    # #e7e6e6 background on columns A–J only
-    last_new_row = first_new_row + len(new_rows) - 1
-    ws.format(
-        f"A{first_new_row}:J{last_new_row}",
-        {"backgroundColor": {"red": 0.906, "green": 0.902, "blue": 0.902}},
-    )
+    total = 0
+    rows_inserted = 0
+    format_ranges = []  # collect all, batch-format at end (avoids rate limit)
 
-    print(f"Synced {len(new_rows)} new contacts → rows {first_new_row}–{last_new_row}.")
+    for last_row, brand, rows in in_sheet:
+        insert_at = last_row + 1
+        ws.insert_rows(rows, insert_at, value_input_option="USER_ENTERED")
+        format_ranges.append(f"A{insert_at}:J{insert_at + len(rows) - 1}")
+        print(f"  {brand}: inserted {len(rows)} contact(s) at row {insert_at}")
+        total += len(rows)
+        rows_inserted += len(rows)
+
+    # New brands: append at bottom (after all insertions)
+    if new_brands:
+        flat = [row for _, rows in new_brands for row in rows]
+        first_append = len(existing) + rows_inserted + 1
+        ws.append_rows(flat, value_input_option="USER_ENTERED")
+        format_ranges.append(f"A{first_append}:J{first_append + len(flat) - 1}")
+        for brand, rows in new_brands:
+            print(f"  {brand}: appended {len(rows)} contact(s) (new brand)")
+        total += len(flat)
+
+    # One batch format call for all new rows
+    if format_ranges:
+        ws.batch_format([{"range": r, "format": gray} for r in format_ranges])
+
+    print(f"Done — {total} new contact(s) added.")
 
 
 def export_excel():
