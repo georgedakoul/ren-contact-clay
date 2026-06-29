@@ -9,6 +9,9 @@
     "source": "clay",
     "domain": "aegeanair.com",
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17"
+    "last_seen": "2026-06-17",
+    "hunter_result": "deliverable",
+    "hunter_score": 91,
+    "hunter_verified_at": "2026-06-29T14:29:00Z"
   }
 ]
