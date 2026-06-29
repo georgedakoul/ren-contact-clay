@@ -463,6 +463,16 @@ _LAST_BATCH_2026_06_24 = {
 }
 
 BATCH = {
+    "Kiko Milano": ([
+        {"name": "John KAMILAKIS",       "latest_experience_title": "Marketing Director KIKO MILANO – GR,CY,BG,RO,CZ",  "url": "https://www.linkedin.com/in/ioanniskamilakis/",         "email": None, "domain": "kikocosmetics.com"},
+        {"name": "Katerina Zerva",        "latest_experience_title": "Brand Marketing Manager- East Europe",              "url": "https://www.linkedin.com/in/kzerva/",                   "email": None, "domain": "kikocosmetics.com"},
+        {"name": "Vasiliki Nikolaou",     "latest_experience_title": "Junior Marketing Brand Manager",                   "url": "https://www.linkedin.com/in/vasiliki-nikolaou-04b87915b/","email": None, "domain": "kikocosmetics.com"},
+        {"name": "angie badolia",         "latest_experience_title": "Operation Manager GR/CY/BG/RO",                    "url": "https://www.linkedin.com/in/angie-badolia-17249a1b8/",  "email": None, "domain": "kikocosmetics.com"},
+        {"name": "Manto Souvatzidaki",    "latest_experience_title": "Planning Manager East Europe",                     "url": "https://www.linkedin.com/in/manto-souvatzidaki-96692aa5/","email": None, "domain": "kikocosmetics.com"},
+        {"name": "irini pavlou",          "latest_experience_title": "Education Manager",                                "url": "https://www.linkedin.com/in/irini-pavlou-60205b27b/",   "email": None, "domain": "kikocosmetics.com"},
+        {"name": "Alexandros Tavoularis", "latest_experience_title": "Retail Sales Manager Greece, Cyprus, Balkans",     "url": "https://www.linkedin.com/in/alexandros-tavoularis-2ba43014/","email": None, "domain": "kikocosmetics.com"},
+        {"name": "Lydia Stamou",          "latest_experience_title": "Area Sales Manager",                               "url": "https://www.linkedin.com/in/lydia-stamou-958694198/",   "email": None, "domain": "kikocosmetics.com"},
+    ], "kikocosmetics.com"),
     # Zero-contact brands — Clay found no Greek marketing contacts
     "W7": ([], "w7cosmetics.co.uk"),
     "W7 Cosmetics": ([], "w7cosmetics.co.uk"),
