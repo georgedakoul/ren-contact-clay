@@ -24,5 +24,44 @@
     "first_seen": "2026-06-30",
     "last_seen": "2026-06-30",
     "email_generated": true
+  },
+  {
+    "name": "Marilia Tompra",
+    "job_title": "Country Director & Board Member SEPHORA Greece, LVMH group",
+    "email": "mtompra@sephora.gr",
+    "linkedin_url": "https://www.linkedin.com/in/marilia-tompra-05342517/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "sephora.com",
+    "email_generated": true,
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-06-30"
+  },
+  {
+    "name": "Antonia Sofianidou",
+    "job_title": "Media & Advertising Specialist",
+    "email": "asofianidou@sephora.gr",
+    "linkedin_url": "https://www.linkedin.com/in/antonia-sofianidou-83157b17a/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "sephora.com",
+    "email_generated": true,
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-06-30"
+  },
+  {
+    "name": "Eirini Ioannou",
+    "job_title": "Head of Ecommerce & Growth",
+    "email": "eioannou@sephora.gr",
+    "linkedin_url": "https://www.linkedin.com/in/eirini-i%ce%bfannou-77840998/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "sephora.com",
+    "email_generated": true,
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-06-30"
   }
 ]
