@@ -118,5 +118,23 @@
     "domain": "coca-colacompany.com",
     "first_seen": "2026-06-23",
     "last_seen": "2026-06-23"
+  },
+  {
+    "email": "voula.konsta@cchellenic.com",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
+  },
+  {
+    "email": "infoline@cchellenic.com",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
+  },
+  {
+    "email": "nlytras@coca-cola.com",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
   }
 ]

@@ -334,6 +334,28 @@ def _scan_store():
     return store
 
 
+def git_sync():
+    result = subprocess.run(
+        ["git", "add",
+         str(STORE_DIR),
+         str(CONTACTS_FILE),
+         str(Path(__file__))],
+        cwd=ROOT, capture_output=True, text=True
+    )
+    if result.returncode != 0:
+        print(result.stderr); return
+    status = subprocess.run(["git", "status", "--short"], cwd=ROOT, capture_output=True, text=True)
+    if not status.stdout.strip():
+        print("Nothing to commit."); return
+    msg = f"clay-batch: sync employee store {datetime.now(timezone.utc).strftime('%Y-%m-%d')}"
+    result = subprocess.run(["git", "commit", "-m", msg], cwd=ROOT, capture_output=True, text=True)
+    if result.returncode != 0:
+        print(result.stderr); return
+    print(result.stdout.strip())
+    result = subprocess.run(["git", "push"], cwd=ROOT, capture_output=True, text=True)
+    print(result.stdout.strip() or result.stderr.strip())
+
+
 def status_report():
     store = _scan_store()
     total_contacts = sum(v["total"] for v in store.values())

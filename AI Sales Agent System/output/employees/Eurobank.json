@@ -130,5 +130,29 @@
     "domain": "eurobank.gr",
     "first_seen": "2026-06-17",
     "last_seen": "2026-06-17"
+  },
+  {
+    "email": "dcharimadopoulou@eurobank.gr",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
+  },
+  {
+    "email": "otriantafyllou@eurobankfactors.gr",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
+  },
+  {
+    "email": "EKAVOURI@EUROBANK.GR",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
+  },
+  {
+    "email": "info@eurobankequities.gr",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
   }
 ]

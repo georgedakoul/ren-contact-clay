@@ -58,5 +58,17 @@
     "domain": "flexcar.gr",
     "first_seen": "2026-06-17",
     "last_seen": "2026-06-17"
+  },
+  {
+    "email": "finance@flexcar.gr",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
+  },
+  {
+    "email": "info@flexcar.gr",
+    "name": "",
+    "title": "",
+    "source": "businessportal"
   }
 ]
