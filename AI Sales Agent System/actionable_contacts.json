@@ -89,11 +89,11 @@
       "linkedin_slug": "sephora",
       "times_advertised": 1348,
       "has_employee_file": true,
-      "employee_count": 20,
-      "emails_known": 1,
+      "employee_count": 19,
+      "emails_known": 19,
       "employee_file": "Sephora.json",
       "domain": "sephora.com",
-      "email_pattern": null
+      "email_pattern": "flast"
     },
     {
       "brand": "Maybelline",
@@ -180,11 +180,11 @@
       "linkedin_slug": null,
       "times_advertised": 883,
       "has_employee_file": true,
-      "employee_count": 19,
-      "emails_known": 1,
+      "employee_count": 18,
+      "emails_known": 18,
       "employee_file": "adidas.json",
-      "domain": null,
-      "email_pattern": null
+      "domain": "adidas.com",
+      "email_pattern": "first.last"
     },
     {
       "brand": "LIDL",
