@@ -89,8 +89,8 @@
       "linkedin_slug": "sephora",
       "times_advertised": 1348,
       "has_employee_file": true,
-      "employee_count": 19,
-      "emails_known": 19,
+      "employee_count": 2,
+      "emails_known": 2,
       "employee_file": "Sephora.json",
       "domain": "sephora.com",
       "email_pattern": "flast"
@@ -180,8 +180,8 @@
       "linkedin_slug": null,
       "times_advertised": 883,
       "has_employee_file": true,
-      "employee_count": 18,
-      "emails_known": 18,
+      "employee_count": 5,
+      "emails_known": 5,
       "employee_file": "adidas.json",
       "domain": "adidas.com",
       "email_pattern": "first.last"
