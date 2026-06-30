@@ -275,7 +275,7 @@
       "emails_known": 1,
       "employee_file": "Emmanouela Cosmetics.json",
       "domain": null,
-      "email_pattern": null
+      "email_pattern": "first.last"
     },
     {
       "brand": "MAC Cosmetics",
