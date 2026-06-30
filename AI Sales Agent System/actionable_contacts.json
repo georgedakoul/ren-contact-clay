@@ -3153,13 +3153,13 @@
     {
       "brand": "Muagreece",
       "industry": "Beauty",
-      "coverage_status": "No coverage",
+      "coverage_status": "LinkedIn-only",
       "linkedin_slug": null,
       "times_advertised": 96,
-      "has_employee_file": false,
-      "employee_count": 0,
+      "has_employee_file": true,
+      "employee_count": 8,
       "emails_known": 0,
-      "employee_file": null,
+      "employee_file": "00-Muagreece.json",
       "domain": null,
       "email_pattern": null
     },

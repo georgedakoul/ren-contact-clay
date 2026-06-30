@@ -95,6 +95,7 @@ DOMAIN_MAP = {
     "Zara":              "inditexpeople.com",
     "Puma":              "puma.com",
     "CarVertical":       "carvertical.com",
+    "Muagreece":         "muagreece.com",   # parent co BVELO operates MUA Greece brand
 }
 
 # All searches now use locations=["Greece"] — this is a Greek outreach list.
@@ -443,6 +444,18 @@ def status_report():
 # After save completes, clear this dict (data is in employee files + git history).
 # ---------------------------------------------------------------------------
 BATCH = {}
+BATCH_ARCHIVED_2 = {
+    "Muagreece": ([
+        {"name": "Angeliki Gidiotou", "latest_experience_title": "Influencer Marketing and UGC Specialist", "url": "https://www.linkedin.com/in/angeliki-gidiotou/", "email": "", "domain": "muagreece.com"},
+        {"name": "Maria Oikonomou", "latest_experience_title": "Digital Marketing & Performance Strategist", "url": "https://www.linkedin.com/in/maria-oikonomou-28938a1aa/", "email": "", "domain": "muagreece.com"},
+        {"name": "Efi Konstantinidou", "latest_experience_title": "Senior Graphic Designer", "url": "https://www.linkedin.com/in/efi-konstantinidou-375b92135/", "email": "", "domain": "muagreece.com"},
+        {"name": "Julia Velona", "latest_experience_title": "Chief Operating Officer", "url": "https://www.linkedin.com/in/julia-velona-a586b9291/", "email": "", "domain": "muagreece.com"},
+        {"name": "Panagiotis Velonas", "latest_experience_title": "Founder | BVELO", "url": "https://www.linkedin.com/in/panagiotis-velonas-886254353/", "email": "", "domain": "muagreece.com"},
+        {"name": "Anna Dovliatidou", "latest_experience_title": "Professional Makeup Artist", "url": "https://www.linkedin.com/in/anna-dovliatidou-94b290126/", "email": "", "domain": "muagreece.com"},
+        {"name": "Evdokia Gousiou", "latest_experience_title": "B2B Specialist", "url": "https://www.linkedin.com/in/evdokia-gousiou-636614299/", "email": "", "domain": "muagreece.com"},
+        {"name": "Anastasis Tsimpouktsoglou", "latest_experience_title": "Shopify Tech & Performance Specialist", "url": "https://www.linkedin.com/in/anastasis-tsimpouktsoglou-9b327a2b9/", "email": "", "domain": "muagreece.com"},
+    ], "muagreece.com"),
+}
 BATCH_ARCHIVED = {
     "adidas": ([
         {"name": "Fay Petroulaki", "latest_experience_title": "Director Brand Comms, Newsroom & Publishing Southeast Europe", "url": "https://www.linkedin.com/in/fay-petroulaki-2871b592/", "email": "", "domain": "adidas.com"},
