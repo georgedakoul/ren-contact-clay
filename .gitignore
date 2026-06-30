@@ -44,6 +44,9 @@ AI Sales Agent System/message_crafter_config.json
 .claude/skills/message-crafter/
 .claude/skills/handoff/
 
+# Separate repos — not part of ren-contact-clay
+Ideaverse/
+
 # Tool/app noise
 .agents/
 .obsidian/
