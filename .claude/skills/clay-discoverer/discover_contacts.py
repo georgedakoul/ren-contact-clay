@@ -443,6 +443,50 @@ def status_report():
 # After save completes, clear this dict (data is in employee files + git history).
 # ---------------------------------------------------------------------------
 BATCH = {}
+BATCH_ARCHIVED = {
+    "adidas": ([
+        {"name": "Fay Petroulaki", "latest_experience_title": "Director Brand Comms, Newsroom & Publishing Southeast Europe", "url": "https://www.linkedin.com/in/fay-petroulaki-2871b592/", "email": "", "domain": "adidas.com"},
+        {"name": "Theodore Michopoulos", "latest_experience_title": "Senior Manager, Human Resources Operations, South East Europe and Italy", "url": "https://www.linkedin.com/in/theodore-michopoulos-27489616/", "email": "", "domain": "adidas.com"},
+        {"name": "Georgia Koutsoukou", "latest_experience_title": "Wholesale Activation Manager, SEE", "url": "https://www.linkedin.com/in/georgia-koutsoukou-87179393/", "email": "", "domain": "adidas.com"},
+        {"name": "Christina Panagiotou", "latest_experience_title": "Senior Manager, Internal Communications - South Europe", "url": "https://www.linkedin.com/in/christinapanagiotou/", "email": "", "domain": "adidas.com"},
+        {"name": "George Sifnios", "latest_experience_title": "Country Manager South East Europe", "url": "https://www.linkedin.com/in/george-sifnios-369b331/", "email": "", "domain": "adidas.com"},
+        {"name": "Anna Kechaidou", "latest_experience_title": "Brand Communications & PR Country Lead", "url": "https://www.linkedin.com/in/anna-kechaidou-0a478b41/", "email": "", "domain": "adidas.com"},
+        {"name": "Konstantinos Koutroumpis", "latest_experience_title": "Digital Performance Manager JR - SEE", "url": "https://www.linkedin.com/in/kostas-koutroumpis/", "email": "", "domain": "adidas.com"},
+        {"name": "Konstantinos Konstantinidis", "latest_experience_title": "Senior Manager Sports Marketing SEE", "url": "https://www.linkedin.com/in/konstantinos-konstantinidis-1120125b/", "email": "", "domain": "adidas.com"},
+        {"name": "Angeliki Prezani, MBA", "latest_experience_title": "Jr. Manager, Wholesale Activation, South East Europe", "url": "https://www.linkedin.com/in/angeliki-prezani/", "email": "", "domain": "adidas.com"},
+        {"name": "Theodoros Gkolfinopoulos", "latest_experience_title": "Senior Manager Digital Sales, SEE", "url": "https://www.linkedin.com/in/theodoros-gkolfinopoulos-95970633/", "email": "", "domain": "adidas.com"},
+        {"name": "Eirini Gazidelli", "latest_experience_title": "Manager HR Operations & Payroll South East Europe", "url": "https://www.linkedin.com/in/eirini-gazidelli-19b36241/", "email": "", "domain": "adidas.com"},
+        {"name": "Alex Zourelidis", "latest_experience_title": "Senior Manager, Visual Merchandising, Retail Space Management & Product Learning Southeast Europe", "url": "https://www.linkedin.com/in/alex-zourelidis/", "email": "", "domain": "adidas.com"},
+        {"name": "Konstantinos Christodoulakis", "latest_experience_title": "Omnichannel Director, South East Europe", "url": "https://www.linkedin.com/in/konstantinos-christodoulakis/", "email": "", "domain": "adidas.com"},
+        {"name": "Mina Gkasti", "latest_experience_title": "HR Director, South East Europe", "url": "https://www.linkedin.com/in/mina-gkasti-22274b33/", "email": "", "domain": "adidas.com"},
+        {"name": "Alexandros E. Bontikoulis", "latest_experience_title": "Director GTM", "url": "https://www.linkedin.com/in/alexandros-e-bontikoulis-5730981b/", "email": "", "domain": "adidas.com"},
+        {"name": "Efstathios Spinos", "latest_experience_title": "Director Marketplace Development", "url": "https://www.linkedin.com/in/efstathios-spinos-a60a0962/", "email": "", "domain": "adidas.com"},
+        {"name": "Aggelos Kampanakis", "latest_experience_title": "Sr Manager Customer Fulfillment SEE", "url": "https://www.linkedin.com/in/kampanakisang/", "email": "", "domain": "adidas.com"},
+        {"name": "Agis Skarvelis", "latest_experience_title": "Senior Go To Market Manager South East Europe", "url": "https://www.linkedin.com/in/agamemnonskarvelis/", "email": "", "domain": "adidas.com"},
+        {"name": "George Generalis", "latest_experience_title": "Senior Director Customer Service, South Europe", "url": "https://www.linkedin.com/in/george-generalis-92637517/", "email": "", "domain": "adidas.com"},
+    ], "adidas.com"),
+    "Sephora": ([
+        {"name": "Marilia Tompra", "latest_experience_title": "Country Director & Board Member SEPHORA Greece, LVMH group", "url": "https://www.linkedin.com/in/marilia-tompra-05342517/", "email": "", "domain": "sephora.com"},
+        {"name": "Afroditi Kiousi", "latest_experience_title": "Retail HR Manager", "url": "https://www.linkedin.com/in/afroditi-kiousi-947703144/", "email": "", "domain": "sephora.com"},
+        {"name": "Maria Delagrammatika", "latest_experience_title": "Retail Operations Director Greece & Balkans (Croatia, Serbia, Romania, Bulgaria)", "url": "https://www.linkedin.com/in/maroulio-delagrammatika/", "email": "", "domain": "sephora.com"},
+        {"name": "Eirini Iοannou", "latest_experience_title": "Head of Ecommerce & Growth", "url": "https://www.linkedin.com/in/eirini-i%ce%bfannou-77840998/", "email": "", "domain": "sephora.com"},
+        {"name": "Maria Simnianaki", "latest_experience_title": "PR & Social Media Specialist", "url": "https://www.linkedin.com/in/maria-simnianaki-29288b181/", "email": "", "domain": "sephora.com"},
+        {"name": "Maria Sotiriou", "latest_experience_title": "Head of Commercial Strategy & Selective Market", "url": "https://www.linkedin.com/in/maria-sotiriou-81797b30/", "email": "", "domain": "sephora.com"},
+        {"name": "Evangelos Bakeas, MBA, CFA, Dipl", "latest_experience_title": "CFO & Supply Director Greece", "url": "https://www.linkedin.com/in/evangelos-bakeas-mba-cfa-dipl-b611754a/", "email": "", "domain": "sephora.com"},
+        {"name": "Maria Sideri", "latest_experience_title": "Head of IT Store Efficiency Sephora EME", "url": "https://www.linkedin.com/in/maria-sideri-a8a89228/", "email": "", "domain": "sephora.com"},
+        {"name": "Vasilios Exarchos", "latest_experience_title": "Finance Manager", "url": "https://www.linkedin.com/in/vasilios-exarchos-157a7721/", "email": "", "domain": "sephora.com"},
+        {"name": "Marianna Papazisi", "latest_experience_title": "Loyalty CRM Specialist", "url": "https://www.linkedin.com/in/marianna-papazisi-a6445b100/", "email": "", "domain": "sephora.com"},
+        {"name": "Dimitris Karampelas", "latest_experience_title": "Store Manager", "url": "https://www.linkedin.com/in/dimitris-karampelas-426a12111/", "email": "", "domain": "sephora.com"},
+        {"name": "Karmiris Panagiotis", "latest_experience_title": "Store Manager", "url": "https://www.linkedin.com/in/karmiris-panagiotis-89756274/", "email": "", "domain": "sephora.com"},
+        {"name": "Antonia Sofianidou", "latest_experience_title": "Media & Advertising Specialist", "url": "https://www.linkedin.com/in/antonia-sofianidou-83157b17a/", "email": "", "domain": "sephora.com"},
+        {"name": "Kassandra Megarioti", "latest_experience_title": "Training Specialist", "url": "https://www.linkedin.com/in/kassandra-megarioti-88603629a/", "email": "", "domain": "sephora.com"},
+        {"name": "Frosso Stratakou", "latest_experience_title": "Accounting Specialist", "url": "https://www.linkedin.com/in/frosso-stratakou-1492a2228/", "email": "", "domain": "sephora.com"},
+        {"name": "Elena Retzou", "latest_experience_title": "Category Specialist", "url": "https://www.linkedin.com/in/elena-retzou-1ab414b1/", "email": "", "domain": "sephora.com"},
+        {"name": "Dimitris Karelos", "latest_experience_title": "Marketing Trainee", "url": "https://www.linkedin.com/in/dimitris-karelos-296b68225/", "email": "", "domain": "sephora.com"},
+        {"name": "Thodoris Lalaounis", "latest_experience_title": "Estore Catalog & Commercial Activation Specialist", "url": "https://www.linkedin.com/in/thodoris-lalaounis-7476491b4/", "email": "", "domain": "sephora.com"},
+        {"name": "Thelia Chrisomalli", "latest_experience_title": "Store Manager", "url": "https://www.linkedin.com/in/thelia-chrisomalli-365309196/", "email": "", "domain": "sephora.com"},
+    ], "sephora.com"),
+}
 
 
 if __name__ == "__main__":
