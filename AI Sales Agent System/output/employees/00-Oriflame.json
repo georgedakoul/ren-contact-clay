@@ -10,5 +10,17 @@
     "domain": "oriflame.com",
     "first_seen": "2026-06-28",
     "last_seen": "2026-06-30"
+  },
+  {
+    "name": "Maria Chanioti",
+    "job_title": "Administrative Support Specialist",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/maria-chanioti-830940229/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "oriflame.com",
+    "first_seen": "2026-06-30",
+    "last_seen": "2026-06-30"
   }
 ]
