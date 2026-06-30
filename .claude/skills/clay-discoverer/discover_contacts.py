@@ -95,7 +95,9 @@ DOMAIN_MAP = {
     "Zara":              "inditexpeople.com",
     "Puma":              "puma.com",
     "CarVertical":       "carvertical.com",
-    "Muagreece":         "muagreece.com",   # parent co BVELO operates MUA Greece brand
+    "Muagreece":              "muagreece.com",   # parent co BVELO operates MUA Greece brand
+    "Emmanouela Cosmetics":   "emmanouelacosmetics.com",
+    "Elixir Makeup":          "elixirmakeup.gr",
 }
 
 # All searches now use locations=["Greece"] — this is a Greek outreach list.
@@ -443,7 +445,11 @@ def status_report():
 # contacts_list items: {"name", "latest_experience_title", "url", "email", "domain"}
 # After save completes, clear this dict (data is in employee files + git history).
 # ---------------------------------------------------------------------------
-BATCH = {}
+BATCH = {
+    "Emmanouela Cosmetics": ([
+        {"name": "Athina Tsiringouli", "latest_experience_title": "Digital Marketing Executive", "url": "https://www.linkedin.com/in/athina-tsiringouli-570473195/", "email": "", "domain": "emmanouelacosmetics.com"},
+    ], "emmanouelacosmetics.com"),
+}
 BATCH_ARCHIVED_2 = {
     "Muagreece": ([
         {"name": "Angeliki Gidiotou", "latest_experience_title": "Influencer Marketing and UGC Specialist", "url": "https://www.linkedin.com/in/angeliki-gidiotou/", "email": "", "domain": "muagreece.com"},
