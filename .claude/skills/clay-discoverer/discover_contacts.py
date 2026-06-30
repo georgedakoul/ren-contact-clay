@@ -334,6 +334,79 @@ def _scan_store():
     return store
 
 
+def sync_to_sheets():
+    """Push contacts with emails to the shared Google Sheet (append-only, email as unique key)."""
+    try:
+        import gspread
+        from google.oauth2.service_account import Credentials
+    except ImportError:
+        print("ERROR: gspread not installed. Run: pip3 install gspread google-auth"); return
+
+    if not SHEETS_SERVICE_ACCOUNT.exists():
+        print(f"ERROR: {SHEETS_SERVICE_ACCOUNT} not found — cannot authenticate."); return
+
+    SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    creds  = Credentials.from_service_account_file(str(SHEETS_SERVICE_ACCOUNT), scopes=SCOPES)
+    gc     = gspread.authorize(creds)
+
+    try:
+        sh = gc.open_by_key(SHEET_ID)
+    except Exception as e:
+        print(f"ERROR opening sheet {SHEET_ID}: {e}"); return
+
+    ws = sh.sheet1
+    existing = ws.get_all_values()
+    HEADER = ["Brand", "Name", "Job Title", "Email", "LinkedIn URL", "Domain", "First Seen", "Last Seen"]
+
+    if not existing:
+        ws.append_row(HEADER)
+        existing_emails = set()
+    else:
+        if existing[0] != HEADER:
+            ws.insert_row(HEADER, 1)
+        existing_emails = {row[3].lower().strip() for row in existing[1:] if len(row) > 3 and row[3]}
+
+    new_rows = []
+    for f in sorted(STORE_DIR.glob("*.json")):
+        if f.stem.startswith(("ZZ-", "00-")):
+            continue
+        brand = f.stem
+        try:
+            contacts = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        for c in contacts:
+            em = (c.get("email") or "").strip()
+            if not em or em.lower() in existing_emails:
+                continue
+            new_rows.append([
+                brand,
+                c.get("name") or "",
+                c.get("job_title") or "",
+                em,
+                c.get("linkedin_url") or "",
+                c.get("domain") or "",
+                c.get("first_seen") or "",
+                c.get("last_seen") or "",
+            ])
+            existing_emails.add(em.lower())
+
+    if not new_rows:
+        print("Google Sheet is already up-to-date — no new contacts to add.")
+        return
+
+    # Append in batches to avoid API rate limits
+    BATCH_SIZE = 100
+    total = 0
+    for i in range(0, len(new_rows), BATCH_SIZE):
+        batch = new_rows[i:i + BATCH_SIZE]
+        ws.append_rows(batch, value_input_option="USER_ENTERED")
+        total += len(batch)
+        print(f"  Appended {total}/{len(new_rows)} rows...")
+
+    print(f"Done. {len(new_rows)} new contacts pushed to Google Sheet.")
+
+
 def git_sync():
     result = subprocess.run(
         ["git", "add",
