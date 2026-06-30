@@ -31,7 +31,7 @@ It is **not** a stand-alone discoverer — it is the save/merge/filter layer.
 # Print status report: full employee store overview + next batch recommendation
 python ".claude/skills/clay-discoverer/discover_contacts.py"
 
-# Phase 1: save raw employee batch (Claude fills the BATCH dict in the script first)
+# Phase 1: Claude populates BATCH dict in discover_contacts.py, then:
 python ".claude/skills/clay-discoverer/discover_contacts.py" save
 
 # ALWAYS run after save — commits + pushes employee files + actionable_contacts.json to GitHub
@@ -74,8 +74,7 @@ the data stays on the agent's machine only and is lost on reset.
 
 ### Phase 2 — Review / title filter
 
-The `save` command applies `BANNED_TITLES` filtering automatically. Run `purge` to clean
-any existing files:
+`save` applies `BANNED_TITLES` automatically. To retroactively clean existing files:
 ```bash
 python discover_contacts.py purge
 ```
@@ -150,8 +149,3 @@ Contact schema per entry:
 }
 ```
 
----
-
-## Related skills
-
-- `contact-discoverer` — DNS/Hunter.io/scraping pipeline (lowest detection risk)
