@@ -334,8 +334,41 @@ def _scan_store():
     return store
 
 
+BRANDS_LOOKUP_FILE = Path(__file__).parent / "data" / "brands_consolidated.csv"
+
+
+def _load_brand_lookup():
+    """brand name (lowercased) -> {num, times_advertised, unique_profiles, industry} from brands_consolidated.csv"""
+    lookup = {}
+    if not BRANDS_LOOKUP_FILE.exists():
+        return lookup
+    import csv
+    with open(BRANDS_LOOKUP_FILE, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            name = (row.get("Brand") or "").strip()
+            if not name:
+                continue
+            lookup[name.lower()] = {
+                "num":              row.get("#", "").split(".")[0] if row.get("#") else "",
+                "times_advertised": row.get("Times Advertised", "").split(".")[0] if row.get("Times Advertised") else "",
+                "unique_profiles":  row.get("Unique Profiles", "").split(".")[0] if row.get("Unique Profiles") else "",
+                "industry":         row.get("Industry", "").strip(),
+            }
+    return lookup
+
+
+# Real shared-sheet header (Master tab). Columns beyond L are pipeline/report
+# fields owned by other skills — never write into them from here.
+SHEET_HEADER = ["#", "Company", "Times_Advertised", "Unique_Profiles", "Industry",
+                "Full Name", "Job Title", "Email", "LinkedIn", "Tier", "Persona", "Status"]
+SHEET_FMT_RANGE_COLS = "A:J"   # per-project convention: grey new rows on insert, cols A-J only
+SHEET_FMT_BG = {"red": 0.906, "green": 0.902, "blue": 0.902}  # #e7e6e6
+
+
 def sync_to_sheets():
-    """Push contacts with emails to the shared Google Sheet (append-only, email as unique key)."""
+    """Insert new contacts (with email) into the shared Google Sheet, grouped under their
+    brand's existing row block — never a bottom dump. Dedup by email. Times_Advertised /
+    Unique_Profiles / # are looked up by brand name from data/brands_consolidated.csv."""
     try:
         import gspread
         from google.oauth2.service_account import Credentials
@@ -356,17 +389,28 @@ def sync_to_sheets():
 
     ws = sh.sheet1
     existing = ws.get_all_values()
-    HEADER = ["Brand", "Name", "Job Title", "Email", "LinkedIn URL", "Domain", "First Seen", "Last Seen"]
-
     if not existing:
-        ws.append_row(HEADER)
-        existing_emails = set()
-    else:
-        if existing[0] != HEADER:
-            ws.insert_row(HEADER, 1)
-        existing_emails = {row[3].lower().strip() for row in existing[1:] if len(row) > 3 and row[3]}
+        print(f"ERROR: sheet is empty — expected header row {SHEET_HEADER}. Not writing blind."); return
+    if existing[0][:len(SHEET_HEADER)] != SHEET_HEADER:
+        print("ERROR: sheet header doesn't match expected schema — refusing to write "
+              "(would misalign columns). Check SHEET_HEADER against the live sheet."); return
 
-    new_rows = []
+    EMAIL_COL = SHEET_HEADER.index("Email")        # 7
+    COMPANY_COL = SHEET_HEADER.index("Company")    # 1
+
+    existing_emails = {row[EMAIL_COL].lower().strip() for row in existing[1:]
+                        if len(row) > EMAIL_COL and row[EMAIL_COL]}
+
+    # last existing sheet row (1-indexed) per brand — for grouped insertion
+    brand_last_row = {}
+    for i, row in enumerate(existing[1:], start=2):
+        if len(row) > COMPANY_COL and row[COMPANY_COL].strip():
+            brand_last_row[row[COMPANY_COL].strip().lower()] = i
+
+    lookup = _load_brand_lookup()
+
+    # brand -> list of new row-value lists (in SHEET_HEADER column order)
+    per_brand_new_rows = {}
     for f in sorted(STORE_DIR.glob("*.json")):
         if f.stem.startswith(("ZZ-", "00-")):
             continue
@@ -375,36 +419,79 @@ def sync_to_sheets():
             contacts = json.loads(f.read_text(encoding="utf-8"))
         except Exception:
             continue
+        info = lookup.get(brand.lower(), {})
         for c in contacts:
             em = (c.get("email") or "").strip()
             if not em or em.lower() in existing_emails:
                 continue
-            new_rows.append([
+            per_brand_new_rows.setdefault(brand, []).append([
+                info.get("num", ""),
                 brand,
+                info.get("times_advertised", ""),
+                info.get("unique_profiles", ""),
+                info.get("industry", ""),
                 c.get("name") or "",
                 c.get("job_title") or "",
                 em,
                 c.get("linkedin_url") or "",
-                c.get("domain") or "",
-                c.get("first_seen") or "",
-                c.get("last_seen") or "",
+                "", "", "",  # Tier, Persona, Status — filled by downstream skills, not here
             ])
             existing_emails.add(em.lower())
 
-    if not new_rows:
+    if not per_brand_new_rows:
         print("Google Sheet is already up-to-date — no new contacts to add.")
         return
 
-    # Append in batches to avoid API rate limits
-    BATCH_SIZE = 100
-    total = 0
-    for i in range(0, len(new_rows), BATCH_SIZE):
-        batch = new_rows[i:i + BATCH_SIZE]
-        ws.append_rows(batch, value_input_option="USER_ENTERED")
-        total += len(batch)
-        print(f"  Appended {total}/{len(new_rows)} rows...")
+    # Insert brand-by-brand, bottom-up by target row, so earlier inserts don't
+    # shift the row indices of brands still queued for insertion.
+    inserts = []  # (target_row, rows)
+    tail_rows = []  # brands with no existing block — appended once at the very end
+    for brand, rows in per_brand_new_rows.items():
+        last_row = brand_last_row.get(brand.lower())
+        if last_row:
+            inserts.append((last_row, rows))
+        else:
+            tail_rows.extend(rows)
+    inserts.sort(key=lambda x: x[0], reverse=True)
 
-    print(f"Done. {len(new_rows)} new contacts pushed to Google Sheet.")
+    total = 0
+    formatted_ranges = []
+    for target_row, rows in inserts:
+        ws.insert_rows(rows, row=target_row + 1, value_input_option="USER_ENTERED")
+        formatted_ranges.append((target_row + 1, target_row + len(rows)))
+        total += len(rows)
+        print(f"  Inserted {len(rows)} row(s) under '{rows[0][1]}' at row {target_row + 1} ({total} so far)...")
+
+    if tail_rows:
+        next_row = len(ws.get_all_values()) + 1
+        ws.append_rows(tail_rows, value_input_option="USER_ENTERED")
+        formatted_ranges.append((next_row, next_row + len(tail_rows) - 1))
+        total += len(tail_rows)
+        print(f"  Appended {len(tail_rows)} row(s) for brand(s) with no existing sheet block.")
+
+    # Format new rows: grey background on A:J only, batched into one call
+    fmt_body = {
+        "requests": [
+            {
+                "repeatCell": {
+                    "range": {
+                        "sheetId": ws.id,
+                        "startRowIndex": start - 1,
+                        "endRowIndex": end,
+                        "startColumnIndex": 0,
+                        "endColumnIndex": 10,  # A:J
+                    },
+                    "cell": {"userEnteredFormat": {"backgroundColor": SHEET_FMT_BG}},
+                    "fields": "userEnteredFormat.backgroundColor",
+                }
+            }
+            for start, end in formatted_ranges
+        ]
+    }
+    if fmt_body["requests"]:
+        sh.batch_update(fmt_body)
+
+    print(f"Done. {total} new contacts inserted into Google Sheet, grouped by brand.")
 
 
 def git_sync():
