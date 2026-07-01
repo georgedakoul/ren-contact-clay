@@ -364,13 +364,50 @@ SHEET_HEADER = ["#", "Company", "Times_Advertised", "Unique_Profiles", "Industry
 SHEET_FMT_RANGE_COLS = "A:J"   # per-project convention: grey new rows on insert, cols A-J only
 SHEET_FMT_BG = {"red": 0.906, "green": 0.902, "blue": 0.902}  # #e7e6e6
 
+# Low-quality email signals — skip these contacts entirely, never sync to sheet.
+# Confirmed 2026-07-01 cleanup: generic role inboxes and third-party (personal /
+# law-tax-accounting-firm) domains are noise, not real marketing contacts.
+GENERIC_LOCAL_PARTS = {"info", "contact", "sales", "support", "hello", "office",
+                        "marketing", "pr", "press", "accounting", "invoice"}
+PERSONAL_EMAIL_DOMAINS = {"gmail.com", "hotmail.com", "hotmail.gr", "yahoo.com", "yahoo.gr",
+                           "outlook.com", "mac.com", "rocketmail.com", "icloud.com"}
+# substrings, not exact domains — these are outside accountants/lawyers, not brand employees
+PRO_SERVICES_DOMAIN_KEYWORDS = ["law", "legal", "tax", "ecovis", "andersen", "mcbainscooper",
+                                 "martzoukos", "gt.com", "capitalpartners", "bernitsaslaw",
+                                 "firstfloor", "syntaxis", "altaxis", "365taccs"]
+
+
+def _is_low_quality_email(email):
+    local, _, domain = email.lower().partition("@")
+    if local in GENERIC_LOCAL_PARTS:
+        return True
+    if domain in PERSONAL_EMAIL_DOMAINS:
+        return True
+    if any(kw in domain for kw in PRO_SERVICES_DOMAIN_KEYWORDS):
+        return True
+    if local[:1].isdigit():
+        return True
+    return False
+
+
+# IMPORTANT — do NOT add automatic "domain must match company name" filtering.
+# Confirmed 2026-07-01: many brands' real marketing contacts sit on a parent/
+# subsidiary domain that shares no substring with the storefront brand name —
+# e.g. Pame Stoixima -> opap.gr, Hellmann's -> unilever.com, Vichy -> loreal.com,
+# Pantene -> pg.com, Coca-Cola -> cchellenic.com, Minos EMI -> umusic.com,
+# COSMOTE -> ote.gr. A naive brand/domain string match flags ~95% of these as
+# "mismatches" and would delete legitimate contacts. Only the two signals above
+# (generic role inbox, personal/professional-services domain) are safe to
+# auto-filter; anything else needs a human to eyeball it.
+
 
 def sync_to_sheets():
     """Insert new contacts into the shared Google Sheet, grouped under their brand's
     existing row block — never a bottom dump. A contact only qualifies if it has BOTH
-    an email AND a LinkedIn URL (partial contacts are not synced). Dedup by email.
-    Times_Advertised / Unique_Profiles / # are looked up by brand name from
-    data/brands_consolidated.csv.
+    an email AND a LinkedIn URL (partial contacts are not synced), and the email isn't
+    low-quality (generic role inbox, personal email provider, or a law/tax/accounting
+    firm domain — see _is_low_quality_email). Dedup by email. Times_Advertised /
+    Unique_Profiles / # are looked up by brand name from data/brands_consolidated.csv.
 
     HARD RULE: this function only ever inserts or appends rows. It must never delete,
     clear, or overwrite any existing cell in the sheet — this is company data owned
@@ -431,6 +468,8 @@ def sync_to_sheets():
             em = (c.get("email") or "").strip()
             li = (c.get("linkedin_url") or "").strip()
             if not em or not li or em.lower() in existing_emails:
+                continue
+            if _is_low_quality_email(em):
                 continue
             per_brand_new_rows.setdefault(brand, []).append([
                 info.get("num", ""),
