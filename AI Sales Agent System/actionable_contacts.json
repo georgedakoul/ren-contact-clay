@@ -545,7 +545,7 @@
       "times_advertised": 462,
       "has_employee_file": true,
       "employee_count": 2,
-      "emails_known": 1,
+      "emails_known": 2,
       "employee_file": "Benefit Cosmetics.json",
       "domain": "benefitcosmetics.com",
       "email_pattern": null
