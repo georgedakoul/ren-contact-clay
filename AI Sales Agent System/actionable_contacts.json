@@ -228,13 +228,13 @@
     {
       "brand": "MUA Makeup Academy",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Covered",
       "linkedin_slug": "mua-makeup-academy",
       "times_advertised": 7,
       "has_employee_file": true,
       "employee_count": 7,
-      "emails_known": 0,
-      "employee_file": "00-MUA Makeup Academy.json",
+      "emails_known": 4,
+      "employee_file": "MUA Makeup Academy.json",
       "domain": null,
       "email_pattern": null
     },
