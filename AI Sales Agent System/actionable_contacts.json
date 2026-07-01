@@ -280,13 +280,13 @@
     {
       "brand": "MAC Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Covered",
       "linkedin_slug": "mac-cosmetics",
       "times_advertised": 683,
       "has_employee_file": true,
       "employee_count": 2,
-      "emails_known": 0,
-      "employee_file": "00-MAC Cosmetics.json",
+      "emails_known": 1,
+      "employee_file": "MAC Cosmetics.json",
       "domain": "maccosmetics.com",
       "email_pattern": null
     },
@@ -540,13 +540,13 @@
     {
       "brand": "Benefit Cosmetics",
       "industry": "Beauty",
-      "coverage_status": "LinkedIn-only",
+      "coverage_status": "Covered",
       "linkedin_slug": "benefitcosmetics",
       "times_advertised": 462,
       "has_employee_file": true,
       "employee_count": 2,
-      "emails_known": 0,
-      "employee_file": "00-Benefit Cosmetics.json",
+      "emails_known": 1,
+      "employee_file": "Benefit Cosmetics.json",
       "domain": "benefitcosmetics.com",
       "email_pattern": null
     },

@@ -309,6 +309,22 @@ def save_contacts(brand_name, contacts, domain=None):
     print(f"  {brand_name}: {added} new contacts, {email_added} emails added → {len(merged)} total")
 
 
+def list_for_enrichment(brands):
+    out = []
+    for b in brands:
+        path = STORE_DIR / f"00-{b}.json"
+        if not path.exists():
+            print(f"  {b}: no 00-{b}.json (not linkedin-only)")
+            continue
+        contacts = json.loads(path.read_text(encoding="utf-8"))
+        domain = DOMAIN_MAP.get(b)
+        for c in contacts:
+            if c.get("email"):
+                continue
+            out.append({"contactName": c["name"], "companyIdentifier": domain or c.get("domain") or b})
+    print(json.dumps(out, indent=2, ensure_ascii=False))
+
+
 def _scan_store():
     """Scan ALL employee files → {brand_name: {total, emails, last_seen, _prefix}}."""
     store = {}
