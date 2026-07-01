@@ -366,9 +366,16 @@ SHEET_FMT_BG = {"red": 0.906, "green": 0.902, "blue": 0.902}  # #e7e6e6
 
 
 def sync_to_sheets():
-    """Insert new contacts (with email) into the shared Google Sheet, grouped under their
-    brand's existing row block — never a bottom dump. Dedup by email. Times_Advertised /
-    Unique_Profiles / # are looked up by brand name from data/brands_consolidated.csv."""
+    """Insert new contacts into the shared Google Sheet, grouped under their brand's
+    existing row block — never a bottom dump. A contact only qualifies if it has BOTH
+    an email AND a LinkedIn URL (partial contacts are not synced). Dedup by email.
+    Times_Advertised / Unique_Profiles / # are looked up by brand name from
+    data/brands_consolidated.csv.
+
+    HARD RULE: this function only ever inserts or appends rows. It must never delete,
+    clear, or overwrite any existing cell in the sheet — this is company data owned
+    outside this pipeline. If a future change needs to touch existing rows, stop and
+    get explicit sign-off first; do not add delete/overwrite logic here."""
     try:
         import gspread
         from google.oauth2.service_account import Credentials
@@ -422,7 +429,8 @@ def sync_to_sheets():
         info = lookup.get(brand.lower(), {})
         for c in contacts:
             em = (c.get("email") or "").strip()
-            if not em or em.lower() in existing_emails:
+            li = (c.get("linkedin_url") or "").strip()
+            if not em or not li or em.lower() in existing_emails:
                 continue
             per_brand_new_rows.setdefault(brand, []).append([
                 info.get("num", ""),
