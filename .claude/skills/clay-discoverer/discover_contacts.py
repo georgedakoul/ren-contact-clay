@@ -350,6 +350,213 @@ def _scan_store():
     return store
 
 
+BRANDS_LOOKUP_FILE = Path(__file__).parent / "data" / "brands_consolidated.csv"
+
+
+def _load_brand_lookup():
+    """brand name (lowercased) -> {num, times_advertised, unique_profiles, industry} from brands_consolidated.csv"""
+    lookup = {}
+    if not BRANDS_LOOKUP_FILE.exists():
+        return lookup
+    import csv
+    with open(BRANDS_LOOKUP_FILE, encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            name = (row.get("Brand") or "").strip()
+            if not name:
+                continue
+            lookup[name.lower()] = {
+                "num":              row.get("#", "").split(".")[0] if row.get("#") else "",
+                "times_advertised": row.get("Times Advertised", "").split(".")[0] if row.get("Times Advertised") else "",
+                "unique_profiles":  row.get("Unique Profiles", "").split(".")[0] if row.get("Unique Profiles") else "",
+                "industry":         row.get("Industry", "").strip(),
+            }
+    return lookup
+
+
+# Real shared-sheet header (Master tab). Columns beyond L are pipeline/report
+# fields owned by other skills — never write into them from here.
+SHEET_HEADER = ["#", "Company", "Times_Advertised", "Unique_Profiles", "Industry",
+                "Full Name", "Job Title", "Email", "LinkedIn", "Tier", "Persona", "Status"]
+SHEET_FMT_RANGE_COLS = "A:J"   # per-project convention: grey new rows on insert, cols A-J only
+SHEET_FMT_BG = {"red": 0.906, "green": 0.902, "blue": 0.902}  # #e7e6e6
+
+# Low-quality email signals — skip these contacts entirely, never sync to sheet.
+# Confirmed 2026-07-01 cleanup: generic role inboxes and third-party (personal /
+# law-tax-accounting-firm) domains are noise, not real marketing contacts.
+GENERIC_LOCAL_PARTS = {"info", "contact", "sales", "support", "hello", "office",
+                        "marketing", "pr", "press", "accounting", "invoice"}
+PERSONAL_EMAIL_DOMAINS = {"gmail.com", "hotmail.com", "hotmail.gr", "yahoo.com", "yahoo.gr",
+                           "outlook.com", "mac.com", "rocketmail.com", "icloud.com"}
+# substrings, not exact domains — these are outside accountants/lawyers, not brand employees
+PRO_SERVICES_DOMAIN_KEYWORDS = ["law", "legal", "tax", "ecovis", "andersen", "mcbainscooper",
+                                 "martzoukos", "gt.com", "capitalpartners", "bernitsaslaw",
+                                 "firstfloor", "syntaxis", "altaxis", "365taccs"]
+
+
+def _is_low_quality_email(email):
+    local, _, domain = email.lower().partition("@")
+    if local in GENERIC_LOCAL_PARTS:
+        return True
+    if domain in PERSONAL_EMAIL_DOMAINS:
+        return True
+    if any(kw in domain for kw in PRO_SERVICES_DOMAIN_KEYWORDS):
+        return True
+    if local[:1].isdigit():
+        return True
+    return False
+
+
+# IMPORTANT — do NOT add automatic "domain must match company name" filtering.
+# Confirmed 2026-07-01: many brands' real marketing contacts sit on a parent/
+# subsidiary domain that shares no substring with the storefront brand name —
+# e.g. Pame Stoixima -> opap.gr, Hellmann's -> unilever.com, Vichy -> loreal.com,
+# Pantene -> pg.com, Coca-Cola -> cchellenic.com, Minos EMI -> umusic.com,
+# COSMOTE -> ote.gr. A naive brand/domain string match flags ~95% of these as
+# "mismatches" and would delete legitimate contacts. Only the two signals above
+# (generic role inbox, personal/professional-services domain) are safe to
+# auto-filter; anything else needs a human to eyeball it.
+
+
+def sync_to_sheets():
+    """Insert new contacts into the shared Google Sheet, grouped under their brand's
+    existing row block — never a bottom dump. A contact only qualifies if it has BOTH
+    an email AND a LinkedIn URL (partial contacts are not synced), and the email isn't
+    low-quality (generic role inbox, personal email provider, or a law/tax/accounting
+    firm domain — see _is_low_quality_email). Dedup by email. Times_Advertised /
+    Unique_Profiles / # are looked up by brand name from data/brands_consolidated.csv.
+
+    HARD RULE: this function only ever inserts or appends rows. It must never delete,
+    clear, or overwrite any existing cell in the sheet — this is company data owned
+    outside this pipeline. If a future change needs to touch existing rows, stop and
+    get explicit sign-off first; do not add delete/overwrite logic here."""
+    try:
+        import gspread
+        from google.oauth2.service_account import Credentials
+    except ImportError:
+        print("ERROR: gspread not installed. Run: pip3 install gspread google-auth"); return
+
+    if not SHEETS_SERVICE_ACCOUNT.exists():
+        print(f"ERROR: {SHEETS_SERVICE_ACCOUNT} not found — cannot authenticate."); return
+
+    SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+    creds  = Credentials.from_service_account_file(str(SHEETS_SERVICE_ACCOUNT), scopes=SCOPES)
+    gc     = gspread.authorize(creds)
+
+    try:
+        sh = gc.open_by_key(SHEET_ID)
+    except Exception as e:
+        print(f"ERROR opening sheet {SHEET_ID}: {e}"); return
+
+    ws = sh.sheet1
+    existing = ws.get_all_values()
+    if not existing:
+        print(f"ERROR: sheet is empty — expected header row {SHEET_HEADER}. Not writing blind."); return
+    if existing[0][:len(SHEET_HEADER)] != SHEET_HEADER:
+        print("ERROR: sheet header doesn't match expected schema — refusing to write "
+              "(would misalign columns). Check SHEET_HEADER against the live sheet."); return
+
+    EMAIL_COL = SHEET_HEADER.index("Email")        # 7
+    COMPANY_COL = SHEET_HEADER.index("Company")    # 1
+
+    existing_emails = {row[EMAIL_COL].lower().strip() for row in existing[1:]
+                        if len(row) > EMAIL_COL and row[EMAIL_COL]}
+
+    # last existing sheet row (1-indexed) per brand — for grouped insertion
+    brand_last_row = {}
+    for i, row in enumerate(existing[1:], start=2):
+        if len(row) > COMPANY_COL and row[COMPANY_COL].strip():
+            brand_last_row[row[COMPANY_COL].strip().lower()] = i
+
+    lookup = _load_brand_lookup()
+
+    # brand -> list of new row-value lists (in SHEET_HEADER column order)
+    per_brand_new_rows = {}
+    for f in sorted(STORE_DIR.glob("*.json")):
+        if f.stem.startswith(("ZZ-", "00-")):
+            continue
+        brand = f.stem
+        try:
+            contacts = json.loads(f.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        info = lookup.get(brand.lower(), {})
+        for c in contacts:
+            em = (c.get("email") or "").strip()
+            li = (c.get("linkedin_url") or "").strip()
+            if not em or not li or em.lower() in existing_emails:
+                continue
+            if _is_low_quality_email(em):
+                continue
+            per_brand_new_rows.setdefault(brand, []).append([
+                info.get("num", ""),
+                brand,
+                info.get("times_advertised", ""),
+                info.get("unique_profiles", ""),
+                info.get("industry", ""),
+                c.get("name") or "",
+                c.get("job_title") or "",
+                em,
+                c.get("linkedin_url") or "",
+                "", "", "",  # Tier, Persona, Status — filled by downstream skills, not here
+            ])
+            existing_emails.add(em.lower())
+
+    if not per_brand_new_rows:
+        print("Google Sheet is already up-to-date — no new contacts to add.")
+        return
+
+    # Insert brand-by-brand, bottom-up by target row, so earlier inserts don't
+    # shift the row indices of brands still queued for insertion.
+    inserts = []  # (target_row, rows)
+    tail_rows = []  # brands with no existing block — appended once at the very end
+    for brand, rows in per_brand_new_rows.items():
+        last_row = brand_last_row.get(brand.lower())
+        if last_row:
+            inserts.append((last_row, rows))
+        else:
+            tail_rows.extend(rows)
+    inserts.sort(key=lambda x: x[0], reverse=True)
+
+    total = 0
+    formatted_ranges = []
+    for target_row, rows in inserts:
+        ws.insert_rows(rows, row=target_row + 1, value_input_option="USER_ENTERED")
+        formatted_ranges.append((target_row + 1, target_row + len(rows)))
+        total += len(rows)
+        print(f"  Inserted {len(rows)} row(s) under '{rows[0][1]}' at row {target_row + 1} ({total} so far)...")
+
+    if tail_rows:
+        next_row = len(ws.get_all_values()) + 1
+        ws.append_rows(tail_rows, value_input_option="USER_ENTERED")
+        formatted_ranges.append((next_row, next_row + len(tail_rows) - 1))
+        total += len(tail_rows)
+        print(f"  Appended {len(tail_rows)} row(s) for brand(s) with no existing sheet block.")
+
+    # Format new rows: grey background on A:J only, batched into one call
+    fmt_body = {
+        "requests": [
+            {
+                "repeatCell": {
+                    "range": {
+                        "sheetId": ws.id,
+                        "startRowIndex": start - 1,
+                        "endRowIndex": end,
+                        "startColumnIndex": 0,
+                        "endColumnIndex": 10,  # A:J
+                    },
+                    "cell": {"userEnteredFormat": {"backgroundColor": SHEET_FMT_BG}},
+                    "fields": "userEnteredFormat.backgroundColor",
+                }
+            }
+            for start, end in formatted_ranges
+        ]
+    }
+    if fmt_body["requests"]:
+        sh.batch_update(fmt_body)
+
+    print(f"Done. {total} new contacts inserted into Google Sheet, grouped by brand.")
+
+
 def git_sync():
     result = subprocess.run(
         ["git", "add",
@@ -484,9 +691,28 @@ def status_report():
 # After save completes, clear this dict (data is in employee files + git history).
 # ---------------------------------------------------------------------------
 BATCH = {
-    "Emmanouela Cosmetics": ([
-        {"name": "Athina Tsiringouli", "latest_experience_title": "Digital Marketing Executive", "url": "https://www.linkedin.com/in/athina-tsiringouli-570473195/", "email": "", "domain": "emmanouelacosmetics.com"},
-    ], "emmanouelacosmetics.com"),
+    "Benefit Cosmetics": ([{"name": "Marietta Fameli", "latest_experience_title": "Digital Project Manager", "url": "https://www.linkedin.com/in/marietta-fameli-622a692b/", "email": "mariettaf@benefitcosmetics.com", "domain": "benefitcosmetics.com"}, {"name": "Afroditi Delipanagioti", "latest_experience_title": "Digital/PR & Marketing manager", "url": "https://www.linkedin.com/in/afroditi-delipanagioti-198406244/", "email": None, "domain": "benefitcosmetics.com"}], "benefitcosmetics.com"),
+    "Borotalco": ([{"name": "Maria Kotsifakou", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/maria-kotsifakou/", "email": "mkotsifakou@boltonadhesives.com", "domain": "bolton.com"}, {"name": "Chrysa Printziou", "latest_experience_title": "Marketing Specialist UHU/Bison", "url": "https://www.linkedin.com/in/cprintziou/", "email": "cprintziou@boltonadhesives.com", "domain": "bolton.com"}], "bolton.com"),
+    "Dust and Cream": ([{"name": "Despoina  E. Ananiadou", "latest_experience_title": "Marketing Coordinator", "url": "https://www.linkedin.com/in/despoina-e-ananiadou-0aa383120/", "email": None, "domain": "dustandcream.gr"}, {"name": "Nikolaos Apostolidis", "latest_experience_title": "Digital Marketing Specialist", "url": "https://www.linkedin.com/in/nikolaos-apostolidis-6363a0216/", "email": None, "domain": "dustandcream.gr"}, {"name": "Amalia Charalampopoulou", "latest_experience_title": "Brand Content Manager", "url": "https://www.linkedin.com/in/amalia-charalampopoulou-b258951a4/", "email": None, "domain": "dustandcream.gr"}], "dustandcream.gr"),
+    "Froika": ([{"name": "Kelly Kottari", "latest_experience_title": "Marketing Coordinator", "url": "https://www.linkedin.com/in/kellykottari/", "email": "kkottari@froika.com", "domain": "froika.com"}], "froika.com"),
+    "Helenvita": ([{"name": "Ioanna G.", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/ioanna-grigoriou-28159b29/", "email": "i.grigoriou@pharmex.gr", "domain": "pharmex.gr"}], "pharmex.gr"),
+    "Hugo Boss": ([{"name": "Katerina Antoniou", "latest_experience_title": "Marketing and Communications", "url": "https://www.linkedin.com/in/katerina-antoniou-412694b2/", "email": "katerina_antoniou@hugoboss.com", "domain": "hugoboss.com"}, {"name": "Dr. Argyro Tsampis", "latest_experience_title": "Brand Ambassador", "url": "https://www.linkedin.com/in/dr-argyro-tsampis-89021378/", "email": None, "domain": "hugoboss.com"}], "hugoboss.com"),
+    "Juliette Armand": ([{"name": "Elpida Fardogianni", "latest_experience_title": "Marketing Specialist", "url": "https://www.linkedin.com/in/elpida-fardogianni-124877b2/", "email": None, "domain": "juliettearmand.com"}, {"name": "Bill Papaefstratiou", "latest_experience_title": "Head of Marketing", "url": "https://www.linkedin.com/in/bill-papaefstratiou-26a4b258/", "email": "william@juliettearmand.com", "domain": "juliettearmand.com"}], "juliettearmand.com"),
+    "Little Secrets Natural Cosmetics": ([{"name": "Eirini Amygdalia Petridou", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/eirini-amygdalia-petridou-596122297/", "email": None, "domain": "littlesecrets.gr"}], "littlesecrets.gr"),
+    "MAC Cosmetics": ([{"name": "Eirini Nikolakea", "latest_experience_title": "Product Marketing Executive", "url": "https://www.linkedin.com/in/eirini-nikolakea/", "email": "enikolakea@maccosmetics.com", "domain": "maccosmetics.com"}, {"name": "Eleni Charitopoulou", "latest_experience_title": "Digital Marketing Specialist", "url": "https://www.linkedin.com/in/eleni-charitopoulou-b8b617162/", "email": None, "domain": "maccosmetics.com"}], "maccosmetics.com"),
+    "Mastic Spa": ([{"name": "Apostle Mengoulis", "latest_experience_title": "Digital Marketing Manager", "url": "https://www.linkedin.com/in/apostle-mengoulis-9947519b/", "email": "apostle@sodisbrands.com", "domain": "masticspa.com"}, {"name": "Sofia Sodi", "latest_experience_title": "Co-founder & Marketing Director", "url": "https://www.linkedin.com/in/sofia-sodi-6aaa94a6/", "email": "sofia@sodisbrands.com", "domain": "masticspa.com"}], "masticspa.com"),
+    "Medisei": ([{"name": "Popita Bikof", "latest_experience_title": "Head of Marketing@MEDISEI", "url": "https://www.linkedin.com/in/popita-bikof-2199aa50/", "email": "p.bikof@medisei.gr", "domain": "medisei.gr"}, {"name": "Stella Mathioudaki", "latest_experience_title": "Digital Marketing & E-Commerce Specialist", "url": "https://www.linkedin.com/in/stella-mathioudaki/", "email": "s.mathioudaki@medisei.gr", "domain": "medisei.gr"}, {"name": "Αμαλία Λυμπέρη", "latest_experience_title": "Marketing Assistant Trainee", "url": "https://www.linkedin.com/in/αμαλία-λυμπέρη-a30387396/", "email": None, "domain": "medisei.gr"}], "medisei.gr"),
+    "Panthenol Extra": ([{"name": "Popita Bikof", "latest_experience_title": "Head of Marketing@MEDISEI", "url": "https://www.linkedin.com/in/popita-bikof-2199aa50/", "email": "p.bikof@medisei.gr", "domain": "medisei.gr"}, {"name": "Stella Mathioudaki", "latest_experience_title": "Digital Marketing & E-Commerce Specialist", "url": "https://www.linkedin.com/in/stella-mathioudaki/", "email": "s.mathioudaki@medisei.gr", "domain": "medisei.gr"}, {"name": "Αμαλία Λυμπέρη", "latest_experience_title": "Marketing Assistant Trainee", "url": "https://www.linkedin.com/in/αμαλία-λυμπέρη-a30387396/", "email": None, "domain": "medisei.gr"}], "medisei.gr"),
+    "Mon Rêve Cosmetics": ([{"name": "Lydia Christoforidou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/lydia-christoforidou-9278a4122/", "email": None, "domain": "hellenica.gr"}, {"name": "Electra Papanastasiou", "latest_experience_title": "Marketing Manager, Strategy Lead Seventeen Cosmetics", "url": "https://www.linkedin.com/in/papanastasiou-electra/", "email": "e.papanastasiou@hellenica.gr", "domain": "hellenica.gr"}, {"name": "Silia Karatza", "latest_experience_title": "Digital Marketing & Social Media Specialist", "url": "https://www.linkedin.com/in/silia-karatza-79b726197/", "email": "s.karatza@hellenica.gr", "domain": "hellenica.gr"}], "hellenica.gr"),
+    "Radiant Professional": ([{"name": "Lydia Christoforidou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/lydia-christoforidou-9278a4122/", "email": None, "domain": "hellenica.gr"}, {"name": "Electra Papanastasiou", "latest_experience_title": "Marketing Manager, Strategy Lead Seventeen Cosmetics", "url": "https://www.linkedin.com/in/papanastasiou-electra/", "email": "e.papanastasiou@hellenica.gr", "domain": "hellenica.gr"}, {"name": "Silia Karatza", "latest_experience_title": "Digital Marketing & Social Media Specialist", "url": "https://www.linkedin.com/in/silia-karatza-79b726197/", "email": "s.karatza@hellenica.gr", "domain": "hellenica.gr"}], "hellenica.gr"),
+    "Radiant Professional Make Up": ([{"name": "Lydia Christoforidou", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/lydia-christoforidou-9278a4122/", "email": None, "domain": "hellenica.gr"}, {"name": "Electra Papanastasiou", "latest_experience_title": "Marketing Manager, Strategy Lead Seventeen Cosmetics", "url": "https://www.linkedin.com/in/papanastasiou-electra/", "email": "e.papanastasiou@hellenica.gr", "domain": "hellenica.gr"}, {"name": "Silia Karatza", "latest_experience_title": "Digital Marketing & Social Media Specialist", "url": "https://www.linkedin.com/in/silia-karatza-79b726197/", "email": "s.karatza@hellenica.gr", "domain": "hellenica.gr"}], "hellenica.gr"),
+    "Oriflame": ([{"name": "despoina noukari", "latest_experience_title": "oriflame marketing", "url": "https://www.linkedin.com/in/despoina-noukari-5a0b9aab/", "email": None, "domain": "oriflame.com"}], "oriflame.com"),
+    "Priorin": ([{"name": "Sonia Mousavere", "latest_experience_title": "Head of Communications & PGA", "url": "https://www.linkedin.com/in/smousavere/", "email": "sonia.mousavere@bayer.com", "domain": "bayer.com"}, {"name": "Thekli Bourtzinou", "latest_experience_title": "Brand Communications and Digital Services Coordinator", "url": "https://www.linkedin.com/in/thekli-bourtzinou-340b3099/", "email": "thekli.bourtzinou@bayer.com", "domain": "bayer.com"}, {"name": "Kyriakos Nathanail", "latest_experience_title": "Brand Manager / Customer Engagement Team Lead", "url": "https://www.linkedin.com/in/kyriakos-nathanail-7118874/", "email": "kyriakos.nathanail@bayer.com", "domain": "bayer.com"}, {"name": "Fotis Tsopelas", "latest_experience_title": "Digital Media & eCommerce Manager Consumer Health Division", "url": "https://www.linkedin.com/in/fotis-tsopelas-41b72960/", "email": "fotis.tsopelas@bayer.com", "domain": "bayer.com"}, {"name": "Spiros Galousis", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/spiros-galousis-24781746/", "email": "sgalousis@bayer.com", "domain": "bayer.com"}, {"name": "Maria Davit", "latest_experience_title": "Brand Manager", "url": "https://www.linkedin.com/in/maria-davit-110006115/", "email": "maria.davit@bayer.com", "domain": "bayer.com"}, {"name": "Zoi Arachovitou", "latest_experience_title": "Marketing Assistant", "url": "https://www.linkedin.com/in/zoi-arachovitou/", "email": "zoi.arachovitou@bayer.com", "domain": "bayer.com"}, {"name": "Eleftherios Filios", "latest_experience_title": "Cluster Brand Manager Opthalmology (GR, CY, MA, IS, ROM, BG)", "url": "https://www.linkedin.com/in/eleftherios-filios-0959b35a/", "email": None, "domain": "bayer.com"}], "bayer.com"),
+    "The Body Shop": ([{"name": "Dimitra Kaldi", "latest_experience_title": "Marketing, Communication & CSR Director at The Body Shop", "url": "https://www.linkedin.com/in/dimitra-kaldi-a8a36350/", "email": "dimitra.kaldi@thebodyshop.com", "domain": "thebodyshopcareers.com"}, {"name": "Eleni Vasilakopoulou", "latest_experience_title": "Marketing Coordinator", "url": "https://www.linkedin.com/in/eleni-vasilakopoulou-87ab4642/", "email": "eleni.vasilakopoulou@thebodyshop.com", "domain": "thebodyshopcareers.com"}], "thebodyshopcareers.com"),
+    "Version Derm": ([{"name": "Chryssa Siaga", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/chryssa-siaga-37252484/", "email": "chryssa@mail.versionderm.gr", "domain": "versionderm.gr"}], "versionderm.gr"),
+    "AEK FC": ([{"name": "Antonis Apostolopoulos", "latest_experience_title": "Event Management & Sports Marketing Assistant", "url": "https://www.linkedin.com/in/antonis-apostolopoulos-7b753b187/", "email": "aapostolopoulos@aekfc.gr", "domain": "aekfc.gr"}, {"name": "Christina Koromila", "latest_experience_title": "Social Media", "url": "https://www.linkedin.com/in/christina-koromila-768326b5/", "email": "c.koromila@kingbetmedia.com", "domain": "aekfc.gr"}], "aekfc.gr"),
+    "ANT1": ([{"name": "Marco Struecker", "latest_experience_title": "Interim General Manager - ANT1+", "url": "https://www.linkedin.com/in/marcostruecker/", "email": None, "domain": "ant1.gr"}, {"name": "Konstantinos Bourounis", "latest_experience_title": "Chief Marketing Officer - Antenna Group Greece", "url": "https://www.linkedin.com/in/konstantinos-bourounis-8675a0/", "email": None, "domain": "ant1.gr"}, {"name": "Agapi Kantartzi", "latest_experience_title": "Marketing Manager & Communications | Antenna Audio / easy 97.2 | Ρυθμος 94.9 | Soundis.gr", "url": "https://www.linkedin.com/in/agapi/", "email": None, "domain": "ant1.gr"}, {"name": "Nikolaos Katsaros", "latest_experience_title": "Digital Performance Product Manager", "url": "https://www.linkedin.com/in/nikolaos-katsaros-52b9a11b/", "email": None, "domain": "ant1.gr"}, {"name": "Ioanna Panagioti", "latest_experience_title": "Social Media Expert", "url": "https://www.linkedin.com/in/ioanna-panagioti-25bba91a9/", "email": None, "domain": "ant1.gr"}, {"name": "Nancy Fafouti", "latest_experience_title": "Social Media Manager", "url": "https://www.linkedin.com/in/nancy-fafouti/", "email": None, "domain": "ant1.gr"}, {"name": "Olympia Tsamasfyra", "latest_experience_title": "Marketing Manager", "url": "https://www.linkedin.com/in/olympia-tsamasfyra-40033069/", "email": None, "domain": "ant1.gr"}, {"name": "Iraklis Ioannidis", "latest_experience_title": "Music Marketing Lead - Marketing Manager Heaven/Warner & Antenna Intelligence", "url": "https://www.linkedin.com/in/iraklis-ioannidis-0a536622/", "email": None, "domain": "ant1.gr"}, {"name": "Konstantinos Tzouros", "latest_experience_title": "Digital technical manager", "url": "https://www.linkedin.com/in/konstantinos-tzouros-5b912025/", "email": None, "domain": "ant1.gr"}, {"name": "Angelos Chatzidakis", "latest_experience_title": "Marketing Executive", "url": "https://www.linkedin.com/in/angelos-chatzidakis/", "email": None, "domain": "ant1.gr"}, {"name": "Marianna Alexiou", "latest_experience_title": "Social Media Expert", "url": "https://www.linkedin.com/in/marianna-alexiou-5287bb13a/", "email": None, "domain": "ant1.gr"}, {"name": "ALIKI ROULIA", "latest_experience_title": "Marketing Supervisor", "url": "https://www.linkedin.com/in/aliki-roulia-821a8097/", "email": None, "domain": "ant1.gr"}, {"name": "Matina Fountzoula", "latest_experience_title": "Digital Content Editor", "url": "https://www.linkedin.com/in/matina-fountzoula-6b215725/", "email": None, "domain": "ant1.gr"}, {"name": "Stavros Papazoglou", "latest_experience_title": "Social Media Coordinator", "url": "https://www.linkedin.com/in/stavpapazoglou/", "email": None, "domain": "ant1.gr"}, {"name": "Diacopoulos Fragiskos", "latest_experience_title": "marketing and tv production manager", "url": "https://www.linkedin.com/in/diacopoulos-fragiskos-7856b618/", "email": None, "domain": "ant1.gr"}], "ant1.gr"),
+    "Box Now": ([{"name": "Chris Papandropoulos", "latest_experience_title": "Group CMO", "url": "https://www.linkedin.com/in/chrispapandropoulos/", "email": None, "domain": "boxnow.gr"}, {"name": "Nikolaos Katsadramis", "latest_experience_title": "Marketing Executive", "url": "https://www.linkedin.com/in/nikolaos-katsadramis-185881129/", "email": None, "domain": "boxnow.gr"}, {"name": "Anastasia Kalliaropoulou", "latest_experience_title": "Marketing Supervisor", "url": "https://www.linkedin.com/in/anastasia-kalliaropoulou-6572b2194/", "email": "anastasia.kalliaropoulou@boxnow.gr", "domain": "boxnow.gr"}], "boxnow.gr"),
 }
 BATCH_ARCHIVED_2 = {
     "Muagreece": ([
