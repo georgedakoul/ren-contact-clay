@@ -787,13 +787,13 @@
     {
       "brand": "Myikona",
       "industry": "E-commerce",
-      "coverage_status": "No coverage",
+      "coverage_status": "Covered",
       "linkedin_slug": null,
       "times_advertised": 13,
-      "has_employee_file": false,
-      "employee_count": 0,
-      "emails_known": 0,
-      "employee_file": null,
+      "has_employee_file": true,
+      "employee_count": 2,
+      "emails_known": 2,
+      "employee_file": "Myikona.json",
       "domain": null,
       "email_pattern": null
     },

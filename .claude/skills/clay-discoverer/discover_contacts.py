@@ -722,6 +722,7 @@ BATCH = {
         {"name": "Evdokia Gousiou", "latest_experience_title": "B2B Specialist", "url": "https://www.linkedin.com/in/evdokia-gousiou-636614299/", "email": "egousiou@bvelo.gr", "domain": "muagreece.com"},
         {"name": "Anastasis Tsimpouktsoglou", "latest_experience_title": "Shopify Tech & Performance Specialist", "url": "https://www.linkedin.com/in/anastasis-tsimpouktsoglou-9b327a2b9/", "email": None, "domain": "muagreece.com"},
     ], "muagreece.com"),
+    "Myikona": ([{"name": "Garyfallos Ntalampiras", "latest_experience_title": "Director of E-commerce, Marketing & Growth", "url": "https://www.linkedin.com/in/garyfallos-ntalampiras-/", "email": "g.ntalampiras@myikona.gr", "domain": "myikona.gr"}], "myikona.gr"),
     "Bvelo": ([
         {"name": "Panagiotis Velonas", "latest_experience_title": "Founder | BVELO", "url": "https://www.linkedin.com/in/panagiotis-velonas-886254353/", "email": "pvelonas@bvelo.gr", "domain": "bvelo.gr"},
         {"name": "Julia Velona", "latest_experience_title": "Chief Operating Officer", "url": "https://www.linkedin.com/in/julia-velona-a586b9291/", "email": "julia@bvelo.gr", "domain": "bvelo.gr"},
