@@ -722,6 +722,15 @@ BATCH = {
         {"name": "Evdokia Gousiou", "latest_experience_title": "B2B Specialist", "url": "https://www.linkedin.com/in/evdokia-gousiou-636614299/", "email": "egousiou@bvelo.gr", "domain": "muagreece.com"},
         {"name": "Anastasis Tsimpouktsoglou", "latest_experience_title": "Shopify Tech & Performance Specialist", "url": "https://www.linkedin.com/in/anastasis-tsimpouktsoglou-9b327a2b9/", "email": None, "domain": "muagreece.com"},
     ], "muagreece.com"),
+    "Bvelo": ([
+        {"name": "Panagiotis Velonas", "latest_experience_title": "Founder | BVELO", "url": "https://www.linkedin.com/in/panagiotis-velonas-886254353/", "email": "pvelonas@bvelo.gr", "domain": "bvelo.gr"},
+        {"name": "Julia Velona", "latest_experience_title": "Chief Operating Officer", "url": "https://www.linkedin.com/in/julia-velona-a586b9291/", "email": "julia@bvelo.gr", "domain": "bvelo.gr"},
+        {"name": "Maria Oikonomou", "latest_experience_title": "Digital Marketing & Performance Strategist", "url": "https://www.linkedin.com/in/maria-oikonomou-28938a1aa/", "email": "maria.oikonomou@bravescale.gr", "domain": "bvelo.gr"},
+        {"name": "Angeliki Gidiotou", "latest_experience_title": "Influencer Marketing and UGC Specialist", "url": "https://www.linkedin.com/in/angeliki-gidiotou/", "email": None, "domain": "bvelo.gr"},
+        {"name": "Efi Konstantinidou", "latest_experience_title": "Senior Graphic Designer", "url": "https://www.linkedin.com/in/efi-konstantinidou-375b92135/", "email": None, "domain": "bvelo.gr"},
+        {"name": "Evdokia Gousiou", "latest_experience_title": "B2B Specialist", "url": "https://www.linkedin.com/in/evdokia-gousiou-636614299/", "email": "egousiou@bvelo.gr", "domain": "bvelo.gr"},
+        {"name": "Anastasis Tsimpouktsoglou", "latest_experience_title": "Shopify Tech & Performance Specialist", "url": "https://www.linkedin.com/in/anastasis-tsimpouktsoglou-9b327a2b9/", "email": None, "domain": "bvelo.gr"},
+    ], "bvelo.gr"),
 }
 BATCH_ARCHIVED_2 = {
     "Muagreece": ([
