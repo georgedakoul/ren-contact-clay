@@ -2,7 +2,7 @@
   "source_file": "Renfluence_Top1000_Coverage.xlsx",
   "source_sheet": "Actionable Brands",
   "generated_at": "2026-06-23T11:01:02Z",
-  "total_brands": 2000,
+  "total_brands": 2001,
   "brands": [
     {
       "brand": "L'Oréal Paris",
@@ -26001,6 +26001,19 @@
       "employee_count": 0,
       "emails_known": 0,
       "employee_file": null,
+      "domain": null,
+      "email_pattern": null
+    },
+    {
+      "brand": "SARKK S.A.",
+      "industry": "Fashion",
+      "coverage_status": "No coverage",
+      "linkedin_slug": null,
+      "times_advertised": 0,
+      "has_employee_file": true,
+      "employee_count": 2,
+      "emails_known": 0,
+      "employee_file": "00-SARKK S.A..json",
       "domain": null,
       "email_pattern": null
     }
