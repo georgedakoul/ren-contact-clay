@@ -691,6 +691,10 @@ def status_report():
 # After save completes, clear this dict (data is in employee files + git history).
 # ---------------------------------------------------------------------------
 BATCH = {
+    "SARKK S.A.": ([
+        {"name": "Ilina Pomaska", "latest_experience_title": "Public Group", "url": "https://www.linkedin.com/in/ipomaska/", "email": "", "domain": ""},
+        {"name": "Sylvie Gerogianni", "latest_experience_title": "", "url": "https://www.linkedin.com/in/sylvie-gerogianni", "email": "", "domain": ""},
+    ], None),
     "Kiko Milano": ([
         {"name": "Ioanna Angelis", "latest_experience_title": "Marketing Director Kalogirou S.A.", "url": "https://www.linkedin.com/in/ioanna-angelis-05724620/", "email": "ioanna.angelis@faisgroup.gr", "domain": "faisgroup.com"},
         {"name": "Melina Zineli - Prastakou", "latest_experience_title": "Brand Marketing Manager-Luxury Division", "url": "https://www.linkedin.com/in/melina-zineli-prastakou-5ba516a3/", "email": "melina.zineli@faisgroup.gr", "domain": "faisgroup.com"},

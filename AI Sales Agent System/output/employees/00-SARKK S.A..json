@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Ilina Pomaska",
+    "job_title": "Public Group",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/ipomaska/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": null,
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Sylvie Gerogianni",
+    "job_title": null,
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/sylvie-gerogianni",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": null,
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  }
+]
