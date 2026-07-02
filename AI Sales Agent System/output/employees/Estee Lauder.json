@@ -166,5 +166,17 @@
     "domain": "elcompanies.com",
     "first_seen": "2026-07-02",
     "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Machi Kampanellou",
+    "job_title": "Brand Director Luxury Skincare Group",
+    "email": "mkampanellou@estee.com",
+    "linkedin_url": "https://www.linkedin.com/in/machi-kampanellou-b84bbb16/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "elcompanies.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
   }
 ]
