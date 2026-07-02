@@ -756,8 +756,8 @@ BATCH = {
         {"name": "Freida Paisidou", "latest_experience_title": "360 Marketing Executive", "url": "https://www.linkedin.com/in/freidapaisidou/", "email": None, "domain": "elcompanies.com"},
     ], "elcompanies.com"),
     "MUA Makeup Academy": ([
-        {"name": "Panagiotis Velonas", "latest_experience_title": "Founder | BVELO", "url": "https://www.linkedin.com/in/panagiotis-velonas-886254353/", "email": None, "domain": "muagreece.com"},
-        {"name": "Maria Oikonomou", "latest_experience_title": "Digital Marketing & Performance Strategist", "url": "https://www.linkedin.com/in/maria-oikonomou-28938a1aa/", "email": None, "domain": "muagreece.com"},
+        {"name": "Panagiotis Velonas", "latest_experience_title": "Founder | BVELO", "url": "https://www.linkedin.com/in/panagiotis-velonas-886254353/", "email": "pvelonas@bvelo.gr", "domain": "muagreece.com"},
+        {"name": "Maria Oikonomou", "latest_experience_title": "Digital Marketing & Performance Strategist", "url": "https://www.linkedin.com/in/maria-oikonomou-28938a1aa/", "email": "maria.oikonomou@bravescale.gr", "domain": "muagreece.com"},
         {"name": "Angeliki Gidiotou", "latest_experience_title": "Influencer Marketing and UGC Specialist", "url": "https://www.linkedin.com/in/angeliki-gidiotou/", "email": None, "domain": "muagreece.com"},
     ], "muagreece.com"),
     "Benefit Cosmetics": ([{"name": "Marietta Fameli", "latest_experience_title": "Digital Project Manager", "url": "https://www.linkedin.com/in/marietta-fameli-622a692b/", "email": "mariettaf@benefitcosmetics.com", "domain": "benefitcosmetics.com"}, {"name": "Afroditi Delipanagioti", "latest_experience_title": "Digital/PR & Marketing manager", "url": "https://www.linkedin.com/in/afroditi-delipanagioti-198406244/", "email": "afroditid@benefitcosmetics.com", "domain": "benefitcosmetics.com"}], "benefitcosmetics.com"),
