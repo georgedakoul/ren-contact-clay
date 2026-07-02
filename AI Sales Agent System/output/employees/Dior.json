@@ -1,14 +1,56 @@
 [
   {
-    "email": "itsigkri@bernitsaslaw.com",
+    "email": "dmeleti@christiandior.com",
     "name": "",
     "title": "",
     "source": "businessportal"
   },
   {
-    "email": "dmeleti@christiandior.com",
-    "name": "",
-    "title": "",
-    "source": "businessportal"
+    "name": "Sevasti Polidouli",
+    "job_title": "Retail Manager",
+    "email": null,
+    "linkedin_url": "https://www.linkedin.com/in/sevasti-polidouli-a0814b163/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "dior.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Ioanna Angelis",
+    "job_title": "Marketing Director Kalogirou S.A.",
+    "email": "ioanna.angelis@faisgroup.gr",
+    "linkedin_url": "https://www.linkedin.com/in/ioanna-angelis-05724620/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "faisgroup.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Melina Zineli - Prastakou",
+    "job_title": "Brand Marketing Manager-Luxury Division",
+    "email": "melina.zineli@faisgroup.gr",
+    "linkedin_url": "https://www.linkedin.com/in/melina-zineli-prastakou-5ba516a3/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "faisgroup.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Paris Kapsalis",
+    "job_title": "Luxury Buyer-Brand Manager at KALOGIROU",
+    "email": "paris.kapsalis@faisgroup.gr",
+    "linkedin_url": "https://www.linkedin.com/in/paris-kapsalis/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "faisgroup.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
   }
 ]

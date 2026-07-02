@@ -21,7 +21,7 @@
     "source": "clay",
     "domain": "coca-colahellenic.com",
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17"
+    "last_seen": "2026-07-02"
   },
   {
     "name": "George Geormas",
@@ -45,7 +45,7 @@
     "source": "clay",
     "domain": "coca-colahellenic.com",
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17"
+    "last_seen": "2026-07-02"
   },
   {
     "name": "Christos Balatsos",
@@ -57,7 +57,7 @@
     "source": "clay",
     "domain": "coca-colahellenic.com",
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-18"
+    "last_seen": "2026-07-02"
   },
   {
     "name": "ANTHIE DIMAKOU",
@@ -69,7 +69,7 @@
     "source": "clay",
     "domain": "coca-colahellenic.com",
     "first_seen": "2026-06-17",
-    "last_seen": "2026-06-17"
+    "last_seen": "2026-07-02"
   },
   {
     "name": "Despina Karmiri",
@@ -120,21 +120,153 @@
     "last_seen": "2026-06-23"
   },
   {
-    "email": "voula.konsta@cchellenic.com",
-    "name": "",
-    "title": "",
-    "source": "businessportal"
-  },
-  {
-    "email": "infoline@cchellenic.com",
-    "name": "",
-    "title": "",
-    "source": "businessportal"
-  },
-  {
     "email": "nlytras@coca-cola.com",
     "name": "",
     "title": "",
     "source": "businessportal"
+  },
+  {
+    "name": "Ourania Xaplanteri",
+    "job_title": "Channel Marketing Activation Executive",
+    "email": "ourania.xaplanteri@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/ouraniaxaplanteri/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Ippokratis Kourkoumpas",
+    "job_title": "Marketing Capability Development Manager",
+    "email": "ippokratis.kourkoumpas@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/ippokratis-kourkoumpas-915526b/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Konstantinos Dolkas",
+    "job_title": "Digital Factory Manager - Integrations",
+    "email": "konstantinos.dolkas@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/konstantinos-dolkas-b308a132/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Dimitris Alevizopoulos",
+    "job_title": "Digital Product Manager - Contact Center & Order Management",
+    "email": "dimitris.alevizopoulos@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/dimitris-alevizopoulos-b1929927/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Dimitris Lianos",
+    "job_title": "Digital Enterprise Platform Leader GR/CY",
+    "email": "dimitris.lianos@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/dimitris-lianos-4243b7b3/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Koukouvaos Georgios",
+    "job_title": "Group Digital & Technology Platform Services IIoT Engineer",
+    "email": "georgios.koukouvaos@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/koukouvaos-georgios-592b1063/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Dimitris Stathopoulos",
+    "job_title": "Group Digital Platform Manager -Supply Chain Planning",
+    "email": "dimitris.stathopoulos@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/dimitris-stathopoulos-a7718222/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Antonios Patarias",
+    "job_title": "Data Science & AI Manager - Digital Commerce",
+    "email": "antonios.patarias@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/patarias-analytics/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Jozsef Juhasz",
+    "job_title": "Head of Digital Employee Platform",
+    "email": "jozsef.juhasz@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/jozsef-juhasz-4045243/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Maria Konisioti",
+    "job_title": "Brand Manager Beer",
+    "email": "maria.konisioti@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/maria-konisioti-2a501271/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Ioanna Stroubi",
+    "job_title": "CCH Brands Marketing Director",
+    "email": "ioanna.stroubi@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/ioanna-stroubi-a5470060/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
+  },
+  {
+    "name": "Chara Braouzi",
+    "job_title": "Digital Enterprise Platform Lead",
+    "email": "chara.braouzi@cchellenic.com",
+    "linkedin_url": "https://www.linkedin.com/in/charikleia-braouzi-a5aa835b/",
+    "verified": false,
+    "active": true,
+    "source": "clay",
+    "domain": "coca-colahellenic.com",
+    "first_seen": "2026-07-02",
+    "last_seen": "2026-07-02"
   }
 ]
